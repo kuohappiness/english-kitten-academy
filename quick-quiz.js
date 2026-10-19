@@ -1,10 +1,12 @@
 // 考前速測模組：本機版本，等雲端帳號上線後可再同步紀錄
+// 錯題在這裡「一次就答對」會累計，達到次數就移出錯題本（見 app.js 的 FIX_TO_CLEAR）
 (function(){
  let quiz=null, selected=[], phase='';
  const randomize=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
  const safe=s=>esc(s);
  function pool(id,wrong){
-   return (id==='all'?LESSONS:LESSONS.filter(l=>l.id===id)).flatMap(l=>
+   const unit=getCurrentUnit().id;
+   return (id==='all'?LESSONS.filter(l=>l.unit===unit):LESSONS.filter(l=>l.id===id)).flatMap(l=>
      l.items.map((item,i)=>({id:l.id,i,title:l.title,item}))
        .filter(q=>!wrong||!!me().progress?.[q.id]?.[q.i]?.wrong));
  }
@@ -13,8 +15,8 @@
    if(!dlg){dlg=document.createElement('dialog');dlg.id='quiz-dialog';dlg.className='quiz-dialog';document.body.appendChild(dlg)}
    dlg.innerHTML='<h2>⚡ 考前速測</h2><p>選擇課別和題數，組成自己的考前練習卷。</p>'+
    '<label for="quiz-lesson">選第幾課</label><select class="input" id="quiz-lesson">'+
-   '<option value="all">Unit 05 全課綜合（30 個單字主題）</option>'+
-   LESSONS.map(l=>'<option value="'+safe(l.id)+'">'+safe(l.title)+'</option>').join('')+'</select>'+
+   '<option value="all">'+safe(getCurrentUnit().title)+' 全課綜合（'+LESSONS.filter(l=>l.unit===getCurrentUnit().id).length+' 個單字主題）</option>'+
+   LESSONS.filter(l=>l.unit===getCurrentUnit().id).map(l=>'<option value="'+safe(l.id)+'">'+safe(l.title)+'</option>').join('')+'</select>'+
    '<label for="quiz-count">題數</label><select class="input" id="quiz-count">'+
    [5,10,20,30,50].map(n=>'<option value="'+n+'" '+(n===10?'selected':'')+'>'+n+' 題</option>').join('')+
    '<option value="all">全部題目</option></select>'+
@@ -80,12 +82,14 @@
    let words=currentWords(),good=quiz.answer.every((id,i)=>words[id]===words[i]);
    quiz.attempt++;phase='feedback';
    document.querySelectorAll('[data-qid],#q-check,#q-shuffle').forEach(x=>x.disabled=true);
-   if(!good){quiz.failed++;const q=quiz.questions[quiz.at];rec(q.id,q.i).wrong=true;save();}
+   const q=quiz.questions[quiz.at];if(!good)quiz.failed++;
+   markResult(q.id,q.i,good,quiz.attempt===1,quiz.answer.map(id=>words[id]));
    let answer=words.map((w,i)=>'<span class="'+(!good&&words[quiz.answer[i]]!==w?'bad':'')+'">'+safe(w)+'</span>').join(' ');
    document.getElementById('q-feedback').innerHTML='<div class="feedback '+(good?'good':'')+'"><h3>'+
       (good?'🐱🎉 答對了！':'🐾 再看一次正確句子')+'</h3><div class="answer">'+answer+
       '</div><p>'+(good?'繼續挑戰下一題！':'紅色標示需要修正的位置；這題要重新拼對才能繼續。')+'</p>'+
-      '<button class="btn '+(good?'mint':'primary')+'" id="q-next">'+(good?'下一題 →':'🔁 再試一次')+'</button></div>';
+      '<div class="actions">'+speakBtn(words.join(' '))+'<button class="btn '+(good?'mint':'primary')+'" id="q-next">'+(good?'下一題 →':'🔁 再試一次')+'</button></div></div>';
+   bindSpeak(document.getElementById('q-feedback'));
    if(good)party();
    document.getElementById('q-next').onclick=()=>{
       if(good){if(quiz.attempt===1)quiz.first++;quiz.at++;next()}
@@ -105,12 +109,10 @@
    party();document.getElementById('q-again').onclick=()=>{quiz=null;home();open()};
    document.getElementById('q-home').onclick=()=>{quiz=null;home()};
  }
- const originalHome=home;
- home=function(){quiz=null;originalHome();if(!me())return;let search=document.querySelector('.searchbox');if(!search)return;
+ window.onHomeRendered=function(){quiz=null;let search=document.getElementById('search-wrap');if(!search)return;
    let box=document.createElement('div');box.className='homecard';box.innerHTML=
     '<h2>⚡ 考前速測</h2><p>挑選課別、題數，隨機出一份綜合考卷，也能集中補練錯題。</p>'+
     '<button class="btn primary" id="q-open">設定測驗 →</button>';search.parentNode.insertBefore(box,search);
    document.getElementById('q-open').onclick=open;
  };
- if(me())home();
 })();
