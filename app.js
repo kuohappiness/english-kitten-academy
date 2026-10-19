@@ -42,7 +42,8 @@ function migrateV2(old) {
   }
   return old;
 }
-const save = () => { try { localStorage.setItem(KEY, JSON.stringify(db)); } catch (e) {} };
+const CLOUD = () => window.Cloud && Cloud.enabled;
+const save = () => { if (CLOUD()) return; try { localStorage.setItem(KEY, JSON.stringify(db)); } catch (e) {} };
 
 const me = () => db.users[db.active];
 const topic = () => LESSONS.find(l => l.id === lesson);
@@ -53,10 +54,13 @@ const rec = (lid, i) => {
 };
 
 // 記錄一次作答。firstTry＝這題這一輪的第一次嘗試（看過正解後重拼的不算）
-function markResult(lid, i, ok, firstTry, answerWords) {
+// scoring＝一般闖關（計次、給分）；複習與速測為 false
+function markResult(lid, i, ok, firstTry, answerWords, scoring = false) {
   const r = rec(lid, i), u = me();
+  if (CLOUD()) Cloud.recordAttempt(lid, i, ok, firstTry, (answerWords || []).join(' '), scoring);
   if (!ok) { r.wrong = true; r.wrongCount = (r.wrongCount || 0) + 1; r.fix = 0; }
   else if (r.wrong && firstTry) { r.fix = (r.fix || 0) + 1; if (r.fix >= FIX_TO_CLEAR) { r.wrong = false; r.fix = 0; } }
+  if (CLOUD()) return;
   u.log ??= [];
   u.log.push({t: Date.now(), lid, i, ok, ...(ok ? {} : {ans: answerWords.join(' ')})});
   if (u.log.length > LOG_LIMIT) u.log.splice(0, u.log.length - LOG_LIMIT);
@@ -129,9 +133,12 @@ function updateUnitChip() {
 
 function header() {
   const nav = $('tabs');
-  nav.innerHTML = db.active ? `<button class="tab ${stage==='home'?'active':''}" data-page="home">🏠 學習首頁</button><button class="tab ${stage==='ranking'?'active':''}" data-page="ranking">🏆 排行榜</button><button class="tab" data-page="logout">👋 切換學員</button>` : '';
+  nav.innerHTML = db.active ? `<button class="tab ${stage==='home'?'active':''}" data-page="home">🏠 學習首頁</button><button class="tab ${stage==='ranking'?'active':''}" data-page="ranking">🏆 排行榜</button><button class="tab" data-page="logout">${CLOUD() ? '👋 登出' : '👋 切換學員'}</button>` : '';
   nav.querySelectorAll('button').forEach(b => b.onclick = () => {
-    if (b.dataset.page === 'logout') { db.active = null; save(); home(); }
+    if (b.dataset.page === 'logout') {
+      if (CLOUD()) { if (!confirm('確定要登出嗎？')) return; Cloud.signOut().finally(() => { db = {users: {}, active: null}; home(); }); return; }
+      db.active = null; save(); home();
+    }
     else if (b.dataset.page === 'ranking') ranking();
     else home();
   });
@@ -139,6 +146,8 @@ function header() {
 
 function home() {
   stage = 'home'; header();
+  if (CLOUD() && Cloud.recovery) { recoveryScreen(); return; }
+  if (CLOUD() && !me()) { authScreen('login'); return; }
   if (!me()) {
     $('app').innerHTML = `<div class="homecard" style="text-align:center"><h2>🐱 歡迎來到喵喵英文學院！</h2><p>先輸入學員暱稱，就可以開始練習與累積星星。</p></div><div class="login-grid"><label>學員暱稱<input id="nickname" class="input" maxlength="20" autocomplete="nickname" placeholder="例如：小喵、Amy"></label><button class="btn primary" id="enter">🐾 開始學習</button><div class="leader-note">目前是單機體驗版：使用暱稱建立這台裝置上的學習檔案，<strong>不是雲端帳號或密碼登入</strong>，請勿在此輸入密碼。</div></div>`;
     const go = () => { const n = $('nickname').value.trim(); if (!n) { alert('先輸入暱稱喔！'); return; } if (!db.users[n]) db.users[n] = {progress: {}, bonuses: {}, log: []}; db.active = n; save(); home(); };
@@ -170,16 +179,24 @@ function home() {
 }
 
 let rankMode = 'week';
-function ranking() {
+async function ranking() {
   stage = 'ranking'; header();
   const since = rankMode === 'week' ? weekStart() : 0;
-  const people = Object.entries(db.users).map(([name, u]) => ({name, score: scoreOf(u, since)}))
-    .filter(p => rankMode === 'all' || p.score > 0)
-    .sort((a, b) => b.score - a.score).slice(0, 10);
-  $('app').innerHTML = `<h2>🏆 本裝置積分榜</h2>
+  let people;
+  if (CLOUD()) {
+    $('app').innerHTML = '<p class="smallnote">🐾 排行榜載入中…</p>';
+    try { people = (await Cloud.leaderboard(since)).map(r => ({name: r.nickname, score: r.score})); }
+    catch (e) { $('app').innerHTML = `<div class="feedback"><h3>🙀 排行榜載入失敗</h3><p>${esc(e.message)}</p></div>`; return; }
+    if (stage !== 'ranking') return;
+  } else {
+    people = Object.entries(db.users).map(([name, u]) => ({name, score: scoreOf(u, since)}))
+      .filter(p => rankMode === 'all' || p.score > 0)
+      .sort((a, b) => b.score - a.score).slice(0, 10);
+  }
+  $('app').innerHTML = `<h2>🏆 ${CLOUD() ? '全班積分榜' : '本裝置積分榜'}</h2>
     <div class="actions"><button class="btn ${rankMode==='week'?'primary':'secondary'}" data-rank="week">📅 本週</button><button class="btn ${rankMode==='all'?'primary':'secondary'}" data-rank="all">🌟 總積分</button></div>
-    <p class="leader-note">${rankMode==='week'?'本週（從星期一開始）新獲得的積分。':'所有累積積分。'}目前只會列出<strong>同一瀏覽器中建立的學員</strong>，雲端排行榜將在下一階段串接。</p>
-    ${people.length ? `<table class="ranking"><tr><th>排名</th><th>暱稱</th><th>積分</th></tr>${people.map((u, i) => `<tr><td>${i<3?['🥇','🥈','🥉'][i]:'#'+(i+1)}</td><td>${esc(u.name)}</td><td>⭐ ${u.score}</td></tr>`).join('')}</table>` : '<p class="smallnote">本週還沒有人得分，快去練習搶第一！</p>'}
+    <p class="leader-note">${rankMode==='week'?'本週（從星期一開始）新獲得的積分。':'所有累積積分。'}${CLOUD() ? '顯示前 10 名。' : '目前只會列出<strong>同一瀏覽器中建立的學員</strong>。'}</p>
+    ${people.length ? `<table class="ranking"><tr><th>排名</th><th>暱稱</th><th>積分</th></tr>${people.map((u, i) => `<tr><td>${i<3?['🥇','🥈','🥉'][i]:'#'+(i+1)}</td><td>${esc(u.name)}${u.name === db.active ? ' 👈' : ''}</td><td>⭐ ${u.score}</td></tr>`).join('')}</table>` : '<p class="smallnote">本週還沒有人得分，快去練習搶第一！</p>'}
     <div class="actions"><button class="btn primary" id="gohome">返回學習首頁</button></div>`;
   document.querySelectorAll('[data-rank]').forEach(b => b.onclick = () => { rankMode = b.dataset.rank; ranking(); });
   $('gohome').onclick = home;
@@ -243,7 +260,7 @@ function check() {
     r.points = r.attempts === 1 ? 3 : r.attempts === 2 ? 2 : 1;
     r.correct = true; r.pointsAt = Date.now();
   }
-  markResult(lesson, index, right, tries === 1, placed.map(id => words[id]));
+  markResult(lesson, index, right, tries === 1, placed.map(id => words[id]), !reviewMode);
   status = right ? 'right' : 'wrong';
   if (right) party();
   render();
@@ -292,7 +309,7 @@ function complete() {
   stage = 'complete'; header();
   me().bonuses ??= {};
   const bonus = !reviewMode && !(lesson in me().bonuses);
-  if (bonus) { me().bonuses[lesson] = Date.now(); save(); }
+  if (bonus) { me().bonuses[lesson] = Date.now(); save(); if (CLOUD()) Cloud.claimBonus(lesson, topic().items.length); }
   const l = topic(), unitLessons = LESSONS.filter(x => x.unit === l.unit), loc = unitLessons.findIndex(x => x.id === lesson), next = unitLessons[loc + 1];
   const unitTitle = UNITS.find(u => u.id === l.unit).title;
   $('app').innerHTML = `<div class="completion"><div class="completion-cat" aria-label="小貓慶祝">😻🎊</div><h1>${reviewMode ? '複習完成！' : '恭喜單字大過關！'}</h1><h2>${esc(l.title)}</h2>
@@ -303,6 +320,76 @@ function complete() {
   if (!reviewMode) party();
   $('next-lesson').onclick = () => next ? start(next.id) : home();
   $('home').onclick = home;
+}
+
+// ---------- 雲端帳號畫面 ----------
+function authScreen(mode, notice = '') {
+  stage = 'auth'; header();
+  const tabs = `<div class="actions auth-tabs"><button class="btn ${mode==='login'?'primary':'secondary'}" data-auth="login">🔑 登入</button><button class="btn ${mode==='signup'?'primary':'secondary'}" data-auth="signup">✨ 註冊新帳號</button></div>`;
+  const forms = {
+    login: `<label>Email<input id="a-email" class="input" type="email" autocomplete="email" inputmode="email"></label>
+      <label>密碼<input id="a-pass" class="input" type="password" autocomplete="current-password"></label>
+      <button class="btn primary" id="a-go">🐾 登入</button>
+      <button class="linkbtn" data-auth="forgot" type="button">忘記密碼？</button>`,
+    signup: `<label>學員暱稱（排行榜上顯示，最多 20 字）<input id="a-nick" class="input" maxlength="20" autocomplete="nickname" placeholder="例如：小喵、Amy"></label>
+      <label>Email（忘記密碼時用來收信，請填常用信箱）<input id="a-email" class="input" type="email" autocomplete="email" inputmode="email"></label>
+      <label>密碼（至少 6 個字元）<input id="a-pass" class="input" type="password" autocomplete="new-password"></label>
+      <label>再輸入一次密碼<input id="a-pass2" class="input" type="password" autocomplete="new-password"></label>
+      <button class="btn primary" id="a-go">✨ 建立帳號</button>`,
+    forgot: `<p>輸入註冊時的 Email，我們會寄一封「重設密碼」信給你，點信裡的連結就能設定新密碼。</p>
+      <label>Email<input id="a-email" class="input" type="email" autocomplete="email" inputmode="email"></label>
+      <button class="btn primary" id="a-go">📮 寄出重設密碼信</button>
+      <button class="linkbtn" data-auth="login" type="button">← 回到登入</button>`,
+  };
+  $('app').innerHTML = `<div class="homecard" style="text-align:center"><h2>🐱 歡迎來到喵喵英文學院！</h2><p>${mode==='signup'?'建立自己的帳號，學習紀錄和積分會存在雲端，換手機也不會不見。':mode==='forgot'?'忘記密碼也沒關係！':'登入後就可以開始練習與累積星星。'}</p></div>
+    ${mode==='forgot' ? '' : tabs}
+    <div class="login-grid">${forms[mode]}<div id="a-msg">${notice}</div></div>`;
+  document.querySelectorAll('[data-auth]').forEach(b => b.onclick = () => authScreen(b.dataset.auth));
+  const msg = (t, good) => { $('a-msg').innerHTML = `<div class="feedback ${good?'good':''}"><p>${t}</p></div>`; };
+  const val = id => ($(id)?.value || '').trim();
+  const go = async () => {
+    const email = val('a-email'), pass = $('a-pass')?.value || '';
+    if (!/^\S+@\S+\.\S+$/.test(email)) return msg('請輸入正確的 Email。');
+    if (mode !== 'forgot' && pass.length < 6) return msg('密碼至少需要 6 個字元。');
+    if (mode === 'signup') {
+      if (!val('a-nick')) return msg('請輸入學員暱稱。');
+      if (pass !== $('a-pass2').value) return msg('兩次輸入的密碼不一樣，請再確認。');
+    }
+    const btn = $('a-go'); btn.disabled = true;
+    try {
+      if (mode === 'login') {
+        await Cloud.signIn(email, pass); await loadCloudUser(); home();
+      } else if (mode === 'signup') {
+        const r = await Cloud.signUp(email, pass, val('a-nick'));
+        if (r.needsConfirm) authScreen('login', `<div class="feedback good"><h3>📮 快完成了！</h3><p>確認信已寄到 <strong>${esc(email)}</strong>，請打開信件點「確認」連結，再回來登入。</p><p class="smallnote">沒收到？請看看垃圾郵件匣，或 <button class="linkbtn" id="a-resend" type="button">重新寄一次</button></p></div>`);
+        else { await loadCloudUser(); home(); }
+        const rs = $('a-resend'); if (rs) rs.onclick = async () => { rs.disabled = true; try { await Cloud.resendConfirm(email); rs.textContent = '已重新寄出 ✓'; } catch (e) { alert(e.message); rs.disabled = false; } };
+      } else {
+        await Cloud.sendReset(email);
+        msg(`📮 如果這個 Email 有註冊過，重設密碼信已寄到 <strong>${esc(email)}</strong>。請到信箱點連結（也看看垃圾郵件匣）。`, true);
+      }
+    } catch (e) {
+      msg(esc(e.message) + (/還沒完成驗證/.test(e.message) ? ' <button class="linkbtn" id="a-resend2" type="button">重新寄確認信</button>' : ''));
+      const rs = $('a-resend2'); if (rs) rs.onclick = async () => { try { await Cloud.resendConfirm(email); msg('確認信已重新寄出，請到信箱查看。', true); } catch (er) { msg(esc(er.message)); } };
+    } finally { if ($('a-go')) $('a-go').disabled = false; }
+  };
+  $('a-go').onclick = go;
+  document.querySelectorAll('#app input').forEach(i => i.onkeydown = e => { if (e.key === 'Enter') go(); });
+}
+function recoveryScreen() {
+  stage = 'auth'; header();
+  $('app').innerHTML = `<div class="homecard" style="text-align:center"><h2>🔑 設定新密碼</h2><p>請輸入你的新密碼。</p></div>
+    <div class="login-grid"><label>新密碼（至少 6 個字元）<input id="r-pass" class="input" type="password" autocomplete="new-password"></label>
+    <label>再輸入一次<input id="r-pass2" class="input" type="password" autocomplete="new-password"></label>
+    <button class="btn primary" id="r-go">💾 儲存新密碼</button><div id="r-msg"></div></div>`;
+  $('r-go').onclick = async () => {
+    const p = $('r-pass').value, show = t => $('r-msg').innerHTML = `<div class="feedback"><p>${esc(t)}</p></div>`;
+    if (p.length < 6) return show('密碼至少需要 6 個字元。');
+    if (p !== $('r-pass2').value) return show('兩次輸入的密碼不一樣。');
+    $('r-go').disabled = true;
+    try { await Cloud.updatePassword(p); await loadCloudUser(); alert('新密碼設定完成！'); home(); }
+    catch (e) { show(e.message); $('r-go').disabled = false; }
+  };
 }
 
 // ---------- 啟動：讀取題庫 ----------
@@ -324,7 +411,20 @@ async function boot() {
   let saved = null; try { saved = localStorage.getItem(KEY + ':unit'); } catch (_) {}
   currentUnit = UNITS.find(u => u.id === saved) || UNITS[UNITS.length - 1];
   window.LESSONS = LESSONS; window.UNITS = UNITS;
-  loadDb(); updateUnitChip(); home();
+  updateUnitChip();
+  if (CLOUD()) {
+    $('app').innerHTML = '<p class="smallnote">🐾 連線中…</p>';
+    try {
+      const session = await Cloud.init(ev => { if (ev === 'recovery') home(); });
+      if (session) await loadCloudUser();
+    } catch (e) { $('app').innerHTML = `<div class="feedback"><h3>🙀 無法連線到雲端</h3><p>${esc(e.message)}</p></div>`; return; }
+  } else loadDb();
+  home();
+}
+async function loadCloudUser() {
+  const u = await Cloud.loadUser();
+  db = u ? {users: {[u.nickname]: u}, active: u.nickname} : {users: {}, active: null};
+  Cloud.flush();
 }
 window.getCurrentUnit = () => currentUnit;
 boot();
