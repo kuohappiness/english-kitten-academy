@@ -91,6 +91,7 @@ anon key 本來就是給網頁公開使用的，資料安全由資料庫權限�
 
 ## 注意事項
 
+- **寄信用 SMTP 改用 Brevo**：Gmail 應用程式密碼不能用時，可改用 Brevo（Host `smtp-relay.brevo.com`、Port `587`、Username 填 Brevo 的 Login）。Brevo 的 SMTP 金鑰 **90 天沒寄信會自動失效**，寒暑假後若學生收不到信，到 Brevo 重新產生金鑰貼回 Supabase 即可。
 - **免費專案閒置 7 天會自動暫停**：期間沒人登入，Supabase 會暫停專案（資料不會刪），到後台按 **Restore** 即可恢復。學期中有人在用就不會發生。
 - **看學生作答紀錄**：後台 **Table Editor** → `attempts` 表，可以看到每一次作答與答錯時排出的句子；`progress` 表是每一句的狀態。
 - **學生忘記 Email**：後台 **Authentication** → **Users** 可以查到所有帳號。
