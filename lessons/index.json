@@ -1,1 +1,6 @@
-{"units":[{"id":"unit05","title":"Unit 05","subtitle":"課本 p.38–47","file":"unit05.json"}]}
+{
+ "units": [
+  {"id": "unit05", "title": "Unit 05", "subtitle": "課本 p.38–47", "file": "unit05.json"},
+  {"id": "unit06", "title": "Unit 06", "subtitle": ""}
+ ]
+}

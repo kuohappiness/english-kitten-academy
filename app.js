@@ -43,7 +43,9 @@ function migrateV2(old) {
   return old;
 }
 const CLOUD = () => window.Cloud && Cloud.enabled;
-const save = () => { if (CLOUD()) return; try { localStorage.setItem(KEY, JSON.stringify(db)); } catch (e) {} };
+let guest = false;                       // 試玩模式：紀錄只留在這次瀏覽，不上傳、不存檔
+const SYNC = () => CLOUD() && !guest;
+const save = () => { if (CLOUD() || guest) return; try { localStorage.setItem(KEY, JSON.stringify(db)); } catch (e) {} };
 
 const me = () => db.users[db.active];
 const topic = () => LESSONS.find(l => l.id === lesson);
@@ -57,7 +59,7 @@ const rec = (lid, i) => {
 // scoring＝一般闖關（計次、給分）；複習與速測為 false
 function markResult(lid, i, ok, firstTry, answerWords, scoring = false) {
   const r = rec(lid, i), u = me();
-  if (CLOUD()) Cloud.recordAttempt(lid, i, ok, firstTry, (answerWords || []).join(' '), scoring);
+  if (SYNC()) Cloud.recordAttempt(lid, i, ok, firstTry, (answerWords || []).join(' '), scoring);
   if (!ok) { r.wrong = true; r.wrongCount = (r.wrongCount || 0) + 1; r.fix = 0; }
   else if (r.wrong && firstTry) { r.fix = (r.fix || 0) + 1; if (r.fix >= FIX_TO_CLEAR) { r.wrong = false; r.fix = 0; } }
   if (CLOUD()) return;
@@ -107,18 +109,30 @@ function party() {
   }
 }
 // 🔊 用瀏覽器內建語音念英文句子
-function speak(text) {
+// 依裝置挑最自然的英文語音：iPhone/Mac 的 Siri、Samantha、增強版語音；Windows Edge 的 Natural 語音；Chrome 的 Google US English
+const VOICE_RANK = [/siri/i, /premium/i, /enhanced/i, /natural/i, /neural/i, /samantha/i, /ava/i, /allison/i, /google us english/i, /aria|jenny|guy/i, /karen|daniel|moira/i, /google uk english/i];
+let bestVoice = null;
+function pickVoice() {
+  if (!('speechSynthesis' in window)) return;
+  const vs = speechSynthesis.getVoices().filter(v => /^en[-_]/i.test(v.lang) || v.lang === 'en');
+  if (!vs.length) return;
+  const score = v => { const i = VOICE_RANK.findIndex(re => re.test(v.name)); return (i < 0 ? 100 : i) + (/en[-_]US/i.test(v.lang) ? 0 : 0.5) + (v.localService ? 0 : 0.2); };
+  bestVoice = vs.sort((a, b) => score(a) - score(b))[0];
+}
+if ('speechSynthesis' in window) { pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
+function speak(text, slow = false) {
   if (!('speechSynthesis' in window)) { alert('這個瀏覽器不支援語音朗讀'); return; }
   speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'en-US'; u.rate = 0.9;
-  const v = speechSynthesis.getVoices().find(v => v.lang && v.lang.startsWith('en'));
-  if (v) u.voice = v;
+  if (!bestVoice) pickVoice();
+  const u = new SpeechSynthesisUtterance(text.replace(/[’‘]/g, "'"));
+  u.lang = bestVoice ? bestVoice.lang : 'en-US';
+  if (bestVoice) u.voice = bestVoice;
+  u.rate = slow ? 0.6 : 0.92; u.pitch = 1;
   speechSynthesis.speak(u);
 }
 window.speak = speak;
-const speakBtn = text => `<button class="btn secondary speak" type="button" data-say="${esc(text)}">🔊 聽發音</button>`;
-function bindSpeak(root = document) { root.querySelectorAll('[data-say]').forEach(b => b.onclick = () => speak(b.dataset.say)); }
+const speakBtn = text => `<button class="btn secondary speak" type="button" data-say="${esc(text)}">🔊 聽發音</button><button class="btn secondary speak" type="button" data-say="${esc(text)}" data-slow="1" title="慢速">🐢 慢速</button>`;
+function bindSpeak(root = document) { root.querySelectorAll('[data-say]').forEach(b => b.onclick = () => speak(b.dataset.say, !!b.dataset.slow)); }
 window.speakBtn = speakBtn; window.bindSpeak = bindSpeak;
 
 // ---------- 頁面 ----------
@@ -133,9 +147,10 @@ function updateUnitChip() {
 
 function header() {
   const nav = $('tabs');
-  nav.innerHTML = db.active ? `<button class="tab ${stage==='home'?'active':''}" data-page="home">🏠 學習首頁</button><button class="tab ${stage==='ranking'?'active':''}" data-page="ranking">🏆 排行榜</button><button class="tab" data-page="logout">${CLOUD() ? '👋 登出' : '👋 切換學員'}</button>` : '';
+  nav.innerHTML = db.active ? `<button class="tab ${stage==='home'?'active':''}" data-page="home">🏠 學習首頁</button><button class="tab ${stage==='ranking'?'active':''}" data-page="ranking">🏆 排行榜</button><button class="tab" data-page="logout">${guest ? '✨ 建立帳號' : CLOUD() ? '👋 登出' : '👋 切換學員'}</button>` : '';
   nav.querySelectorAll('button').forEach(b => b.onclick = () => {
     if (b.dataset.page === 'logout') {
+      if (guest) { if (!confirm('離開試玩並建立帳號？試玩的紀錄不會保留。')) return; guest = false; db = {users: {}, active: null}; authScreen('signup'); return; }
       if (CLOUD()) { if (!confirm('確定要登出嗎？')) return; Cloud.signOut().finally(() => { db = {users: {}, active: null}; home(); }); return; }
       db.active = null; save(); home();
     }
@@ -157,15 +172,19 @@ function home() {
   const unitLessons = LESSONS.filter(l => l.unit === currentUnit.id);
   const completed = unitLessons.filter(l => stats(l.id).complete).length;
   const wrongs = wrongCount(unitLessons.map(l => l.id));
-  const unitPicker = UNITS.length > 1 ? `<div class="searchbox"><label for="unit-pick">📚 選擇單元</label><select class="input" id="unit-pick">${UNITS.map(u => `<option value="${esc(u.id)}" ${u.id===currentUnit.id?'selected':''}>${esc(u.title)}${u.subtitle?' · '+esc(u.subtitle):''}</option>`).join('')}</select></div>` : '';
-  $('app').innerHTML = `<h2>🐾 ${esc(db.active)}，歡迎回來！</h2>
+  const unitPicker = `<div class="searchbox"><div class="sectionlabel">📚 選擇單元</div><div class="unit-buttons">${UNITS.map(u => u.topics.length
+      ? `<button class="btn ${u.id===currentUnit.id?'primary':'secondary'}" data-unit="${esc(u.id)}">${esc(u.title)}</button>`
+      : `<button class="btn secondary" disabled title="內容準備中">${esc(u.title)} · 準備中</button>`).join('')}</div></div>`;
+  const guestNote = guest ? `<div class="leader-note">🎮 <strong>試玩模式</strong>：可以自由練習，但紀錄和積分不會保存，也不會上排行榜。喜歡的話 <button class="linkbtn" id="guest-signup" type="button">建立自己的帳號</button>！</div>` : '';
+  $('app').innerHTML = `${guestNote}<h2>🐾 ${esc(db.active)}，${guest ? '歡迎試玩！' : '歡迎回來！'}</h2>
     <div class="scoreboard"><div class="scorebox"><b>⭐ ${total()}</b><small>累積積分</small></div><div class="scorebox"><b>${completed} / ${unitLessons.length}</b><small>本單元完成主題</small></div><div class="scorebox"><b>📝 ${wrongs}</b><small>待複習錯題</small></div></div>
     <p class="smallnote">第一次答對 3 分、第二次答對 2 分、第三次以後答對 1 分；每個句子只計分一次。完成一整個主題再加 5 分。錯題在速測或複習中「一次就答對」${FIX_TO_CLEAR} 次後會移出錯題本。</p>
     ${unitPicker}
     <div class="searchbox" id="search-wrap"><label for="searchword">🔎 搜尋單字或例句</label><input class="input" id="searchword" type="search" placeholder="輸入單字，例如：between、take、因為" autocomplete="off"><div class="smallnote" id="search-count"></div></div>
     <div id="lesson-list">${unitLessons.map(l => { const st = stats(l.id); return `<div class="lesson-card"><div><strong>${esc(l.title)}</strong><small>✅ ${st.done}/${st.total} 句 · ⭐ ${st.points} 分${st.complete?' · 已過關 🏅':''}</small></div><button class="btn ${st.complete?'secondary':'primary'}" data-start="${esc(l.id)}">${st.complete?'再次複習':'開始練習 →'}</button></div>`; }).join('')}</div>`;
   document.querySelectorAll('[data-start]').forEach(b => b.onclick = () => start(b.dataset.start));
-  if ($('unit-pick')) $('unit-pick').onchange = e => { currentUnit = UNITS.find(u => u.id === e.target.value); try { localStorage.setItem(KEY + ':unit', currentUnit.id); } catch (_) {} updateUnitChip(); home(); };
+  if ($('guest-signup')) $('guest-signup').onclick = () => { guest = false; db = {users: {}, active: null}; authScreen('signup'); };
+  document.querySelectorAll('[data-unit]').forEach(b => b.onclick = () => { currentUnit = UNITS.find(u => u.id === b.dataset.unit); try { localStorage.setItem(KEY + ':unit', currentUnit.id); } catch (_) {} updateUnitChip(); home(); });
   const search = $('searchword');
   search.oninput = () => {
     const q = search.value.trim().toLowerCase(); let visible = 0;
@@ -183,6 +202,10 @@ async function ranking() {
   stage = 'ranking'; header();
   const since = rankMode === 'week' ? weekStart() : 0;
   let people;
+  if (guest) {
+    $('app').innerHTML = `<h2>🏆 全班積分榜</h2><div class="leader-note">🎮 試玩模式看不到排行榜喔！建立帳號後，你的積分就會和同學一起排名。</div><div class="actions"><button class="btn primary" id="g-sign">✨ 建立帳號</button><button class="btn secondary" id="gohome">返回學習首頁</button></div>`;
+    $('g-sign').onclick = () => { guest = false; db = {users: {}, active: null}; authScreen('signup'); }; $('gohome').onclick = home; return;
+  }
   if (CLOUD()) {
     $('app').innerHTML = '<p class="smallnote">🐾 排行榜載入中…</p>';
     try { people = (await Cloud.leaderboard(since)).map(r => ({name: r.nickname, score: r.score})); }
@@ -309,7 +332,7 @@ function complete() {
   stage = 'complete'; header();
   me().bonuses ??= {};
   const bonus = !reviewMode && !(lesson in me().bonuses);
-  if (bonus) { me().bonuses[lesson] = Date.now(); save(); if (CLOUD()) Cloud.claimBonus(lesson, topic().items.length); }
+  if (bonus) { me().bonuses[lesson] = Date.now(); save(); if (SYNC()) Cloud.claimBonus(lesson, topic().items.length); }
   const l = topic(), unitLessons = LESSONS.filter(x => x.unit === l.unit), loc = unitLessons.findIndex(x => x.id === lesson), next = unitLessons[loc + 1];
   const unitTitle = UNITS.find(u => u.id === l.unit).title;
   $('app').innerHTML = `<div class="completion"><div class="completion-cat" aria-label="小貓慶祝">😻🎊</div><h1>${reviewMode ? '複習完成！' : '恭喜單字大過關！'}</h1><h2>${esc(l.title)}</h2>
@@ -343,7 +366,9 @@ function authScreen(mode, notice = '') {
   };
   $('app').innerHTML = `<div class="homecard" style="text-align:center"><h2>🐱 歡迎來到喵喵英文學院！</h2><p>${mode==='signup'?'建立自己的帳號，學習紀錄和積分會存在雲端，換手機也不會不見。':mode==='forgot'?'忘記密碼也沒關係！':'登入後就可以開始練習與累積星星。'}</p></div>
     ${mode==='forgot' ? '' : tabs}
-    <div class="login-grid">${forms[mode]}<div id="a-msg">${notice}</div></div>`;
+    <div class="login-grid">${forms[mode]}<div id="a-msg">${notice}</div></div>
+    ${mode==='forgot' ? '' : `<div class="guest-box"><p>還沒想好要不要註冊？</p><button class="btn mint" id="a-guest" type="button">🎮 先試玩看看（免註冊）</button></div>`}`;
+  if ($('a-guest')) $('a-guest').onclick = () => { guest = true; db = {users: {'訪客': {progress: {}, bonuses: {}, log: []}}, active: '訪客'}; home(); };
   document.querySelectorAll('[data-auth]').forEach(b => b.onclick = () => authScreen(b.dataset.auth));
   const msg = (t, good) => { $('a-msg').innerHTML = `<div class="feedback ${good?'good':''}"><p>${t}</p></div>`; };
   const val = id => ($(id)?.value || '').trim();
@@ -397,8 +422,9 @@ async function boot() {
   try {
     const idx = await (await fetch('lessons/index.json', {cache: 'no-cache'})).json();
     UNITS = await Promise.all(idx.units.map(async u => {
+      if (!u.file) return {id: u.id, title: u.title, subtitle: u.subtitle || '', topics: []}; // 尚未上架的單元
       const d = await (await fetch('lessons/' + u.file, {cache: 'no-cache'})).json();
-      return {id: u.id, title: u.title, subtitle: u.subtitle, topics: d.topics};
+      return {id: u.id, title: u.title, subtitle: u.subtitle || '', topics: d.topics || []};
     }));
   } catch (e) {
     $('app').innerHTML = `<div class="feedback"><h3>🙀 題庫載入失敗</h3><p>請確認網路連線後重新整理。若是直接雙擊開啟檔案，請改用網址（GitHub Pages）或本機伺服器開啟。</p></div>`;
@@ -409,7 +435,8 @@ async function boot() {
     items: t.items.map(x => [x.en, x.zh]), grammar: t.grammar || [],
   })));
   let saved = null; try { saved = localStorage.getItem(KEY + ':unit'); } catch (_) {}
-  currentUnit = UNITS.find(u => u.id === saved) || UNITS[UNITS.length - 1];
+  const ready = UNITS.filter(u => u.topics.length);
+  currentUnit = ready.find(u => u.id === saved) || ready[ready.length - 1];
   window.LESSONS = LESSONS; window.UNITS = UNITS;
   updateUnitChip();
   if (CLOUD()) {
@@ -420,6 +447,20 @@ async function boot() {
     } catch (e) { $('app').innerHTML = `<div class="feedback"><h3>🙀 無法連線到雲端</h3><p>${esc(e.message)}</p></div>`; return; }
   } else loadDb();
   home();
+  visitCounter();
+}
+// 瀏覽人次：同一個瀏覽分頁只算一次。需要先在 Supabase 執行 supabase/visits.sql，否則不顯示
+async function visitCounter() {
+  if (!CLOUD() || !window.supabase) return;
+  const cfg = window.CLOUD_CONFIG;
+  let counted = false; try { counted = sessionStorage.getItem('kitten-visit') === '1'; } catch (_) {}
+  try {
+    const r = await fetch(cfg.url + '/rest/v1/rpc/' + (counted ? 'get_visits' : 'hit_visit'), {method: 'POST', headers: {apikey: cfg.anonKey, 'Content-Type': 'application/json'}, body: '{}'});
+    if (!r.ok) return;
+    const n = await r.json();
+    try { sessionStorage.setItem('kitten-visit', '1'); } catch (_) {}
+    const el = $('visits'); if (el && typeof n === 'number') el.textContent = '👀 瀏覽人次 ' + n.toLocaleString();
+  } catch (_) {}
 }
 async function loadCloudUser() {
   const u = await Cloud.loadUser();
