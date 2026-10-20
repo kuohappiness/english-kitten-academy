@@ -1,6 +1,16 @@
 {
- "units": [
-  {"id": "unit05", "title": "Unit 05", "subtitle": "課本 p.38–47", "file": "unit05.json"},
-  {"id": "unit06", "title": "Unit 06", "subtitle": ""}
- ]
+  "units": [
+    {
+      "id": "unit05",
+      "title": "Unit 05",
+      "subtitle": "課本 p.38–47",
+      "file": "unit05.json"
+    },
+    {
+      "id": "unit06",
+      "title": "Unit 06",
+      "subtitle": "課本 p.48–58",
+      "file": "unit06.json"
+    }
+  ]
 }
