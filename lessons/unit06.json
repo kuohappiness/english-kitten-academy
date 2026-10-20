@@ -1,0 +1,1745 @@
+{
+  "id": "unit06",
+  "title": "Unit 06",
+  "subtitle": "課本 p.48–58",
+  "topics": [
+    {
+      "id": "most",
+      "title": "01 most / least",
+      "items": [
+        {
+          "en": "The player who scores the most points is the winner.",
+          "zh": "得分最多的選手是贏家。"
+        },
+        {
+          "en": "Most people find it hard to stop smoking.",
+          "zh": "大多數人認為戒菸很難。"
+        },
+        {
+          "en": "Lilly is the most beautiful girl I’ve ever seen.",
+          "zh": "莉莉是我見過最漂亮的女生。"
+        },
+        {
+          "en": "It will take 40 minutes at most to get to the airport.",
+          "zh": "最多只要花 40 分鐘就可以到機場。"
+        },
+        {
+          "en": "Most of what Grace told you was true.",
+          "zh": "葛瑞絲告訴你的事情大多數是真的。"
+        },
+        {
+          "en": "Terry has the least workload of us all.",
+          "zh": "泰瑞的工作量在我們當中是最少的。"
+        },
+        {
+          "en": "This is the least interesting event I’ve ever attended.",
+          "zh": "這是我所參加過最無聊的活動了。"
+        },
+        {
+          "en": "At least five hundred people showed up for the rally.",
+          "zh": "至少有 500 人出席該集會。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "at most 的意思是？",
+          "choices": [
+            "最多",
+            "至少",
+            "大部分"
+          ],
+          "answer": 0,
+          "explain": "at most 表示「最多」；at least 表示「至少」。"
+        },
+        {
+          "q": "most people 與 most of the people，何者可用？",
+          "choices": [
+            "兩者皆可",
+            "只有 most of people",
+            "只有 the most people"
+          ],
+          "answer": 0,
+          "explain": "most 可以直接修飾複數名詞；most of 後面通常需要 the、所有格等限定詞。"
+        },
+        {
+          "q": "the least interesting 意思是？",
+          "choices": [
+            "最不有趣的",
+            "最有趣的",
+            "有一點有趣的"
+          ],
+          "answer": 0,
+          "explain": "the least 加形容詞表示最低程度，常見於最高級比較。"
+        }
+      ]
+    },
+    {
+      "id": "front",
+      "title": "02 front / back",
+      "items": [
+        {
+          "en": "Maria walked to the front of the stage and took a bow.",
+          "zh": "瑪麗亞走到舞臺前方鞠躬。"
+        },
+        {
+          "en": "I’d like to sit in the front of the theater.",
+          "zh": "我想坐在電影院的前排。"
+        },
+        {
+          "en": "There was a long lineup in front of the stand.",
+          "zh": "攤位前方有一條很長的排隊隊伍。"
+        },
+        {
+          "en": "The front tire of Linda’s bicycle was flat.",
+          "zh": "琳達腳踏車的前輪沒氣了。"
+        },
+        {
+          "en": "I hate people who speak ill of me behind my back.",
+          "zh": "我討厭在背後說我壞話的人。"
+        },
+        {
+          "en": "The baseball hit Jack on the back of his head.",
+          "zh": "棒球打到傑克頭的後部。"
+        },
+        {
+          "en": "Rebecca keeps her phone in her back pocket.",
+          "zh": "蕾貝卡把電話放在後面的口袋。"
+        },
+        {
+          "en": "The security guard walked back and forth in front of the bank.",
+          "zh": "警衛在銀行前面來回走動。"
+        },
+        {
+          "en": "Victor never went back to that restaurant.",
+          "zh": "維克多再也沒有回去那間餐廳。"
+        },
+        {
+          "en": "Dylan doesn’t know how to back his car into the garage.",
+          "zh": "狄倫不知道要怎麼倒車入庫。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "in front of the stand 表示？",
+          "choices": [
+            "在攤位前方",
+            "在攤位裡面",
+            "在攤位後方"
+          ],
+          "answer": 0,
+          "explain": "in front of 指某物外部的前方；in the front of 可表示內部前排。"
+        },
+        {
+          "q": "behind my back 的意思是？",
+          "choices": [
+            "在我背後（偷偷地）",
+            "在我面前",
+            "回到我身邊"
+          ],
+          "answer": 0,
+          "explain": "behind one’s back 可表示背著某人做事或說話。"
+        },
+        {
+          "q": "back and forth 表示？",
+          "choices": [
+            "來回地",
+            "永不回來",
+            "向前看"
+          ],
+          "answer": 0,
+          "explain": "back and forth 是「來回地」。"
+        }
+      ]
+    },
+    {
+      "id": "show",
+      "title": "03 show",
+      "items": [
+        {
+          "en": "Can you show me your favorite photo?",
+          "zh": "可以給我看你最喜歡的照片嗎？"
+        },
+        {
+          "en": "A study shows that staying up all night to study isn’t a great idea.",
+          "zh": "一項研究顯示，通宵念書並不是個好主意。"
+        },
+        {
+          "en": "The gallery shows the work of local artists.",
+          "zh": "這間藝廊展出當地藝術家的成果作品。"
+        },
+        {
+          "en": "Jack didn’t show up on time.",
+          "zh": "傑克沒有準時出現。"
+        },
+        {
+          "en": "All the theaters are showing the new James Bond movie.",
+          "zh": "所有電影院都在放映《007》系列的新電影。"
+        },
+        {
+          "en": "The talk show I saw on TV last night was fantastic.",
+          "zh": "我昨晚在電視看到的脫口秀很精采。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "show up 的意思是？",
+          "choices": [
+            "出現",
+            "展覽畫作",
+            "打開電視"
+          ],
+          "answer": 0,
+          "explain": "show up＝出現；可用 appear 表示。"
+        },
+        {
+          "q": "show 的過去式是？",
+          "choices": [
+            "showed",
+            "shown",
+            "showing"
+          ],
+          "answer": 0,
+          "explain": "show 的過去式為 showed，過去分詞可為 shown 或 showed。"
+        },
+        {
+          "q": "a talk show 是什麼？",
+          "choices": [
+            "脫口秀節目",
+            "畫展",
+            "選秀成績"
+          ],
+          "answer": 0,
+          "explain": "a talk show 是談話性電視節目。"
+        }
+      ]
+    },
+    {
+      "id": "house",
+      "title": "04 house",
+      "items": [
+        {
+          "en": "My grandmother’s house is old and shabby.",
+          "zh": "我奶奶的房子已經老舊不堪了。"
+        },
+        {
+          "en": "We need a bigger place to house those stray dogs.",
+          "zh": "我們需要大一點的地方來收留那些流浪狗。"
+        },
+        {
+          "en": "Holly has been a housewife since she got married.",
+          "zh": "荷莉婚後就成了家庭主婦。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "house 當動詞時可表示？",
+          "choices": [
+            "提供住所；收容",
+            "打掃房屋",
+            "出租家電"
+          ],
+          "answer": 0,
+          "explain": "house 可當動詞，表示為人或動物提供住所。"
+        },
+        {
+          "q": "housewife 的複數是？",
+          "choices": [
+            "housewives",
+            "housewifes",
+            "housewifees"
+          ],
+          "answer": 0,
+          "explain": "以 -wife 結尾變複數時，wife 變 wives。"
+        },
+        {
+          "q": "housework 通常是？",
+          "choices": [
+            "不可數名詞",
+            "一定是可數複數",
+            "過去式動詞"
+          ],
+          "answer": 0,
+          "explain": "housework 表示家事，通常為不可數名詞。"
+        }
+      ]
+    },
+    {
+      "id": "call",
+      "title": "05 call",
+      "items": [
+        {
+          "en": "Call me whenever you need help.",
+          "zh": "任何時候需要幫忙都可以打電話給我。"
+        },
+        {
+          "en": "Call me up whenever you need help.",
+          "zh": "任何時候需要幫忙都可以打電話給我。（另一種說法）"
+        },
+        {
+          "en": "Give me a call whenever you need help.",
+          "zh": "任何時候需要幫忙都可以打電話給我。（另一種說法）"
+        },
+        {
+          "en": "My mom called me, but I didn’t hear her.",
+          "zh": "我媽在叫我，可是我沒聽見。"
+        },
+        {
+          "en": "When Max was little, his parents called him Maxie.",
+          "zh": "麥可斯的父母在他小時候叫他麥西。"
+        },
+        {
+          "en": "Janine called the waiter over to order another drink.",
+          "zh": "珍寧叫服務生過來再點另一杯飲料。"
+        },
+        {
+          "en": "The boss called a meeting to discuss the issue.",
+          "zh": "老闆召開會議來討論這個議題。"
+        },
+        {
+          "en": "The game was called off because of rain.",
+          "zh": "這場比賽因雨取消。"
+        },
+        {
+          "en": "When I was walking along the river, I heard a call for help.",
+          "zh": "我沿河散步時，聽見了求救聲。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "call off a meeting 表示？",
+          "choices": [
+            "取消會議",
+            "召開會議",
+            "打電話給朋友"
+          ],
+          "answer": 0,
+          "explain": "call off 表示取消；call a meeting 表示召開會議。"
+        },
+        {
+          "q": "give me a call 表示？",
+          "choices": [
+            "打電話給我",
+            "替我取名字",
+            "把我叫醒"
+          ],
+          "answer": 0,
+          "explain": "give sb a call＝打電話給某人。"
+        },
+        {
+          "q": "call him Maxie 中的 call 是？",
+          "choices": [
+            "稱呼；取名",
+            "打電話",
+            "取消"
+          ],
+          "answer": 0,
+          "explain": "call sb + 名稱，表示稱某人為某名稱。"
+        }
+      ]
+    },
+    {
+      "id": "leave",
+      "title": "06 leave",
+      "items": [
+        {
+          "en": "As soon as Molly left the room, her baby cried.",
+          "zh": "茉莉一離開房間，她的小寶寶就哭了。"
+        },
+        {
+          "en": "I left my cellphone in the office.",
+          "zh": "我把手機留在辦公室裡了。"
+        },
+        {
+          "en": "Ian left the door open, so that I could come in.",
+          "zh": "伊恩讓門開著，這樣我才能進來。"
+        },
+        {
+          "en": "John left for Hong Kong yesterday.",
+          "zh": "約翰昨天動身前往香港。"
+        },
+        {
+          "en": "I’ll take leave to attend my sister’s wedding.",
+          "zh": "我會請假去參加妹妹的婚禮。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "leave for Hong Kong 表示？",
+          "choices": [
+            "動身前往香港",
+            "離開香港",
+            "留在香港"
+          ],
+          "answer": 0,
+          "explain": "leave for + 地點＝動身前往某處。"
+        },
+        {
+          "q": "leave the door open 的句型是？",
+          "choices": [
+            "leave + 受詞 + 形容詞",
+            "leave + to V",
+            "leave + 受詞 + 過去式"
+          ],
+          "answer": 0,
+          "explain": "leave sb/sth + 形容詞，表示讓人或物處於某狀態。"
+        },
+        {
+          "q": "take leave 是什麼意思？",
+          "choices": [
+            "請假",
+            "搭車離開",
+            "留下物品"
+          ],
+          "answer": 0,
+          "explain": "take leave＝請假；annual leave 為年假。"
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "title": "07 school / course",
+      "items": [
+        {
+          "en": "We enjoy playing basketball after school.",
+          "zh": "我們喜歡在放學後打籃球。"
+        },
+        {
+          "en": "We saw a school of fish in the river.",
+          "zh": "我們看到河中有一群魚。"
+        },
+        {
+          "en": "Tony schooled his son in the rules of grammar.",
+          "zh": "東尼教他兒子文法規則。"
+        },
+        {
+          "en": "Next month I’m taking a writing course.",
+          "zh": "下個月我要修一門寫作課。"
+        },
+        {
+          "en": "The course takes the runners through the woods.",
+          "zh": "這條路線會帶跑者們穿越樹林。"
+        },
+        {
+          "en": "They’ll find time to read in the course of their travels.",
+          "zh": "他們在旅途中會找時間閱讀。"
+        },
+        {
+          "en": "The main course is steak.",
+          "zh": "主菜是牛排。"
+        },
+        {
+          "en": "Tammy’s tears coursed down her cheeks.",
+          "zh": "譚美的眼淚滾落她的雙頰。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "a school of fish 表示？",
+          "choices": [
+            "一群魚",
+            "一所魚類學校",
+            "一條魚"
+          ],
+          "answer": 0,
+          "explain": "school 可作集合名詞，表示一群魚或鯨魚。"
+        },
+        {
+          "q": "take a course 是指？",
+          "choices": [
+            "修一門課",
+            "跑完比賽",
+            "吃主菜"
+          ],
+          "answer": 0,
+          "explain": "take a course＝修讀一門課程。"
+        },
+        {
+          "q": "in the course of 意思是？",
+          "choices": [
+            "在……過程中",
+            "在……之外",
+            "在學校後"
+          ],
+          "answer": 0,
+          "explain": "in the course of＝在某個過程中，相當於 during。"
+        }
+      ]
+    },
+    {
+      "id": "while",
+      "title": "08 while",
+      "items": [
+        {
+          "en": "While we were having dinner, the phone rang.",
+          "zh": "我們在吃晚餐時，電話響了。"
+        },
+        {
+          "en": "Linda likes singing, while Peter enjoys dancing.",
+          "zh": "琳達喜歡唱歌，而彼得喜歡跳舞。"
+        },
+        {
+          "en": "While Vivian’s thin, she can eat a lot.",
+          "zh": "雖然薇薇安很瘦，但她可以吃很多。"
+        },
+        {
+          "en": "I’ll stay here for a while.",
+          "zh": "我將在這裡停留一會兒。"
+        },
+        {
+          "en": "Aaron whiled his weekend away playing Nintendo Switch games.",
+          "zh": "艾倫週末玩任天堂的 Switch 遊戲消磨時間。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "while 引導兩個同時發生的動作時，意思是？",
+          "choices": [
+            "當……的時候",
+            "因為",
+            "所以"
+          ],
+          "answer": 0,
+          "explain": "while 可表示「當……時」，連接時間子句。"
+        },
+        {
+          "q": "while Peter enjoys dancing 的 while 表示？",
+          "choices": [
+            "而；相對之下",
+            "只要",
+            "為了"
+          ],
+          "answer": 0,
+          "explain": "while 可以對比兩個人的不同喜好。"
+        },
+        {
+          "q": "for a while 的意思是？",
+          "choices": [
+            "一會兒",
+            "永遠",
+            "每個週末"
+          ],
+          "answer": 0,
+          "explain": "for a while＝一會兒；while away 表示消磨時間。"
+        }
+      ]
+    },
+    {
+      "id": "part",
+      "title": "09 part",
+      "items": [
+        {
+          "en": "I don’t like the first part of the novel.",
+          "zh": "我不喜歡這本小說的第一部分。"
+        },
+        {
+          "en": "The part you want is quite hard to get.",
+          "zh": "你要的那種零件很難取得。"
+        },
+        {
+          "en": "Sophie played the part of Cinderella.",
+          "zh": "蘇菲扮演灰姑娘的角色。"
+        },
+        {
+          "en": "Gandhi played an important role in India’s liberation from the UK.",
+          "zh": "甘地在印度脫離英國獨立的過程中扮演重要的角色。"
+        },
+        {
+          "en": "How many students took part in the speech contest?",
+          "zh": "這次演講比賽有多少學生參加？"
+        },
+        {
+          "en": "The clouds parted, and the sun began to shine.",
+          "zh": "雲朵散開，陽光開始閃耀。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "take part in 表示？",
+          "choices": [
+            "參加",
+            "分開",
+            "取得零件"
+          ],
+          "answer": 0,
+          "explain": "take part in＝參與某活動。"
+        },
+        {
+          "q": "play an important role in 表示？",
+          "choices": [
+            "在……扮演重要角色",
+            "從……退出",
+            "在……後面"
+          ],
+          "answer": 0,
+          "explain": "play a role in＝在某事中扮演角色。"
+        },
+        {
+          "q": "The clouds parted. 中 parted 的意思？",
+          "choices": [
+            "散開",
+            "組成零件",
+            "參加活動"
+          ],
+          "answer": 0,
+          "explain": "part 可作動詞，表示分開。"
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "title": "10 end / start / begin",
+      "items": [
+        {
+          "en": "At the end of the concert, everybody stood up.",
+          "zh": "大家在演唱會的尾聲站了起來。"
+        },
+        {
+          "en": "The end of the movie was the best part.",
+          "zh": "這部電影的結局是最棒的部分。"
+        },
+        {
+          "en": "They decided to end their relationship.",
+          "zh": "他們決定結束關係。"
+        },
+        {
+          "en": "It seems that my schoolwork will never end.",
+          "zh": "我的功課似乎永遠做不完。"
+        },
+        {
+          "en": "I knew you would end up borrowing money from me.",
+          "zh": "我就知道你最後還是會跟我借錢。"
+        },
+        {
+          "en": "Renee started to exercise three days ago.",
+          "zh": "芮妮 3 天前開始做運動。"
+        },
+        {
+          "en": "Renee started exercising three days ago.",
+          "zh": "芮妮 3 天前開始做運動。（另一種說法）"
+        },
+        {
+          "en": "The meeting will start in five minutes.",
+          "zh": "會議將在 5 分鐘後開始。"
+        },
+        {
+          "en": "The school play got off to a poor start.",
+          "zh": "學校演出的開頭不太順利。"
+        },
+        {
+          "en": "The movie began an hour ago.",
+          "zh": "電影 1 小時前開演。"
+        },
+        {
+          "en": "I began studying English right after I entered junior high school.",
+          "zh": "我一上國中就開始學英文。"
+        },
+        {
+          "en": "I began to study English right after I entered junior high school.",
+          "zh": "我一上國中就開始學英文。（另一種說法）"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "end up + V-ing 表示？",
+          "choices": [
+            "最後做了某事",
+            "正在開始",
+            "刻意避免"
+          ],
+          "answer": 0,
+          "explain": "end up + V-ing 表示結果最後做了某件事。"
+        },
+        {
+          "q": "start to exercise 和 start exercising？",
+          "choices": [
+            "都可以表示開始運動",
+            "只有前者正確",
+            "只有後者正確"
+          ],
+          "answer": 0,
+          "explain": "start 可接 to V 或 V-ing。"
+        },
+        {
+          "q": "begin 的過去式是？",
+          "choices": [
+            "began",
+            "begun",
+            "begined"
+          ],
+          "answer": 0,
+          "explain": "begin–began–begun。"
+        }
+      ]
+    },
+    {
+      "id": "feel",
+      "title": "11 feel",
+      "items": [
+        {
+          "en": "I feel encouraged when I hear those words.",
+          "zh": "聽到這些話時，我感到備受鼓舞。"
+        },
+        {
+          "en": "I felt her hand in the darkness.",
+          "zh": "在黑暗中我碰到她的手。"
+        },
+        {
+          "en": "Do you feel like going to the movies tonight?",
+          "zh": "你今晚想看電影嗎？"
+        },
+        {
+          "en": "Natalie loves the feel of soft wool on her skin.",
+          "zh": "娜塔莉喜愛羊毛在她肌膚上柔軟的觸感。"
+        },
+        {
+          "en": "The new restaurant has a Mediterranean feel to it.",
+          "zh": "這間新開的餐廳充滿地中海風情。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "feel like going 表示？",
+          "choices": [
+            "想要去",
+            "感覺像去了",
+            "被迫去"
+          ],
+          "answer": 0,
+          "explain": "feel like + V-ing 表示想做某事。"
+        },
+        {
+          "q": "feel 的過去式是？",
+          "choices": [
+            "felt",
+            "feeled",
+            "feeling"
+          ],
+          "answer": 0,
+          "explain": "feel–felt–felt。"
+        },
+        {
+          "q": "the feel of soft wool 中 feel 是？",
+          "choices": [
+            "名詞：觸感",
+            "助動詞",
+            "比較級形容詞"
+          ],
+          "answer": 0,
+          "explain": "feel 當名詞可表示觸感或感受。"
+        }
+      ]
+    },
+    {
+      "id": "number",
+      "title": "12 number",
+      "items": [
+        {
+          "en": "May I have your phone number?",
+          "zh": "我可以問你的電話號碼嗎？"
+        },
+        {
+          "en": "The number of car accidents fell last year.",
+          "zh": "去年車禍的數目減少了。"
+        },
+        {
+          "en": "A number of kids are playing in the park.",
+          "zh": "幾個小朋友正在公園玩耍。"
+        },
+        {
+          "en": "It took us four days to number all the books.",
+          "zh": "我們花了 4 天的時間將全部的書編號。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "the number of + 複數名詞作主詞，動詞通常用？",
+          "choices": [
+            "單數",
+            "複數",
+            "原形不變"
+          ],
+          "answer": 0,
+          "explain": "the number of 著重數目，動詞用單數。"
+        },
+        {
+          "q": "a number of + 複數名詞作主詞，動詞通常用？",
+          "choices": [
+            "複數",
+            "單數",
+            "過去分詞"
+          ],
+          "answer": 0,
+          "explain": "a number of 表示若干，動詞用複數。"
+        },
+        {
+          "q": "number all the books 是什麼意思？",
+          "choices": [
+            "替所有書編號",
+            "計算書價",
+            "借出所有書"
+          ],
+          "answer": 0,
+          "explain": "number 當動詞可表示編號。"
+        }
+      ]
+    },
+    {
+      "id": "follow",
+      "title": "13 follow",
+      "items": [
+        {
+          "en": "I followed the teacher into the classroom.",
+          "zh": "我跟著老師進入教室。"
+        },
+        {
+          "en": "Follow the sign, and you’ll find the restroom.",
+          "zh": "順著指標走，你就會找到洗手間。"
+        },
+        {
+          "en": "Please follow these instructions.",
+          "zh": "請遵從這些指示。"
+        },
+        {
+          "en": "I just can’t follow her explanation.",
+          "zh": "我就是聽不懂她的解釋。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "follow instructions 的意思是？",
+          "choices": [
+            "遵照指示",
+            "修改指示",
+            "忘記指示"
+          ],
+          "answer": 0,
+          "explain": "follow 可表示遵照規定、指示。"
+        },
+        {
+          "q": "I can’t follow her explanation. 中 follow 是？",
+          "choices": [
+            "理解",
+            "追趕",
+            "發表"
+          ],
+          "answer": 0,
+          "explain": "follow 可表示聽懂、理解說明。"
+        },
+        {
+          "q": "follower 是哪種詞性？",
+          "choices": [
+            "名詞",
+            "動詞過去式",
+            "副詞"
+          ],
+          "answer": 0,
+          "explain": "follower＝追隨者，是名詞。"
+        }
+      ]
+    },
+    {
+      "id": "turn",
+      "title": "14 turn",
+      "items": [
+        {
+          "en": "I turned around and saw Vincent standing by the door.",
+          "zh": "我轉身看到文森站在門邊。"
+        },
+        {
+          "en": "Turn right at the next intersection.",
+          "zh": "在下個十字路口右轉。"
+        },
+        {
+          "en": "Leaves turn yellow in autumn.",
+          "zh": "秋天時，樹葉會變黃。"
+        },
+        {
+          "en": "Suddenly, the frog turned into a prince.",
+          "zh": "突然，那隻青蛙變成了王子。"
+        },
+        {
+          "en": "The witch turned the prince into a beast.",
+          "zh": "巫婆把王子變成了一頭野獸。"
+        },
+        {
+          "en": "It’s your turn to wash the dishes.",
+          "zh": "輪到你洗碗盤了。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "turn into 表示？",
+          "choices": [
+            "變成",
+            "返回",
+            "帶出"
+          ],
+          "answer": 0,
+          "explain": "turn into + 名詞＝變成。"
+        },
+        {
+          "q": "turn A into B 表示？",
+          "choices": [
+            "把 A 變成 B",
+            "把 B 還給 A",
+            "從 B 離開"
+          ],
+          "answer": 0,
+          "explain": "turn A into B＝使 A 變成 B。"
+        },
+        {
+          "q": "It’s your turn to V 表示？",
+          "choices": [
+            "輪到你做某事",
+            "你已經做完了",
+            "要求別人做"
+          ],
+          "answer": 0,
+          "explain": "It’s sb’s turn to V＝輪到某人做某事。"
+        }
+      ]
+    },
+    {
+      "id": "problem",
+      "title": "15 problem / question",
+      "items": [
+        {
+          "en": "Let’s try our best to solve the problem.",
+          "zh": "我們盡全力來解決這個問題吧！"
+        },
+        {
+          "en": "I have problems communicating with that stubborn guy.",
+          "zh": "我很難和那個固執的傢伙溝通。"
+        },
+        {
+          "en": "If you have any questions, please raise your hands.",
+          "zh": "如果你們有任何問題，請舉手。"
+        },
+        {
+          "en": "There is no question about the CEO’s ability.",
+          "zh": "執行長的能力是不用懷疑的。"
+        },
+        {
+          "en": "The police questioned Robert for nearly four hours.",
+          "zh": "警方訊問羅伯特將近 4 小時。"
+        },
+        {
+          "en": "Danny felt bad when his boss questioned his honesty.",
+          "zh": "丹尼的老闆質疑他的誠實時，他覺得很難受。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "have problems + V-ing 表示？",
+          "choices": [
+            "做某事有困難",
+            "擅長做某事",
+            "停止做某事"
+          ],
+          "answer": 0,
+          "explain": "have problems/difficulty + V-ing。"
+        },
+        {
+          "q": "There is no question about... 表示？",
+          "choices": [
+            "對……毫無疑問",
+            "提出問題",
+            "拒絕回答"
+          ],
+          "answer": 0,
+          "explain": "There is no question about...＝……是毫無疑問的。"
+        },
+        {
+          "q": "question 當動詞可以表示？",
+          "choices": [
+            "質疑；訊問",
+            "解決問題",
+            "回答問題"
+          ],
+          "answer": 0,
+          "explain": "question 可當動詞，表示質疑或訊問。"
+        }
+      ]
+    },
+    {
+      "id": "hold",
+      "title": "16 hold",
+      "items": [
+        {
+          "en": "Paul held his new baby gently in his arms.",
+          "zh": "保羅輕柔地把他剛出生的寶寶摟在懷裡。"
+        },
+        {
+          "en": "We’ll be holding a meeting at noon today.",
+          "zh": "今天中午我們要舉行會議。"
+        },
+        {
+          "en": "Hold on while I grab my jacket.",
+          "zh": "等一下，我拿件外套。"
+        },
+        {
+          "en": "The worker took hold of the rope and pulled it hard.",
+          "zh": "工人握住繩子猛力一拉。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "hold a meeting 的意思是？",
+          "choices": [
+            "舉行會議",
+            "取消會議",
+            "遲到"
+          ],
+          "answer": 0,
+          "explain": "hold a meeting＝舉行會議。"
+        },
+        {
+          "q": "hold on 在口語中表示？",
+          "choices": [
+            "等一下",
+            "放開",
+            "放棄"
+          ],
+          "answer": 0,
+          "explain": "hold on＝等一下、稍候。"
+        },
+        {
+          "q": "hold 的過去式是？",
+          "choices": [
+            "held",
+            "holded",
+            "holding"
+          ],
+          "answer": 0,
+          "explain": "hold–held–held。"
+        }
+      ]
+    },
+    {
+      "id": "fact",
+      "title": "17 fact",
+      "items": [
+        {
+          "en": "What you see is not always fact.",
+          "zh": "你看到的不一定是事實。"
+        },
+        {
+          "en": "As a matter of fact, I don’t believe Ray at all.",
+          "zh": "事實上，我根本就不相信雷伊。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "as a matter of fact 表示？",
+          "choices": [
+            "事實上",
+            "有可能",
+            "然而"
+          ],
+          "answer": 0,
+          "explain": "as a matter of fact＝in fact＝事實上。"
+        },
+        {
+          "q": "fact 是哪一種詞性？",
+          "choices": [
+            "名詞",
+            "介系詞",
+            "助動詞"
+          ],
+          "answer": 0,
+          "explain": "fact 是名詞，表示事實。"
+        },
+        {
+          "q": "lie 與 fact 的意義關係是？",
+          "choices": [
+            "謊言與事實相對",
+            "完全相同",
+            "都是表示可能性"
+          ],
+          "answer": 0,
+          "explain": "lie 作名詞可表示謊言，fact 是事實。"
+        }
+      ]
+    },
+    {
+      "id": "keep",
+      "title": "18 keep",
+      "items": [
+        {
+          "en": "You may keep the change.",
+          "zh": "零錢你留著吧。"
+        },
+        {
+          "en": "The old man keeps cows and sheep on his farm.",
+          "zh": "這名老人在他的農場飼養牛和羊群。"
+        },
+        {
+          "en": "Keep quiet when you are in the hospital.",
+          "zh": "在醫院裡要保持安靜。"
+        },
+        {
+          "en": "Keep on working hard, and you’ll be successful some day.",
+          "zh": "繼續努力，那麼有朝一日你就會成功。"
+        },
+        {
+          "en": "Don’t walk so fast. I can’t keep up with you.",
+          "zh": "別走那麼快，我跟不上你。"
+        },
+        {
+          "en": "I got a part-time job so I could earn my keep.",
+          "zh": "我有一份兼職工作，以讓我能賺取生活費。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "keep + 形容詞 表示？",
+          "choices": [
+            "保持某種狀態",
+            "變成某物",
+            "使人離開"
+          ],
+          "answer": 0,
+          "explain": "keep quiet＝保持安靜。"
+        },
+        {
+          "q": "keep on + V-ing 表示？",
+          "choices": [
+            "繼續做某事",
+            "停止做某事",
+            "即將做某事"
+          ],
+          "answer": 0,
+          "explain": "keep on working 表示繼續努力工作。"
+        },
+        {
+          "q": "keep up with 表示？",
+          "choices": [
+            "跟上",
+            "放棄",
+            "超過全部"
+          ],
+          "answer": 0,
+          "explain": "keep up with＝跟上人或事物的進度。"
+        }
+      ]
+    },
+    {
+      "id": "put",
+      "title": "19 put",
+      "items": [
+        {
+          "en": "You should put the book on the bookshelf.",
+          "zh": "你應該把書放在書架上。"
+        },
+        {
+          "en": "Put down your address before leaving.",
+          "zh": "寫下你的住址之後再離開。"
+        },
+        {
+          "en": "Write down your address before leaving.",
+          "zh": "寫下你的住址之後再離開。（另一種說法）"
+        },
+        {
+          "en": "I can’t put up with Alan’s rudeness anymore.",
+          "zh": "我受不了艾倫的粗魯了。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "put down your address 表示？",
+          "choices": [
+            "寫下地址",
+            "把地址丟掉",
+            "更改地址"
+          ],
+          "answer": 0,
+          "explain": "put down 可表示寫下，相當於 write down。"
+        },
+        {
+          "q": "put up with 表示？",
+          "choices": [
+            "忍受",
+            "張貼",
+            "舉起"
+          ],
+          "answer": 0,
+          "explain": "put up with＝忍受。"
+        },
+        {
+          "q": "put 的三態是？",
+          "choices": [
+            "put–put–put",
+            "put–putted–putted",
+            "put–pat–pat"
+          ],
+          "answer": 0,
+          "explain": "put 的原形、過去式、過去分詞相同。"
+        }
+      ]
+    },
+    {
+      "id": "bring",
+      "title": "20 bring",
+      "items": [
+        {
+          "en": "Nick brought his wife a bunch of roses.",
+          "zh": "尼克帶了一束玫瑰花給他太太。"
+        },
+        {
+          "en": "Nick brought a bunch of roses to his wife.",
+          "zh": "尼克帶了一束玫瑰花給他太太。（另一種說法）"
+        },
+        {
+          "en": "The medicine brought great relief to the patient.",
+          "zh": "這種藥讓病人的狀況大大緩解。"
+        },
+        {
+          "en": "John was brought up in the country.",
+          "zh": "約翰是在鄉下長大的。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "bring sb sth 可以改成？",
+          "choices": [
+            "bring sth to sb",
+            "bring sth for sb（必然同義）",
+            "bring sb to sth（必然同義）"
+          ],
+          "answer": 0,
+          "explain": "bring sb sth＝bring sth to sb，表示帶某物給某人。"
+        },
+        {
+          "q": "bring up a child 表示？",
+          "choices": [
+            "撫養孩子",
+            "接孩子回家",
+            "讓孩子帶東西"
+          ],
+          "answer": 0,
+          "explain": "bring up 可表示撫養長大。"
+        },
+        {
+          "q": "bring 的過去式是？",
+          "choices": [
+            "brought",
+            "bringed",
+            "brang"
+          ],
+          "answer": 0,
+          "explain": "bring–brought–brought。"
+        }
+      ]
+    },
+    {
+      "id": "group",
+      "title": "21 group",
+      "items": [
+        {
+          "en": "A small group of students lined up at the bus stop.",
+          "zh": "一小群學生在公車站牌前排隊。"
+        },
+        {
+          "en": "Jessy joined a group for foreign students on campus.",
+          "zh": "潔西參加了學校裡給外籍學生加入的團體。"
+        },
+        {
+          "en": "Pamela’s clothes are grouped by color.",
+          "zh": "潘蜜拉的衣服按顏色分類。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "a group of students 表示？",
+          "choices": [
+            "一群學生",
+            "只有一個學生",
+            "一間教室"
+          ],
+          "answer": 0,
+          "explain": "a group of + 複數名詞表示一群。"
+        },
+        {
+          "q": "grouped by color 表示？",
+          "choices": [
+            "按顏色分類",
+            "改變顏色",
+            "帶走顏色"
+          ],
+          "answer": 0,
+          "explain": "be grouped by... 可表示依某標準分組。"
+        },
+        {
+          "q": "group 作動詞是？",
+          "choices": [
+            "分組；分類",
+            "決定",
+            "畫圈"
+          ],
+          "answer": 0,
+          "explain": "group 可當動詞，表示分組或分類。"
+        }
+      ]
+    },
+    {
+      "id": "case",
+      "title": "22 case",
+      "items": [
+        {
+          "en": "The police are still looking into the case.",
+          "zh": "警方仍在調查這件案子。"
+        },
+        {
+          "en": "It was a case of love at first sight.",
+          "zh": "這就是一見鍾情的例子。"
+        },
+        {
+          "en": "In that case, I have nothing else to say.",
+          "zh": "那樣的話，我沒有其他要說的了。"
+        },
+        {
+          "en": "You should take a sweater, in case it gets cold.",
+          "zh": "你應該帶件毛衣，以防天氣變冷。"
+        },
+        {
+          "en": "In case of emergency, call this number.",
+          "zh": "萬一有緊急事件，請打這個號碼。"
+        },
+        {
+          "en": "The rich woman cased the expensive jewelry in a leather box.",
+          "zh": "這名有錢的女子把昂貴珠寶裝入一個皮革製的箱子裡。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "in that case 表示？",
+          "choices": [
+            "那樣的話",
+            "以防萬一",
+            "在盒子裡"
+          ],
+          "answer": 0,
+          "explain": "in that case＝那樣的話。"
+        },
+        {
+          "q": "in case + 子句 表示？",
+          "choices": [
+            "以防……",
+            "因為……",
+            "即使……"
+          ],
+          "answer": 0,
+          "explain": "in case + 子句，表示以防某事發生。"
+        },
+        {
+          "q": "in case of + 名詞 表示？",
+          "choices": [
+            "萬一發生……",
+            "總而言之",
+            "對……有興趣"
+          ],
+          "answer": 0,
+          "explain": "in case of + 名詞，表示萬一發生某事。"
+        }
+      ]
+    },
+    {
+      "id": "point",
+      "title": "23 point / line",
+      "items": [
+        {
+          "en": "Harry drew a line between the two points.",
+          "zh": "哈利在 2 個點之間畫一條線。"
+        },
+        {
+          "en": "I’m just trying to explain my point of view.",
+          "zh": "我正試著解釋我的看法。"
+        },
+        {
+          "en": "Eileen talked for ten minutes before she got to the point.",
+          "zh": "艾琳講了 10 分鐘才講到重點。"
+        },
+        {
+          "en": "The team lost the game by only a few points.",
+          "zh": "那個隊伍只以幾分之差輸了這場比賽。"
+        },
+        {
+          "en": "The little boy pointed at the toy he wanted.",
+          "zh": "小男孩指著他想要的玩具。"
+        },
+        {
+          "en": "I pointed my camera at the movie star.",
+          "zh": "我把照相機對準這個電影明星。"
+        },
+        {
+          "en": "The teacher pointed out two grammar mistakes in my essay.",
+          "zh": "老師指出我文章中的 2 個文法錯誤。"
+        },
+        {
+          "en": "Please stand behind the yellow line.",
+          "zh": "請站在黃線後。"
+        },
+        {
+          "en": "Some people were standing in line at the hotdog stand.",
+          "zh": "有些人在熱狗攤排隊。"
+        },
+        {
+          "en": "Cafés and restaurants line the busy street.",
+          "zh": "繁忙的街道上有一排咖啡廳和餐廳。"
+        },
+        {
+          "en": "All of the students are lining up to receive their awards.",
+          "zh": "所有的學生正排隊等著領獎。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "point of view 是指？",
+          "choices": [
+            "觀點",
+            "分數",
+            "方向標誌"
+          ],
+          "answer": 0,
+          "explain": "point of view＝觀點。"
+        },
+        {
+          "q": "point out 表示？",
+          "choices": [
+            "指出",
+            "指向某物",
+            "抵達"
+          ],
+          "answer": 0,
+          "explain": "point out 是指出事實或錯誤。"
+        },
+        {
+          "q": "stand in line 表示？",
+          "choices": [
+            "排隊",
+            "站在線後",
+            "站在前方"
+          ],
+          "answer": 0,
+          "explain": "stand in line 表示排隊；line up 也是排隊。"
+        }
+      ]
+    },
+    {
+      "id": "area",
+      "title": "24 area",
+      "items": [
+        {
+          "en": "The hurricane caused a lot of damage in many areas of this country.",
+          "zh": "颶風重創這個國家的許多地區。"
+        },
+        {
+          "en": "Frank is an expert in the area of marketing.",
+          "zh": "法蘭克是行銷領域的專家。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "area of marketing 是指？",
+          "choices": [
+            "行銷領域",
+            "市場面積",
+            "廣告數量"
+          ],
+          "answer": 0,
+          "explain": "area 可表示專業領域。"
+        },
+        {
+          "q": "an area code 是指？",
+          "choices": [
+            "電話區碼",
+            "郵遞區號",
+            "課程代碼"
+          ],
+          "answer": 0,
+          "explain": "area code＝電話區碼。"
+        },
+        {
+          "q": "areas of this country 中 areas 是？",
+          "choices": [
+            "地區",
+            "角度",
+            "學科科目"
+          ],
+          "answer": 0,
+          "explain": "area 可以表示地區、範圍。"
+        }
+      ]
+    },
+    {
+      "id": "let",
+      "title": "25 let",
+      "items": [
+        {
+          "en": "Mia’s parents won’t let her go out after 10 p.m.",
+          "zh": "晚上 10 點後，米雅的爸媽就不讓她出門。"
+        },
+        {
+          "en": "Let’s go picnicking this afternoon!",
+          "zh": "我們今天下午去野餐吧！"
+        },
+        {
+          "en": "Ben can’t afford a car, let alone a house.",
+          "zh": "班買不起車子，更別說買房子。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "let sb + 動詞要用？",
+          "choices": [
+            "原形動詞",
+            "to V",
+            "V-ing"
+          ],
+          "answer": 0,
+          "explain": "let + 受詞 + 原形動詞。"
+        },
+        {
+          "q": "Let’s + 動詞原形 表示？",
+          "choices": [
+            "我們……吧",
+            "讓他……",
+            "即將……"
+          ],
+          "answer": 0,
+          "explain": "Let’s + 原形動詞，用於提出建議。"
+        },
+        {
+          "q": "let alone 的意思是？",
+          "choices": [
+            "更別說",
+            "獨自一人",
+            "至少"
+          ],
+          "answer": 0,
+          "explain": "let alone 常用於否定句，表示「更別說」。"
+        }
+      ]
+    },
+    {
+      "id": "side",
+      "title": "26 side",
+      "items": [
+        {
+          "en": "There is a lake on the other side of the park.",
+          "zh": "公園的另一邊有座湖。"
+        },
+        {
+          "en": "The scared little girl would not leave her mom’s side.",
+          "zh": "受驚嚇的小女孩不願離開她媽媽身邊。"
+        },
+        {
+          "en": "George took sides with Linda in the argument.",
+          "zh": "喬治在這次爭論中支持琳達。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "take sides with sb 表示？",
+          "choices": [
+            "支持某人",
+            "站在某人旁邊",
+            "與某人分手"
+          ],
+          "answer": 0,
+          "explain": "take sides with＝在爭論中支持某人。"
+        },
+        {
+          "q": "on the other side of 表示？",
+          "choices": [
+            "在另一邊",
+            "在正中央",
+            "在下面"
+          ],
+          "answer": 0,
+          "explain": "side 指邊、側；on the other side of＝在……的另一邊。"
+        },
+        {
+          "q": "inside 的相反詞是？",
+          "choices": [
+            "outside",
+            "beside",
+            "aside"
+          ],
+          "answer": 0,
+          "explain": "inside 是裡面，outside 是外面。"
+        }
+      ]
+    },
+    {
+      "id": "try",
+      "title": "27 try",
+      "items": [
+        {
+          "en": "I know you’re busy, but try to come.",
+          "zh": "我知道你很忙，但試著來看看。"
+        },
+        {
+          "en": "I tried shutting the computer, but it didn’t work.",
+          "zh": "我試過將電腦關機，但沒有效。"
+        },
+        {
+          "en": "Can I try on these shoes?",
+          "zh": "我可以試穿一下這雙鞋子嗎？"
+        },
+        {
+          "en": "You made several mistakes, but it was a good try.",
+          "zh": "雖然你犯了幾個錯，但是個好的嘗試。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "try to V 表示？",
+          "choices": [
+            "設法做某事",
+            "試穿",
+            "完成某事"
+          ],
+          "answer": 0,
+          "explain": "try to V＝設法或試圖做某事。"
+        },
+        {
+          "q": "try + V-ing 表示？",
+          "choices": [
+            "嘗試某種方法",
+            "努力完成某事",
+            "拒絕做某事"
+          ],
+          "answer": 0,
+          "explain": "try V-ing 著重嘗試一種方法，看看結果。"
+        },
+        {
+          "q": "try on shoes 表示？",
+          "choices": [
+            "試穿鞋子",
+            "購買鞋子",
+            "擦鞋"
+          ],
+          "answer": 0,
+          "explain": "try on＝試穿。"
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "title": "28 water",
+      "items": [
+        {
+          "en": "Just give me a glass of water.",
+          "zh": "給我一杯水就可以了。"
+        },
+        {
+          "en": "Jenny waters her garden every day.",
+          "zh": "珍妮每天替她的花園澆水。"
+        },
+        {
+          "en": "My mouth watered when I saw the food.",
+          "zh": "我看到那些食物時，便流口水了。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "water the garden 中 water 是？",
+          "choices": [
+            "動詞：澆水",
+            "名詞：水",
+            "形容詞：濕的"
+          ],
+          "answer": 0,
+          "explain": "water 可作動詞表示澆水。"
+        },
+        {
+          "q": "My mouth watered. 的意思？",
+          "choices": [
+            "我流口水了",
+            "我喝水了",
+            "我口乾了"
+          ],
+          "answer": 0,
+          "explain": "mouth water 表示因期待食物而流口水。"
+        },
+        {
+          "q": "water 為「水」時通常是？",
+          "choices": [
+            "不可數名詞",
+            "複數名詞",
+            "動詞過去式"
+          ],
+          "answer": 0,
+          "explain": "water 表示水時，通常是不可數名詞。"
+        }
+      ]
+    },
+    {
+      "id": "move",
+      "title": "29 move / movement",
+      "items": [
+        {
+          "en": "Please move the desk to the other room.",
+          "zh": "請把這張書桌移到另一間房間去。"
+        },
+        {
+          "en": "The turtle began to move slowly.",
+          "zh": "這隻烏龜開始慢慢地移動。"
+        },
+        {
+          "en": "The movie moved us to tears.",
+          "zh": "這部電影使我們感動得落淚。"
+        },
+        {
+          "en": "Next week we are moving to a new apartment.",
+          "zh": "下星期我們就要搬到新公寓。"
+        },
+        {
+          "en": "We are still discussing the next move.",
+          "zh": "我們還在討論下一步怎麼做。"
+        },
+        {
+          "en": "There was no sign of movement in the woods.",
+          "zh": "樹林裡一點動靜都沒有。"
+        },
+        {
+          "en": "The Civil Rights Movement brought great changes to the US in all aspects.",
+          "zh": "民權運動對美國各方面都造成很大的改變。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "move sb to tears 表示？",
+          "choices": [
+            "使某人感動落淚",
+            "移動某人到別處",
+            "讓某人哭鬧"
+          ],
+          "answer": 0,
+          "explain": "move sb to tears＝使某人感動得落淚。"
+        },
+        {
+          "q": "move to a new apartment 表示？",
+          "choices": [
+            "搬到新公寓",
+            "去參觀公寓",
+            "離開公寓不搬家"
+          ],
+          "answer": 0,
+          "explain": "move to + 地點可表示搬到某處。"
+        },
+        {
+          "q": "movement 是哪一種詞性？",
+          "choices": [
+            "名詞",
+            "介系詞",
+            "助動詞"
+          ],
+          "answer": 0,
+          "explain": "movement 是名詞，表示移動或運動。"
+        }
+      ]
+    }
+  ]
+}
