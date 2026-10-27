@@ -11,6 +11,12 @@
       "title": "Unit 06",
       "subtitle": "課本 p.48–58",
       "file": "unit06.json"
+    },
+    {
+      "id": "unit07",
+      "title": "Unit 07",
+      "subtitle": "課本 p.59–68",
+      "file": "unit07.json"
     }
   ]
 }
