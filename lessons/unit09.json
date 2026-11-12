@@ -1,0 +1,1631 @@
+{
+  "id": "unit09",
+  "title": "Unit 09",
+  "subtitle": "課本 p.78–87",
+  "topics": [
+    {
+      "id": "build",
+      "title": "01 build",
+      "items": [
+        {
+          "en": "My grandfather built this house all by himself.",
+          "zh": "我爺爺一手建造這棟房子。"
+        },
+        {
+          "en": "Peter built up the successful business on his own.",
+          "zh": "彼得獨自建立起這個成功的事業。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "build 的三態是？",
+          "choices": [
+            "build, built, built",
+            "build, builded, builded",
+            "build, built, builden"
+          ],
+          "answer": 0,
+          "explain": "build–built–built。"
+        },
+        {
+          "q": "build 的名詞「建築物」是？",
+          "choices": [
+            "building",
+            "builder",
+            "built"
+          ],
+          "answer": 0,
+          "explain": "build → building（建築物）。"
+        },
+        {
+          "q": "「獨自建立起事業」可以說 ___ the business.",
+          "choices": [
+            "build up",
+            "build out",
+            "build off"
+          ],
+          "answer": 0,
+          "explain": "build up＝建立（同 build）。"
+        }
+      ]
+    },
+    {
+      "id": "fall",
+      "title": "02 fall",
+      "items": [
+        {
+          "en": "The old woman fell down and hurt her leg.",
+          "zh": "老婆婆跌倒，傷了腿。"
+        },
+        {
+          "en": "The temperature has been falling for the past week.",
+          "zh": "過去一週氣溫持續下降。"
+        },
+        {
+          "en": "There has been a fall in house prices.",
+          "zh": "房價已下跌了。"
+        },
+        {
+          "en": "Last fall, I went to visit my aunt in Spain.",
+          "zh": "去年秋天，我到西班牙看我阿姨。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "fall 的三態是？",
+          "choices": [
+            "fall, fell, fallen",
+            "fall, felt, felt",
+            "fall, falled, falled"
+          ],
+          "answer": 0,
+          "explain": "fall–fell–fallen；注意 feel–felt–felt 是「感覺」。"
+        },
+        {
+          "q": "fall 的反義字（上升）是？",
+          "choices": [
+            "rise",
+            "decrease",
+            "drop"
+          ],
+          "answer": 0,
+          "explain": "fall / decrease 減少；rise / increase 上升、增加。"
+        },
+        {
+          "q": "Last fall 的 fall 意思是？",
+          "choices": [
+            "秋天",
+            "跌倒",
+            "下降"
+          ],
+          "answer": 0,
+          "explain": "fall 當名詞可指秋天，同 autumn。"
+        }
+      ]
+    },
+    {
+      "id": "half",
+      "title": "03 half",
+      "items": [
+        {
+          "en": "Brett came to the office a half hour early.",
+          "zh": "布萊特提早半個小時到辦公室。"
+        },
+        {
+          "en": "Let’s split the pizza in half.",
+          "zh": "我們把披薩切成兩半吧。"
+        },
+        {
+          "en": "Half of the work is finished.",
+          "zh": "工作已完成了一半。"
+        },
+        {
+          "en": "Natasha is half German and half Scottish.",
+          "zh": "娜塔莎是半個德國人和半個蘇格蘭人。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "half 的複數是？",
+          "choices": [
+            "halves",
+            "halfs",
+            "halfes"
+          ],
+          "answer": 0,
+          "explain": "字尾 f 常改成 ves：half → halves。"
+        },
+        {
+          "q": "Half of the students ___ here.",
+          "choices": [
+            "are",
+            "is",
+            "be"
+          ],
+          "answer": 0,
+          "explain": "half of the + 複數可數名詞，用複數動詞。"
+        },
+        {
+          "q": "Half of the work ___ finished.",
+          "choices": [
+            "is",
+            "are",
+            "were"
+          ],
+          "answer": 0,
+          "explain": "half of the + 不可數／單數名詞，用單數動詞。"
+        }
+      ]
+    },
+    {
+      "id": "free",
+      "title": "04 free",
+      "items": [
+        {
+          "en": "When you’ve finished this task, you’re free to go.",
+          "zh": "你做完這份工作後，就可以離開了。"
+        },
+        {
+          "en": "I didn’t need to pay for the book because it was free.",
+          "zh": "我不用花錢買這本書，因為是免費的。"
+        },
+        {
+          "en": "If you are free, come visit us.",
+          "zh": "如果你有空，請來看我們。"
+        },
+        {
+          "en": "Kent likes to go surfing in his free time.",
+          "zh": "肯特閒暇時喜歡去衝浪。"
+        },
+        {
+          "en": "Peggy let her dog run free in the park.",
+          "zh": "佩姬讓她的狗狗在公園自由奔跑。"
+        },
+        {
+          "en": "The elderly can get in the museum for free.",
+          "zh": "年長者可以免費進入博物館。"
+        },
+        {
+          "en": "The elderly can get in the museum free of charge.",
+          "zh": "年長者可以免費進入博物館。（用 free of charge）"
+        },
+        {
+          "en": "The prisoner was freed from jail last month.",
+          "zh": "這名囚犯上個月被釋放出獄了。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "for free 等於？",
+          "choices": [
+            "free of charge",
+            "free time",
+            "be free to"
+          ],
+          "answer": 0,
+          "explain": "for free＝free of charge，免費。"
+        },
+        {
+          "q": "be free to V 的意思是？",
+          "choices": [
+            "自由做……；有空做……",
+            "免費做……",
+            "被釋放去做……"
+          ],
+          "answer": 0,
+          "explain": "be free to V＝可以自由做、有空做。"
+        },
+        {
+          "q": "free 的名詞「自由」是？",
+          "choices": [
+            "freedom",
+            "freely",
+            "freeness"
+          ],
+          "answer": 0,
+          "explain": "freedom 自由（名詞）；freely 自由地（副詞）。"
+        }
+      ]
+    },
+    {
+      "id": "cost",
+      "title": "05 cost",
+      "items": [
+        {
+          "en": "We need to lower our transportation cost.",
+          "zh": "我們必須減少交通成本。"
+        },
+        {
+          "en": "Roger transformed the business at the cost of his health.",
+          "zh": "羅傑犧牲了健康來改變公司。"
+        },
+        {
+          "en": "How much does that book cost?",
+          "zh": "那本書花多少錢買的？"
+        },
+        {
+          "en": "That car cost me a fortune.",
+          "zh": "買那輛車花了我不少錢。"
+        },
+        {
+          "en": "The reporter’s racist comments cost him his job.",
+          "zh": "這位記者種族歧視的言論讓他丟了工作。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "cost 和 spend 的差別是？",
+          "choices": [
+            "cost 的主詞是事物，spend 的主詞是人",
+            "cost 的主詞是人，spend 的主詞是事物",
+            "兩者用法完全相同"
+          ],
+          "answer": 0,
+          "explain": "The car cost me...／I spent... on the car。"
+        },
+        {
+          "q": "cost 的過去式是？",
+          "choices": [
+            "cost",
+            "costed",
+            "coast"
+          ],
+          "answer": 0,
+          "explain": "cost 三態同形。"
+        },
+        {
+          "q": "at the cost of... 的意思是？",
+          "choices": [
+            "以……的代價",
+            "以……的價格買",
+            "花費……"
+          ],
+          "answer": 0,
+          "explain": "at the cost of＝以……為代價。"
+        }
+      ]
+    },
+    {
+      "id": "special",
+      "title": "06 special",
+      "items": [
+        {
+          "en": "What’s so special about this car?",
+          "zh": "這輛車有什麼特別之處？"
+        },
+        {
+          "en": "I’m doing nothing special for Thanksgiving this year.",
+          "zh": "今年感恩節我沒做什麼特別的事情。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "special 的反義字是？",
+          "choices": [
+            "ordinary",
+            "especial",
+            "specific"
+          ],
+          "answer": 0,
+          "explain": "special 特別的；usual 通常的、ordinary 普通的。"
+        },
+        {
+          "q": "「沒做什麼特別的事」正確說法是？",
+          "choices": [
+            "nothing special",
+            "special nothing",
+            "nothing specially"
+          ],
+          "answer": 0,
+          "explain": "-thing 結尾的代名詞，形容詞放在後面。"
+        },
+        {
+          "q": "What’s so special ___ this car?",
+          "choices": [
+            "about",
+            "of",
+            "for"
+          ],
+          "answer": 0,
+          "explain": "What’s special about...?＝……有什麼特別之處？"
+        }
+      ]
+    },
+    {
+      "id": "husband",
+      "title": "07 husband / wife / child",
+      "items": [
+        {
+          "en": "A good husband should always be loyal to his wife.",
+          "zh": "好丈夫應始終對妻子忠實。"
+        },
+        {
+          "en": "My wife has been a great help to me.",
+          "zh": "我妻子一直給我很大的幫助。"
+        },
+        {
+          "en": "My wife wants to have another child.",
+          "zh": "我太太想再有一個小孩。"
+        },
+        {
+          "en": "Vincent loves being an only child.",
+          "zh": "文森喜歡當獨生子。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "wife 的複數是？",
+          "choices": [
+            "wives",
+            "wifes",
+            "wifies"
+          ],
+          "answer": 0,
+          "explain": "字尾 fe 改成 ves：wife → wives。"
+        },
+        {
+          "q": "child 的複數是？",
+          "choices": [
+            "children",
+            "childs",
+            "childrens"
+          ],
+          "answer": 0,
+          "explain": "child 的複數是不規則變化 children。"
+        },
+        {
+          "q": "an only child 的意思是？",
+          "choices": [
+            "獨生子／女",
+            "唯一的小孩照片",
+            "只有小孩"
+          ],
+          "answer": 0,
+          "explain": "an only child＝獨生子女。"
+        }
+      ]
+    },
+    {
+      "id": "remember",
+      "title": "08 remember / forget",
+      "items": [
+        {
+          "en": "I can’t remember the woman’s name.",
+          "zh": "我想不起這名女子的名字。"
+        },
+        {
+          "en": "Remember to close the door when you leave.",
+          "zh": "你走時記得要把門關上。"
+        },
+        {
+          "en": "I remember visiting this place before.",
+          "zh": "我記得曾到過這個地方。"
+        },
+        {
+          "en": "Don’t forget your promise.",
+          "zh": "別忘了你的承諾。"
+        },
+        {
+          "en": "My mother forgot to wake me up this morning.",
+          "zh": "我媽媽今早忘記叫我起床。"
+        },
+        {
+          "en": "I forgot watching this film.",
+          "zh": "我忘了曾看過這部影片。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "remember to V 的意思是？",
+          "choices": [
+            "記得要做……（還沒做）",
+            "記得曾做過……",
+            "忘了要做……"
+          ],
+          "answer": 0,
+          "explain": "remember / forget to V 指還沒做的事；+ V-ing 指已做過的事。"
+        },
+        {
+          "q": "I remember ___ this place before.（記得曾來過）",
+          "choices": [
+            "visiting",
+            "to visit",
+            "visit"
+          ],
+          "answer": 0,
+          "explain": "remember + V-ing＝記得曾做過。"
+        },
+        {
+          "q": "forget 的過去式是？",
+          "choices": [
+            "forgot",
+            "forgetted",
+            "forgotten"
+          ],
+          "answer": 0,
+          "explain": "forget–forgot–forgot / forgotten。"
+        }
+      ]
+    },
+    {
+      "id": "level",
+      "title": "09 level",
+      "items": [
+        {
+          "en": "Tom’s English is at the highest level in his class.",
+          "zh": "湯姆的英文程度是班上最好的。"
+        },
+        {
+          "en": "After you hang the picture, make sure it’s level.",
+          "zh": "把畫掛上去後，要確定畫有放平。"
+        },
+        {
+          "en": "Betty asked the workers to level her garden.",
+          "zh": "貝蒂請工人們剷平她的花園。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "at... level 的意思是？",
+          "choices": [
+            "在……的程度",
+            "在……的樓層",
+            "在……之後"
+          ],
+          "answer": 0,
+          "explain": "at the highest level＝在最高的程度。"
+        },
+        {
+          "q": "make sure it’s level 的 level 是？",
+          "choices": [
+            "形容詞：平的",
+            "名詞：程度",
+            "動詞：弄平"
+          ],
+          "answer": 0,
+          "explain": "level 當形容詞＝平的。"
+        },
+        {
+          "q": "level her garden 的 level 是？",
+          "choices": [
+            "動詞：弄平",
+            "名詞：水準",
+            "形容詞：平的"
+          ],
+          "answer": 0,
+          "explain": "level 當動詞＝弄平、剷平。"
+        }
+      ]
+    },
+    {
+      "id": "ground",
+      "title": "10 ground",
+      "items": [
+        {
+          "en": "Autumn is here, and the ground is covered with fallen leaves.",
+          "zh": "秋天到了，地上鋪滿了落葉。"
+        },
+        {
+          "en": "The lion returned to its hunting ground.",
+          "zh": "這隻獅子回到牠的狩獵場。"
+        },
+        {
+          "en": "Your report should not be grounded in imagination.",
+          "zh": "你的報告不該以想像為根據。"
+        },
+        {
+          "en": "The ship was grounded and the canal was blocked.",
+          "zh": "這艘船擱淺了，運河也被堵住了。"
+        },
+        {
+          "en": "All planes are grounded until the typhoon leaves.",
+          "zh": "所有飛機都得停飛，等到颱風離開才能起飛。"
+        },
+        {
+          "en": "The boy’s parents grounded him for a week.",
+          "zh": "這名小男孩的父母罰他禁足一個星期。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "be grounded in / on... 等於？",
+          "choices": [
+            "be based on...",
+            "be covered with...",
+            "be filled with..."
+          ],
+          "answer": 0,
+          "explain": "be grounded in / on＝以……為根據＝be based on。"
+        },
+        {
+          "q": "His parents grounded him. 的 ground 是？",
+          "choices": [
+            "動詞：禁足",
+            "名詞：地面",
+            "動詞：擱淺"
+          ],
+          "answer": 0,
+          "explain": "ground 當動詞可表禁足、停飛、擱淺、根據。"
+        },
+        {
+          "q": "playground 的意思是？",
+          "choices": [
+            "操場",
+            "地面下的",
+            "背景"
+          ],
+          "answer": 0,
+          "explain": "playground 操場；underground 地面下的；background 背景。"
+        }
+      ]
+    },
+    {
+      "id": "cut",
+      "title": "11 cut",
+      "items": [
+        {
+          "en": "Mom cut the apple with a sharp knife.",
+          "zh": "媽媽用一把鋒利的刀切蘋果。"
+        },
+        {
+          "en": "The boss asked his workers to cut costs by half.",
+          "zh": "老闆要求員工削減一半的開支。"
+        },
+        {
+          "en": "The doctor advised Leo to cut down on his drinking.",
+          "zh": "醫生建議里歐減少飲酒。"
+        },
+        {
+          "en": "The homeless man has a long cut on his face.",
+          "zh": "那個遊民的臉上有一條長長的傷口。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "cut 的過去式是？",
+          "choices": [
+            "cut",
+            "cutted",
+            "cat"
+          ],
+          "answer": 0,
+          "explain": "cut 三態同形。"
+        },
+        {
+          "q": "cut down on sth 的意思是？",
+          "choices": [
+            "減少某物",
+            "切開某物",
+            "砍倒某物"
+          ],
+          "answer": 0,
+          "explain": "cut down (on sth)＝減少，同 reduce。"
+        },
+        {
+          "q": "a long cut on his face 的 cut 是？",
+          "choices": [
+            "名詞：傷口",
+            "動詞：切",
+            "名詞：削減"
+          ],
+          "answer": 0,
+          "explain": "cut 當名詞可指傷口。"
+        }
+      ]
+    },
+    {
+      "id": "full",
+      "title": "12 full / fully",
+      "items": [
+        {
+          "en": "My heart was full of warmth when he offered to help.",
+          "zh": "當他主動提議幫忙時，我的心中充滿著溫馨的感覺。"
+        },
+        {
+          "en": "I was asked to write down my full name.",
+          "zh": "我被要求寫下全名。"
+        },
+        {
+          "en": "I’m too full to eat anymore.",
+          "zh": "我很飽，再也吃不下了。"
+        },
+        {
+          "en": "I fully understand what you mean.",
+          "zh": "我完全了解你的意思。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "be full of... 等於？",
+          "choices": [
+            "be filled with...",
+            "be fond of...",
+            "be made of..."
+          ],
+          "answer": 0,
+          "explain": "be full of＝be filled with，充滿。"
+        },
+        {
+          "q": "full 的反義字是？",
+          "choices": [
+            "empty",
+            "complete",
+            "fully"
+          ],
+          "answer": 0,
+          "explain": "full 滿的 ↔ empty 空的。"
+        },
+        {
+          "q": "I ___ understand what you mean.（完全地）",
+          "choices": [
+            "fully",
+            "full",
+            "fullly"
+          ],
+          "answer": 0,
+          "explain": "修飾動詞要用副詞 fully。"
+        }
+      ]
+    },
+    {
+      "id": "able",
+      "title": "13 able / unable",
+      "items": [
+        {
+          "en": "I’m sure David is able to do it by himself.",
+          "zh": "我確定大衛有能力獨自做這件事。"
+        },
+        {
+          "en": "I’m sure David is capable of doing it by himself.",
+          "zh": "我確定大衛有能力獨自做這件事。（用 capable of）"
+        },
+        {
+          "en": "Jennie was unable to conduct the research.",
+          "zh": "珍妮無法進行這份研究。"
+        },
+        {
+          "en": "Jennie was incapable of conducting the research.",
+          "zh": "珍妮無法進行這份研究。（用 incapable of）"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "be able to V 等於？",
+          "choices": [
+            "be capable of + V-ing",
+            "be capable to V",
+            "be able of + V-ing"
+          ],
+          "answer": 0,
+          "explain": "be able to V＝be capable of + V-ing。"
+        },
+        {
+          "q": "be unable to V 等於？",
+          "choices": [
+            "be incapable of + V-ing",
+            "be uncapable of + V-ing",
+            "be incapable to V"
+          ],
+          "answer": 0,
+          "explain": "be unable to V＝be incapable of + V-ing。"
+        },
+        {
+          "q": "able 的名詞「能力」是？",
+          "choices": [
+            "ability",
+            "enable",
+            "ablity"
+          ],
+          "answer": 0,
+          "explain": "ability 能力；enable 使能夠（動詞）。"
+        }
+      ]
+    },
+    {
+      "id": "art",
+      "title": "14 art",
+      "items": [
+        {
+          "en": "I know nothing of modern art.",
+          "zh": "我對現代藝術一無所知。"
+        },
+        {
+          "en": "The government is cutting funding for the arts.",
+          "zh": "政府削減提供給藝術的資金。"
+        },
+        {
+          "en": "The exhibition features the art of Picasso.",
+          "zh": "這場展覽展出畢卡索的藝術作品。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "art 表示「藝術；藝術品」時是？",
+          "choices": [
+            "不可數名詞",
+            "可數名詞",
+            "動詞"
+          ],
+          "answer": 0,
+          "explain": "art 表藝術、藝術（作）品時皆不可數。"
+        },
+        {
+          "q": "the arts 指的是？",
+          "choices": [
+            "藝術（含繪畫、舞蹈、音樂等的總稱）",
+            "許多藝術品",
+            "藝術家們"
+          ],
+          "answer": 0,
+          "explain": "the arts＝各類藝術的總稱。"
+        },
+        {
+          "q": "art 的「藝術家」是？",
+          "choices": [
+            "artist",
+            "artistic",
+            "arter"
+          ],
+          "answer": 0,
+          "explain": "artist 藝術家；artistic 藝術的。"
+        }
+      ]
+    },
+    {
+      "id": "break",
+      "title": "15 break",
+      "items": [
+        {
+          "en": "Chad broke his mother’s vase by accident.",
+          "zh": "查德不小心打破他媽媽的花瓶。"
+        },
+        {
+          "en": "Wayne’s heart broke into pieces when his wife left him.",
+          "zh": "當韋恩的老婆離開他時，他的心碎了。"
+        },
+        {
+          "en": "The car broke down in the middle of nowhere.",
+          "zh": "這輛車子在荒郊野外拋錨了。"
+        },
+        {
+          "en": "The thief broke into my house and stole a gold watch.",
+          "zh": "小偷闖入我家偷走了一只金錶。"
+        },
+        {
+          "en": "He just broke the Olympic record for the men’s 100-meter dash.",
+          "zh": "他剛剛打破了男子 100 公尺短跑奧運紀錄。"
+        },
+        {
+          "en": "Christina would never break the school rules.",
+          "zh": "克莉絲蒂娜絕不會違反校規。"
+        },
+        {
+          "en": "The day was breaking when they parted.",
+          "zh": "他們分別時天正破曉。"
+        },
+        {
+          "en": "Let’s take a break for ten minutes before we go back to work again.",
+          "zh": "我們休息 10 分鐘再繼續工作。"
+        },
+        {
+          "en": "We found a break in the pipe.",
+          "zh": "我們發現水管有一道裂痕。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "break 的三態是？",
+          "choices": [
+            "break, broke, broken",
+            "break, broke, broke",
+            "break, breaked, breaked"
+          ],
+          "answer": 0,
+          "explain": "break–broke–broken。"
+        },
+        {
+          "q": "The car broke down. 的意思是？",
+          "choices": [
+            "車子拋錨了",
+            "車子被闖入",
+            "車子被打破紀錄"
+          ],
+          "answer": 0,
+          "explain": "break down＝（車輛）拋錨、（機器）故障、（情緒）崩潰。"
+        },
+        {
+          "q": "break into... 的意思是？",
+          "choices": [
+            "闖入……",
+            "打破紀錄",
+            "休息一下"
+          ],
+          "answer": 0,
+          "explain": "break into＝闖入；break a record＝打破紀錄；take a break＝休息。"
+        }
+      ]
+    },
+    {
+      "id": "land",
+      "title": "16 land / landing",
+      "items": [
+        {
+          "en": "The passengers were pleased to see the land.",
+          "zh": "乘客很開心能看到陸地。"
+        },
+        {
+          "en": "This piece of land is used for farming.",
+          "zh": "這塊地供農作用。"
+        },
+        {
+          "en": "He returned to his native land after a few years.",
+          "zh": "幾年後，他回到了自己的母國。"
+        },
+        {
+          "en": "The plane was landing on the runway.",
+          "zh": "那架飛機正降落在跑道上。"
+        },
+        {
+          "en": "We were all relieved to know that the plane made a safe landing.",
+          "zh": "知道飛機安全著陸時，我們都鬆了一口氣。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "land（陸地、土地）是？",
+          "choices": [
+            "不可數名詞",
+            "可數名詞",
+            "只能當動詞"
+          ],
+          "answer": 0,
+          "explain": "land 表陸地、土地時不可數，用 a piece of land。"
+        },
+        {
+          "q": "land（著陸）的反義是？",
+          "choices": [
+            "take off",
+            "take on",
+            "put off"
+          ],
+          "answer": 0,
+          "explain": "land 著陸 ↔ take off 起飛。"
+        },
+        {
+          "q": "sb’s native land 的意思是？",
+          "choices": [
+            "某人的母國",
+            "某人的土地",
+            "某人的家鄉話"
+          ],
+          "answer": 0,
+          "explain": "native land＝母國、祖國。"
+        }
+      ]
+    },
+    {
+      "id": "quite",
+      "title": "17 quite",
+      "items": [
+        {
+          "en": "Paul was quite sad after his dog died.",
+          "zh": "保羅的狗狗死了之後，他相當難過。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "quite 的意思是？",
+          "choices": [
+            "相當",
+            "安靜的",
+            "離開"
+          ],
+          "answer": 0,
+          "explain": "quite 相當（副詞）；quiet 安靜的；quit 離開、放棄。"
+        },
+        {
+          "q": "下列哪一個「不是」quite 的近義字？",
+          "choices": [
+            "quietly",
+            "pretty",
+            "fairly"
+          ],
+          "answer": 0,
+          "explain": "pretty、fairly 當副詞都可表「相當」。"
+        },
+        {
+          "q": "quite 的詞性是？",
+          "choices": [
+            "副詞",
+            "形容詞",
+            "動詞"
+          ],
+          "answer": 0,
+          "explain": "quite 是副詞，修飾形容詞 sad。"
+        }
+      ]
+    },
+    {
+      "id": "less",
+      "title": "18 less",
+      "items": [
+        {
+          "en": "Ella spent less money than she expected.",
+          "zh": "艾拉花的錢比她預計的少。"
+        },
+        {
+          "en": "No less than 9 students passed the exam.",
+          "zh": "至少有 9 個學生通過這次的考試。"
+        },
+        {
+          "en": "Cindy is less energetic than other kids.",
+          "zh": "辛蒂跟其他孩子比起來較沒活力。"
+        },
+        {
+          "en": "Greg’s version of events is less believable than yours.",
+          "zh": "葛瑞格對於事件的說法比你的還不可信。"
+        },
+        {
+          "en": "Ryan can barely cook meat, much less pasta.",
+          "zh": "雷恩不會煮肉，更別說煮義大利麵了。"
+        },
+        {
+          "en": "The cost for the hotel is $100, less the $20 deposit.",
+          "zh": "旅館的費用是 100 美元，再扣掉 20 美元的訂金。"
+        },
+        {
+          "en": "If you want to lose weight, you have to eat less and exercise more.",
+          "zh": "如果你想減肥，就得少吃多動。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "less 作形容詞時，修飾？",
+          "choices": [
+            "不可數名詞",
+            "複數可數名詞",
+            "單數可數名詞"
+          ],
+          "answer": 0,
+          "explain": "less money；可數名詞用 fewer。"
+        },
+        {
+          "q": "no less than... 的意思是？",
+          "choices": [
+            "至少……",
+            "不超過……",
+            "少於……"
+          ],
+          "answer": 0,
+          "explain": "no less than＝至少。"
+        },
+        {
+          "q": "much less 的意思是？",
+          "choices": [
+            "更別說（與否定句並用）",
+            "少很多",
+            "至少"
+          ],
+          "answer": 0,
+          "explain": "much less＝更別說，用在否定句之後。"
+        }
+      ]
+    },
+    {
+      "id": "draw",
+      "title": "19 draw",
+      "items": [
+        {
+          "en": "I’m drawing a picture of a dog, not a pig.",
+          "zh": "我畫的是一隻狗，不是豬。"
+        },
+        {
+          "en": "I’d like to draw your attention to page ten.",
+          "zh": "我想請大家注意看第 10 頁。"
+        },
+        {
+          "en": "Paul drew a stool in the fireplace.",
+          "zh": "保羅拉了一張凳子到壁爐邊。"
+        },
+        {
+          "en": "This famous actress will be the big draw at the film festival.",
+          "zh": "這位知名女星會是這次影展的一大看頭。"
+        },
+        {
+          "en": "The soccer match ended in a draw.",
+          "zh": "這場足球賽打成平手。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "draw 的三態是？",
+          "choices": [
+            "draw, drew, drawn",
+            "draw, drawed, drawed",
+            "draw, drew, drew"
+          ],
+          "answer": 0,
+          "explain": "draw–drew–drawn。"
+        },
+        {
+          "q": "end in a draw 的意思是？",
+          "choices": [
+            "以平局告終",
+            "以畫作結束",
+            "被吸引"
+          ],
+          "answer": 0,
+          "explain": "draw 當名詞可表平局，同 tie。"
+        },
+        {
+          "q": "draw (sb’s) attention 的意思是？",
+          "choices": [
+            "吸引（某人的）注意力",
+            "畫出注意事項",
+            "拉走某人"
+          ],
+          "answer": 0,
+          "explain": "draw 可表「吸引」，同 attract。"
+        }
+      ]
+    },
+    {
+      "id": "walk",
+      "title": "20 walk",
+      "items": [
+        {
+          "en": "Let’s take a walk after work.",
+          "zh": "我們下班後去散步吧。"
+        },
+        {
+          "en": "Walk faster, or we won’t make it to the office on time.",
+          "zh": "走快一點，要不然我們無法準時趕到辦公室。"
+        },
+        {
+          "en": "Henry decided to walk away from the deal.",
+          "zh": "亨利決定從這場交易中脫身。"
+        },
+        {
+          "en": "Please let me walk you home.",
+          "zh": "請讓我陪你走路回家。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "take a walk 等於？",
+          "choices": [
+            "go for a walk",
+            "go to walk",
+            "make a walk"
+          ],
+          "answer": 0,
+          "explain": "take a walk＝go for a walk，散步。"
+        },
+        {
+          "q": "walk sb home 的意思是？",
+          "choices": [
+            "陪某人走回家",
+            "讓某人自己走回家",
+            "從家走去找某人"
+          ],
+          "answer": 0,
+          "explain": "walk 當及物動詞＝陪（某人）走路。"
+        },
+        {
+          "q": "a ten-minute walk 的意思是？",
+          "choices": [
+            "10 分鐘的腳程",
+            "走 10 分鐘就休息",
+            "10 分鐘走一次"
+          ],
+          "answer": 0,
+          "explain": "a ten-minute walk＝10 分鐘的腳程；注意 minute 不加 s。"
+        }
+      ]
+    },
+    {
+      "id": "certain",
+      "title": "21 certain / uncertain",
+      "items": [
+        {
+          "en": "Certain answers are not correct.",
+          "zh": "某些答案有誤。"
+        },
+        {
+          "en": "A certain man called you yesterday.",
+          "zh": "昨天有某個人打電話找你。"
+        },
+        {
+          "en": "I’m certain that Miley will succeed.",
+          "zh": "我確信麥莉會成功。"
+        },
+        {
+          "en": "I’m certain of Miley’s success.",
+          "zh": "我確信麥莉會成功。（用 certain of）"
+        },
+        {
+          "en": "Nobody knows for certain when Michael is coming back.",
+          "zh": "沒有人確知邁可什麼時候會回來。"
+        },
+        {
+          "en": "Certain of the employees take long coffee breaks.",
+          "zh": "有些員工喝咖啡的休息時間很久。"
+        },
+        {
+          "en": "I’m uncertain about what we should do next.",
+          "zh": "我不確定我們接下來該做什麼。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "a certain + 單數名詞 的意思是？",
+          "choices": [
+            "某個……",
+            "確定的……",
+            "一些……"
+          ],
+          "answer": 0,
+          "explain": "certain + 複數名詞＝某些；a certain + 單數名詞＝某個。"
+        },
+        {
+          "q": "know for certain 等於？",
+          "choices": [
+            "know for sure",
+            "know for some",
+            "know at certain"
+          ],
+          "answer": 0,
+          "explain": "know for certain / sure＝確知。"
+        },
+        {
+          "q": "certain of... 等於？",
+          "choices": [
+            "some of...",
+            "sure of...",
+            "all of..."
+          ],
+          "answer": 0,
+          "explain": "certain of the employees＝some of the employees。"
+        }
+      ]
+    },
+    {
+      "id": "enter",
+      "title": "22 enter",
+      "items": [
+        {
+          "en": "Please enter the room through the back door.",
+          "zh": "請由後門進入屋裡。"
+        },
+        {
+          "en": "You must enter a password to start the system.",
+          "zh": "你必須輸入密碼以啟動系統。"
+        },
+        {
+          "en": "Tracy entered the beauty contest simply for fun.",
+          "zh": "崔希參加選美比賽單純只是為了好玩。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "「進入房間」正確說法是？",
+          "choices": [
+            "enter the room",
+            "enter into the room",
+            "enter to the room"
+          ],
+          "answer": 0,
+          "explain": "enter 當及物動詞直接接地點。"
+        },
+        {
+          "q": "enter 的反義字是？",
+          "choices": [
+            "exit",
+            "entry",
+            "entrance"
+          ],
+          "answer": 0,
+          "explain": "entrance、entry 是入口；exit 是出口、離開。"
+        },
+        {
+          "q": "enter a password 的 enter 意思是？",
+          "choices": [
+            "（電腦）輸入",
+            "參加",
+            "進入"
+          ],
+          "answer": 0,
+          "explain": "enter 可表進入、（電腦）輸入、（報名）參加。"
+        }
+      ]
+    },
+    {
+      "id": "truly",
+      "title": "23 truly",
+      "items": [
+        {
+          "en": "Your opinion is truly important to me.",
+          "zh": "你的意見對我來說確實很重要。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "truly 的意思是？",
+          "choices": [
+            "真地，確實地",
+            "真相",
+            "真的（形容詞）"
+          ],
+          "answer": 0,
+          "explain": "truly 是副詞，同 really。"
+        },
+        {
+          "q": "true 的副詞拼法是？",
+          "choices": [
+            "truly",
+            "truely",
+            "truelly"
+          ],
+          "answer": 0,
+          "explain": "true 去 e 加 ly → truly。"
+        },
+        {
+          "q": "truly 的近義字是？",
+          "choices": [
+            "really",
+            "rarely",
+            "nearly"
+          ],
+          "answer": 0,
+          "explain": "truly＝really，真地、確實地。"
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "title": "24 voice / sound",
+      "items": [
+        {
+          "en": "Jeff has a quiet voice; I can barely hear him.",
+          "zh": "傑夫的聲音很小，我幾乎聽不到他說話。"
+        },
+        {
+          "en": "Alex is so shy that he only talks in a low voice.",
+          "zh": "艾力克斯太害羞了，只敢小聲地說話。"
+        },
+        {
+          "en": "The workers voiced their complaints about the decision.",
+          "zh": "工人們對這項決議表示不滿。"
+        },
+        {
+          "en": "There was a weird sound coming from the kitchen.",
+          "zh": "廚房裡傳來一個奇怪的聲音。"
+        },
+        {
+          "en": "Your idea sounds good to me.",
+          "zh": "我覺得你的想法聽起來很好。"
+        },
+        {
+          "en": "That sounds like a good idea!",
+          "zh": "那聽起來是個好主意！"
+        },
+        {
+          "en": "A sound mind is in a sound body.",
+          "zh": "健全的精神寓於健康的身體。（諺語）"
+        },
+        {
+          "en": "Thank you for your sound idea.",
+          "zh": "謝謝你的好點子。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "voice 和 sound 的差別是？",
+          "choices": [
+            "voice 專指人發出的聲音，sound 可指任何聲音",
+            "voice 可指任何聲音，sound 專指人聲",
+            "兩者完全相同"
+          ],
+          "answer": 0,
+          "explain": "sound 泛指任何聲音；voice 專指人的聲音。"
+        },
+        {
+          "q": "That sounds ___ a good idea!",
+          "choices": [
+            "like",
+            "as",
+            "to"
+          ],
+          "answer": 0,
+          "explain": "sound + adj.；sound like + N。"
+        },
+        {
+          "q": "safe and sound 的意思是？",
+          "choices": [
+            "安然無恙",
+            "安全的聲音",
+            "聽起來安全"
+          ],
+          "answer": 0,
+          "explain": "sound 當形容詞＝健全的、完好的。"
+        }
+      ]
+    },
+    {
+      "id": "right",
+      "title": "25 right / wrong / left",
+      "items": [
+        {
+          "en": "The theory has been proved right.",
+          "zh": "此理論經證明是正確的。"
+        },
+        {
+          "en": "The Opera House is on your right side.",
+          "zh": "歌劇院在你的右邊。"
+        },
+        {
+          "en": "Turn right at the next block, and you’ll see the restaurant.",
+          "zh": "在下一個街區右轉，你就會看到那間餐廳了。"
+        },
+        {
+          "en": "Turn to the right at the next block, and you’ll see the restaurant.",
+          "zh": "在下一個街區右轉，你就會看到那間餐廳了。（用 turn to the right）"
+        },
+        {
+          "en": "I left my suitcase right here.",
+          "zh": "我的行李箱就放在這裡。"
+        },
+        {
+          "en": "Did I guess right?",
+          "zh": "我猜對了嗎？"
+        },
+        {
+          "en": "In certain countries, women don’t have the right to vote.",
+          "zh": "在某些國家，女性沒有投票權。"
+        },
+        {
+          "en": "Most of the answers he wrote were wrong.",
+          "zh": "他寫的答案大部分是錯的。"
+        },
+        {
+          "en": "It’s wrong to take something that isn’t yours.",
+          "zh": "拿別人的東西是不對的。"
+        },
+        {
+          "en": "There’s something wrong with Becky’s phone.",
+          "zh": "貝琪的電話出了點問題。"
+        },
+        {
+          "en": "I just don’t know where we went wrong.",
+          "zh": "我就是不知道我們到底哪裡出問題了。"
+        },
+        {
+          "en": "The boy is too young to tell right from wrong.",
+          "zh": "小男孩太小了，還不能明辨是非。"
+        },
+        {
+          "en": "Two wrongs do not make a right.",
+          "zh": "兩惡不成一善／勿以惡報惡。（諺語）"
+        },
+        {
+          "en": "Jack decided to forgive those who have wronged him.",
+          "zh": "傑克決定原諒那些待他不公的人。"
+        },
+        {
+          "en": "They live on the left bank of the river.",
+          "zh": "他們住在河的左岸。"
+        },
+        {
+          "en": "Turn left at the next corner.",
+          "zh": "在下一個街角左轉。"
+        },
+        {
+          "en": "Turn to the left at the next corner.",
+          "zh": "在下一個街角左轉。（用 turn to the left）"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "have the right to V/N 的意思是？",
+          "choices": [
+            "有……的權利",
+            "在……的右邊",
+            "做……是正確的"
+          ],
+          "answer": 0,
+          "explain": "right 當名詞可表權利。"
+        },
+        {
+          "q": "tell right from wrong 的意思是？",
+          "choices": [
+            "明辨是非",
+            "告訴別人對錯",
+            "從錯誤中找答案"
+          ],
+          "answer": 0,
+          "explain": "tell A from B＝分辨 A 與 B。"
+        },
+        {
+          "q": "There’s something wrong ___ my phone.",
+          "choices": [
+            "with",
+            "of",
+            "to"
+          ],
+          "answer": 0,
+          "explain": "(be) wrong with sth＝某物出問題、故障。"
+        }
+      ]
+    },
+    {
+      "id": "behind",
+      "title": "26 behind",
+      "items": [
+        {
+          "en": "The bridesmaids entered the church, with the bride following behind.",
+          "zh": "伴娘們進入教堂，新娘跟在後方。"
+        },
+        {
+          "en": "Maureen stayed behind to help clean up.",
+          "zh": "莫琳留下來幫忙清理。"
+        },
+        {
+          "en": "Sherry fell behind with her schoolwork.",
+          "zh": "雪莉的功課落後了。"
+        },
+        {
+          "en": "There’s a little girl standing behind you.",
+          "zh": "有一個小女孩站在你後方。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "stay behind 的意思是？",
+          "choices": [
+            "留下來",
+            "落後",
+            "跟在後面"
+          ],
+          "answer": 0,
+          "explain": "stay behind＝留下來；fall behind＝落後。"
+        },
+        {
+          "q": "fall behind 的意思是？",
+          "choices": [
+            "落後",
+            "向後跌倒",
+            "留下來"
+          ],
+          "answer": 0,
+          "explain": "fall behind (with sth)＝（某方面）落後。"
+        },
+        {
+          "q": "standing behind you 的 behind 是？",
+          "choices": [
+            "介系詞：在……之後",
+            "副詞：在原地",
+            "名詞：後面"
+          ],
+          "answer": 0,
+          "explain": "behind + 受詞時是介系詞。"
+        }
+      ]
+    },
+    {
+      "id": "decide",
+      "title": "27 decide",
+      "items": [
+        {
+          "en": "We’ve decided that we would change the plan.",
+          "zh": "我們已決定要改變計畫。"
+        },
+        {
+          "en": "We’ve decided to change the plan.",
+          "zh": "我們已決定要改變計畫。（用 decide to V）"
+        },
+        {
+          "en": "We’ve made a decision to change the plan.",
+          "zh": "我們已決定要改變計畫。（用 make a decision）"
+        },
+        {
+          "en": "Has the company decided on the color of the uniform?",
+          "zh": "公司已選定制服的顏色了嗎？"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "decide to V 等於？",
+          "choices": [
+            "make a decision to V",
+            "do a decision to V",
+            "make a decide to V"
+          ],
+          "answer": 0,
+          "explain": "decide to V＝make a decision to V。"
+        },
+        {
+          "q": "decide on... 的意思是？",
+          "choices": [
+            "選定……",
+            "決定不……",
+            "依賴……"
+          ],
+          "answer": 0,
+          "explain": "decide on＝選定。"
+        },
+        {
+          "q": "decide 的名詞是？",
+          "choices": [
+            "decision",
+            "decisive",
+            "decidement"
+          ],
+          "answer": 0,
+          "explain": "decision 決定（名詞）；decisive 決定性的（形容詞）。"
+        }
+      ]
+    },
+    {
+      "id": "as",
+      "title": "28 as",
+      "items": [
+        {
+          "en": "I can’t eat steak as I’m a vegetarian.",
+          "zh": "我不能吃牛排，因為我吃素。"
+        },
+        {
+          "en": "Emma arrived just as Beth was leaving.",
+          "zh": "艾瑪抵達時，貝絲正要離開。"
+        },
+        {
+          "en": "The house looks exactly as it did when I was a child.",
+          "zh": "這棟房子看起來就像我小時候所看到的那樣。"
+        },
+        {
+          "en": "The man looked as if he was going to faint.",
+          "zh": "那名男子看起來好像要暈倒了。"
+        },
+        {
+          "en": "You are as smart as a genius.",
+          "zh": "你像天才一樣聰明。"
+        },
+        {
+          "en": "Brian has a job as a journalist.",
+          "zh": "布萊恩有份當記者的工作。"
+        }
+      ],
+      "grammar": [
+        {
+          "q": "as if... 的意思是？",
+          "choices": [
+            "好像／似乎……",
+            "如果……",
+            "因為……"
+          ],
+          "answer": 0,
+          "explain": "as if＝好像、似乎。"
+        },
+        {
+          "q": "as + adj. + as 中，第一個 as 是什麼詞性？",
+          "choices": [
+            "副詞",
+            "連接詞",
+            "介系詞"
+          ],
+          "answer": 0,
+          "explain": "第一個 as 為副詞，第二個 as 為連接詞。"
+        },
+        {
+          "q": "Brian has a job as a journalist. 的 as 意思是？",
+          "choices": [
+            "作為",
+            "因為",
+            "當……時"
+          ],
+          "answer": 0,
+          "explain": "as 當介系詞＝作為。"
+        }
+      ]
+    }
+  ]
+}
