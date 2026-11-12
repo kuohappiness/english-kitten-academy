@@ -1,0 +1,20 @@
+name: 保持資料庫連線（避免 Supabase 免費專案被暫停）
+on:
+  schedule:
+    - cron: '17 1 */3 * *'   # 每 3 天一次（UTC 01:17，台灣時間 09:17）
+  workflow_dispatch:          # 也可以在 Actions 分頁手動執行
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 呼叫資料庫一次
+        run: |
+          URL='https://clhtnlxnlpksyvamstof.supabase.co'
+          KEY='sb_publishable_9V7Nc1oLT69KFk0bSHyp4g_VeroFJM3'
+          code=$(curl -s -o /tmp/out -w '%{http_code}' -X POST "$URL/rest/v1/rpc/get_visits" \
+            -H "apikey: $KEY" -H 'Content-Type: application/json' -d '{}')
+          echo "HTTP $code，瀏覽人次：$(cat /tmp/out)"
+          if [ "$code" != "200" ]; then
+            echo "::error::資料庫沒有回應，可能已被暫停，請到 Supabase 後台按 Resume project"
+            exit 1
+          fi
