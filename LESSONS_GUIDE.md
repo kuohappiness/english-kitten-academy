@@ -112,3 +112,4 @@ node tools/validate-lessons.js
 - `sections`：學習單大題，每題 `bank`（單字框，依序對應 A、B、C…）、`lines`（`label`/`note` 為對話標題，`who` 為說話者，`text` 內用 `{{編號}}` 挖空）、`answers`（編號 → 字母）
 - 圈選題：在 `options` 放該編號的選項陣列，`answers` 填正確選項文字；`explain` 為交卷後顯示的說明；`chart` 可放圖表資料
 - 新增一課：放進 `lessons/letstalk/`，並在 `lets-talk.js` 最上面的 `FILES` 加上檔名。課的 `id` 上線後不要改（最佳成績用它記錄）
+- 重點提醒的熟悉度星星用「第幾頁」記錄：上線後不要調換或刪除投影片，要新增請加在最後面
