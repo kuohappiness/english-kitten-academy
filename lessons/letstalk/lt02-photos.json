@@ -3,124 +3,467 @@
  "title": "第二課 Good Ways to Take Photos",
  "subtitle": "10/21–10/22 · 課本 p.42–45",
  "slides": [
-  {"title": "課文大意：什麼是 photo marathon？", "points": [
-   "photo marathon（攝影馬拉松）是一種 event（活動）：大家在同一天拍照。",
-   "通常有 6–8 小時的 time limit（時間限制）。",
-   "一開始拿到一份 themes（主題）清單，例如 “red”、“daily life”，每個主題拍一張。",
-   "最後 submit（提交）照片，judges（評審）選出最好的，有人會贏得 prizes（獎品）。"],
-   "examples": ["For this event, you take photos all on the same day.", "Judges look at the photos and choose the best ones."]},
-  {"title": "課文大意：Zach 的拍照小技巧", "points": [
-   "不要只拍一張，多拍幾張：You're more likely to get a good one.",
-   "試試不同 angles（角度）：low angles、high angles、side views。",
-   "只拍一個 subject（主體），而且不要放在 middle（正中間），要 put it off to the side。",
-   "不要太常用 zoom（變焦），改成 move closer（走近一點）。",
-   "清晨或傍晚拍：The light is better then."]},
-  {"title": "重點單字（一）：活動相關", "points": [
-   "event (n) 活動；事件：The event starts at 9:00 in the morning.",
-   "limit (n) 限制：You have a time limit to finish.",
-   "theme (n) 主題：What is the theme of the party?",
-   "judge (n) 評審；裁判：The judge will choose the best team.",
-   "prize (n) 獎；獎品：Tom won a prize for his art.",
-   "marathon (n) 馬拉松；submit (v) 提交 → submits / submitted"],
-   "tip": "win a prize（贏得獎品）是固定搭配，不說 get the prize 也可以但 win 最常用。"},
-  {"title": "重點單字（二）：拍照相關", "points": [
-   "angle (n) 角度：She took the picture from many angles.",
-   "low (adj) 低的 ↔ high (adj) 高的",
-   "side (adj) 側面的：the side door / side view；side (n) 邊：sit on the right side",
-   "subject (n) 主體；主題：Dogs are often the subject of my photos.",
-   "middle (n) 中間：in the middle of the room",
-   "zoom (n) 焦距；變焦"],
-   "tip": "一字多義：subject 也是「科目」（My favorite subject is English.）；judge 也可以當動詞「評斷」。"},
-  {"title": "片語：time limit（名詞＋名詞）", "points": [
-   "前面的名詞說明後面的名詞，表示「什麼樣的限制」。",
-   "time limit 時間限制、speed limit 速限、age limit 年齡限制、weight limit 重量限制"],
-   "examples": ["You should drive within the speed limit.", "There is no age limit for this event.", "They have a strict weight limit for carry-on luggage."],
-   "tip": "前面的名詞用單數：a time limit，不說 a times limit。"},
-  {"title": "片語：do one's best to + 原形動詞", "points": [
-   "盡力去做某事。one's 要隨主詞改：I → my best, they → their best, he → his best。",
-   "to 後面接原形動詞。"],
-   "examples": ["Then do your best to take great photos.", "Please do your best to arrive on time.", "They did their best to win the game."],
-   "tip": "常見錯誤：do your best to taking ✗ → do your best to take ✓"},
-  {"title": "句型：be more / less likely to + 原形動詞", "points": [
-   "likely (adj) 可能的。be more likely to + V：比較可能做…；be less likely to + V：比較不可能做…",
-   "be 動詞要跟主詞變化：I am / You are / He is"],
-   "examples": ["You're more likely to get a good one.", "Happy people are more likely to smile.", "You are less likely to get sick if you exercise.", "People are less likely to go out in cold weather."]},
-  {"title": "片語：put it off to the side", "points": [
-   "off 是副詞「離開」，to the side 是「往旁邊」→ 從中心移到旁邊一點。",
-   "代名詞要放中間：put it / them off to the side。"],
-   "examples": ["No. Put it off to the side. That looks better.", "The box is in the way; please put it off to the side.", "I don't want to eat the onions, so I'll put them off to the side."]},
-  {"title": "句型：The ... choose the ... ones.", "points": [
-   "ones 代替前面提過的複數名詞（photos、students…），避免重複。單數用 one。",
-   "the + 最高級（best、bravest、nicest）+ ones：選出最…的那些。"],
-   "examples": ["Then the judges choose the best ones.", "The leaders choose the bravest ones.", "The teachers choose the nicest ones."],
-   "tip": "good → better → best；brave → braver → bravest；nice → nicer → nicest"},
-  {"title": "句型：My ... don't / doesn't look as ... as yours.", "points": [
-   "as + 形容詞原級 + as：和…一樣…；否定 not as … as：沒有…那麼…",
-   "主詞複數用 don't，單數用 doesn't；look 後面接形容詞。",
-   "yours ＝ your + 名詞（your pictures / your shoes）。"],
-   "examples": ["My pictures don't look as good as yours.", "My shoes don't look as new as yours.", "My backpack doesn't look as big as yours."],
-   "tip": "as 中間放原級：as good as ✓，as better as ✗"}
+  {
+   "title": "課文大意：什麼是 photo marathon？",
+   "points": [
+    "photo marathon（攝影馬拉松）是一種 event（活動）：大家在同一天拍照。",
+    "通常有 6–8 小時的 time limit（時間限制）。",
+    "一開始拿到一份 themes（主題）清單，例如 “red”、“daily life”，每個主題拍一張。",
+    "最後 submit（提交）照片，judges（評審）選出最好的，有人會贏得 prizes（獎品）。"
+   ],
+   "examples": [
+    "For this event, you take photos all on the same day.",
+    "Judges look at the photos and choose the best ones."
+   ]
+  },
+  {
+   "title": "課文大意：Zach 的拍照小技巧",
+   "points": [
+    "不要只拍一張，多拍幾張：You're more likely to get a good one.",
+    "試試不同 angles（角度）：low angles、high angles、side views。",
+    "只拍一個 subject（主體），而且不要放在 middle（正中間），要 put it off to the side。",
+    "不要太常用 zoom（變焦），改成 move closer（走近一點）。",
+    "清晨或傍晚拍：The light is better then."
+   ]
+  },
+  {
+   "title": "重點單字（一）：活動相關",
+   "points": [
+    "event (n) 活動；事件：The event starts at 9:00 in the morning.",
+    "limit (n) 限制：You have a time limit to finish.",
+    "theme (n) 主題：What is the theme of the party?",
+    "judge (n) 評審；裁判：The judge will choose the best team.",
+    "prize (n) 獎；獎品：Tom won a prize for his art.",
+    "marathon (n) 馬拉松；submit (v) 提交 → submits / submitted"
+   ],
+   "tip": "win a prize（贏得獎品）是固定搭配，不說 get the prize 也可以但 win 最常用。"
+  },
+  {
+   "title": "重點單字（二）：拍照相關",
+   "points": [
+    "angle (n) 角度：She took the picture from many angles.",
+    "low (adj) 低的 ↔ high (adj) 高的",
+    "side (adj) 側面的：the side door / side view；side (n) 邊：sit on the right side",
+    "subject (n) 主體；主題：Dogs are often the subject of my photos.",
+    "middle (n) 中間：in the middle of the room",
+    "zoom (n) 焦距；變焦"
+   ],
+   "tip": "一字多義：subject 也是「科目」（My favorite subject is English.）；judge 也可以當動詞「評斷」。"
+  },
+  {
+   "title": "片語：time limit（名詞＋名詞）",
+   "points": [
+    "前面的名詞說明後面的名詞，表示「什麼樣的限制」。",
+    "time limit 時間限制、speed limit 速限、age limit 年齡限制、weight limit 重量限制"
+   ],
+   "examples": [
+    "You should drive within the speed limit.",
+    "There is no age limit for this event.",
+    "They have a strict weight limit for carry-on luggage."
+   ],
+   "tip": "前面的名詞用單數：a time limit，不說 a times limit。"
+  },
+  {
+   "title": "片語：do one's best to + 原形動詞",
+   "points": [
+    "盡力去做某事。one's 要隨主詞改：I → my best, they → their best, he → his best。",
+    "to 後面接原形動詞。"
+   ],
+   "examples": [
+    "Then do your best to take great photos.",
+    "Please do your best to arrive on time.",
+    "They did their best to win the game."
+   ],
+   "tip": "常見錯誤：do your best to taking ✗ → do your best to take ✓"
+  },
+  {
+   "title": "句型：be more / less likely to + 原形動詞",
+   "points": [
+    "likely (adj) 可能的。be more likely to + V：比較可能做…；be less likely to + V：比較不可能做…",
+    "be 動詞要跟主詞變化：I am / You are / He is"
+   ],
+   "examples": [
+    "You're more likely to get a good one.",
+    "Happy people are more likely to smile.",
+    "You are less likely to get sick if you exercise.",
+    "People are less likely to go out in cold weather."
+   ]
+  },
+  {
+   "title": "片語：put it off to the side",
+   "points": [
+    "off 是副詞「離開」，to the side 是「往旁邊」→ 從中心移到旁邊一點。",
+    "代名詞要放中間：put it / them off to the side。"
+   ],
+   "examples": [
+    "No. Put it off to the side. That looks better.",
+    "The box is in the way; please put it off to the side.",
+    "I don't want to eat the onions, so I'll put them off to the side."
+   ]
+  },
+  {
+   "title": "句型：The ... choose the ... ones.",
+   "points": [
+    "ones 代替前面提過的複數名詞（photos、students…），避免重複。單數用 one。",
+    "the + 最高級（best、bravest、nicest）+ ones：選出最…的那些。"
+   ],
+   "examples": [
+    "Then the judges choose the best ones.",
+    "The leaders choose the bravest ones.",
+    "The teachers choose the nicest ones."
+   ],
+   "tip": "good → better → best；brave → braver → bravest；nice → nicer → nicest"
+  },
+  {
+   "title": "句型：My ... don't / doesn't look as ... as yours.",
+   "points": [
+    "as + 形容詞原級 + as：和…一樣…；否定 not as … as：沒有…那麼…",
+    "主詞複數用 don't，單數用 doesn't；look 後面接形容詞。",
+    "yours ＝ your + 名詞（your pictures / your shoes）。"
+   ],
+   "examples": [
+    "My pictures don't look as good as yours.",
+    "My shoes don't look as new as yours.",
+    "My backpack doesn't look as big as yours."
+   ],
+   "tip": "as 中間放原級：as good as ✓，as better as ✗"
+  }
  ],
  "sections": [
-  {"id": "s1", "title": "一、課文短文", "bank": ["marathon", "event", "limit", "themes", "submit", "judges", "prizes", "angles"],
-   "lines": [
-    {"text": "Do you like taking photos? Then you might enjoy a photo {{1}}. It is a fun {{2}}. Everyone takes photos on the same day, and there is a time {{3}} of six to eight hours. At the start, you get a list of {{4}}, like “red” or “daily life.” You must take a photo for each one. At the end, you {{5}} your best pictures. The {{6}} look at all the photos and choose the best ones. Some people win {{7}}!"}
+  {
+   "id": "s1",
+   "title": "一、課文短文",
+   "bank": [
+    "submit",
+    "judges",
+    "limit",
+    "marathon",
+    "prizes",
+    "event",
+    "themes",
+    "angles"
    ],
-   "answers": {"1": "A", "2": "B", "3": "C", "4": "D", "5": "E", "6": "F", "7": "G"}},
-  {"id": "s2", "title": "二、對話與句型", "bank": ["best", "ones", "likely", "as", "off", "to", "looking", "more", "less", "what"],
    "lines": [
-    {"label": "Conversation A", "note": "(in the living room)"},
-    {"who": "Ivy", "text": "Are you ready for the photo marathon, Ken?"},
-    {"who": "Ken", "text": "Yes! I’m {{8}} forward to it."},
-    {"who": "Ivy", "text": "{{9}} are some of the themes?"},
-    {"who": "Ken", "text": "Oh, things like “red” or “daily life.”"},
-    {"label": "Conversation B"},
-    {"who": "Ivy", "text": "Will the judges choose the best {{10}}?"},
-    {"who": "Ken", "text": "Yes. And some people get prizes."},
-    {"who": "Ivy", "text": "Then do your {{11}} to take great photos!"},
-    {"label": "Conversation C", "note": "(in the studio)"},
-    {"who": "Betty", "text": "Your pictures are great! My pictures don’t look {{12}} good as yours."},
-    {"who": "Zach", "text": "Don’t just take one photo of something. Take a lot. You’re {{13}} {{14}} to get a good one."},
-    {"who": "Betty", "text": "So if I take only one photo, I’m {{15}} likely to get a good one?"},
-    {"who": "Zach", "text": "Exactly. And don’t put the subject in the middle. Put it {{16}} {{17}} the side."},
-    {"label": "圈選正確的形式"},
-    {"text": "Please do your best {{18}} on time."},
-    {"text": "The teachers choose the {{19}} ones."},
-    {"text": "My backpack {{20}} look as big as yours."}
+    {
+     "text": "Do you like taking photos? Then you might enjoy a photo {{1}}. It is a fun {{2}}. Everyone takes photos on the same day, and there is a time {{3}} of six to eight hours. At the start, you get a list of {{4}}, like “red” or “daily life.” You must take a photo for each one. At the end, you {{5}} your best pictures. The {{6}} look at all the photos and choose the best ones. Some people win {{7}}!"
+    }
    ],
-   "answers": {"8": "G", "9": "J", "10": "B", "11": "A", "12": "D", "13": "H", "14": "C", "15": "I", "16": "E", "17": "F", "18": "to arrive", "19": "nicest", "20": "doesn’t"},
-   "options": {"18": ["arrive", "arriving", "to arrive"], "19": ["nice", "nicer", "nicest"], "20": ["don’t", "doesn’t", "isn’t"]},
-   "explain": {"8": "look forward to 期待", "10": "ones 代替前面的 photos", "11": "do one’s best to + V 盡力去做", "12": "not as + 原級 + as：沒有…那麼…", "13": "be more likely to + V：比較可能", "14": "be more likely to + V：比較可能", "15": "只拍一張 → 比較不可能拍到好照片 → less likely", "16": "put it off to the side 移到旁邊", "17": "put it off to the side 移到旁邊", "18": "do one’s best to + 原形動詞", "19": "the + 最高級 + ones；nice → nicer → nicest", "20": "backpack 是單數 → doesn’t；look as big as"}},
-  {"id": "s3", "title": "三、新編對話：拍照小技巧", "bank": ["subject", "zoom", "angles", "low", "side", "light", "middle", "closer", "tips", "interesting", "early", "late", "creative", "prize", "in the way"],
+   "answers": {
+    "1": "D",
+    "2": "F",
+    "3": "C",
+    "4": "G",
+    "5": "A",
+    "6": "B",
+    "7": "E"
+   }
+  },
+  {
+   "id": "s2",
+   "title": "二、對話與句型",
+   "bank": [
+    "as",
+    "looking",
+    "to",
+    "ones",
+    "likely",
+    "less",
+    "more",
+    "what",
+    "off",
+    "best"
+   ],
    "lines": [
-    {"label": "Conversation", "note": "(in the park)"},
-    {"who": "Amy", "text": "Hi, Milo. Are you taking pictures of the flowers?"},
-    {"who": "Milo", "text": "Yes. I’m joining a photo marathon next week. Can you give me some {{21}}?"},
-    {"who": "Amy", "text": "First, try different {{22}}, like high ones and low ones. Get down on the ground and try a {{23}} angle."},
-    {"who": "Milo", "text": "What about taking a photo from the {{24}}, not the front?"},
-    {"who": "Amy", "text": "Sure! Then your pictures will be more {{25}}."},
-    {"who": "Milo", "text": "This red flower is my {{26}}. Should I put it in the {{27}} of the picture?"},
-    {"who": "Amy", "text": "No. Put it off to the side. That looks better."},
-    {"who": "Milo", "text": "The flower is far away. Can I use the {{28}}?"},
-    {"who": "Amy", "text": "Don’t use it too much. Just move {{29}} to the flower."},
-    {"who": "Milo", "text": "When is the best time to take pictures?"},
-    {"who": "Amy", "text": "In the {{30}} morning or the {{31}} afternoon. The {{32}} is better then."},
-    {"who": "Milo", "text": "Thanks! Maybe I’ll win a {{33}}!"},
-    {"who": "Amy", "text": "Be {{34}} and do your best! Oh, wait. Your bag is {{35}}."},
-    {"who": "Milo", "text": "Sorry! I’ll put it off to the side."}
+    {
+     "label": "Conversation A",
+     "note": "(in the living room)"
+    },
+    {
+     "who": "Ivy",
+     "text": "Are you ready for the photo marathon, Ken?"
+    },
+    {
+     "who": "Ken",
+     "text": "Yes! I’m {{8}} forward to it."
+    },
+    {
+     "who": "Ivy",
+     "text": "{{9}} are some of the themes?"
+    },
+    {
+     "who": "Ken",
+     "text": "Oh, things like “red” or “daily life.”"
+    },
+    {
+     "label": "Conversation B"
+    },
+    {
+     "who": "Ivy",
+     "text": "Will the judges choose the best {{10}}?"
+    },
+    {
+     "who": "Ken",
+     "text": "Yes. And some people get prizes."
+    },
+    {
+     "who": "Ivy",
+     "text": "Then do your {{11}} to take great photos!"
+    },
+    {
+     "label": "Conversation C",
+     "note": "(in the studio)"
+    },
+    {
+     "who": "Betty",
+     "text": "Your pictures are great! My pictures don’t look {{12}} good as yours."
+    },
+    {
+     "who": "Zach",
+     "text": "Don’t just take one photo of something. Take a lot. You’re {{13}} {{14}} to get a good one."
+    },
+    {
+     "who": "Betty",
+     "text": "So if I take only one photo, I’m {{15}} likely to get a good one?"
+    },
+    {
+     "who": "Zach",
+     "text": "Exactly. And don’t put the subject in the middle. Put it {{16}} {{17}} the side."
+    },
+    {
+     "label": "圈選正確的形式"
+    },
+    {
+     "text": "Please do your best {{18}} on time."
+    },
+    {
+     "text": "The teachers choose the {{19}} ones."
+    },
+    {
+     "text": "My backpack {{20}} look as big as yours."
+    }
    ],
-   "answers": {"21": "I", "22": "C", "23": "D", "24": "E", "25": "J", "26": "A", "27": "G", "28": "B", "29": "H", "30": "K", "31": "L", "32": "F", "33": "N", "34": "M", "35": "O"},
-   "explain": {"24": "side (n) 邊；從側面拍", "26": "subject 主體（照片要拍的東西）", "28": "zoom 變焦", "29": "move closer 走近一點", "33": "win a prize 贏得獎品", "35": "be in the way 擋路"}},
-  {"id": "s4", "title": "四、圖表文意 What Do People Take Pictures Of?", "bank": ["18%", "26%", "other people and themselves", "events and celebrations", "travel and scenery", "everyday activities", "food and drinks"],
-   "chart": [["other people and themselves", 26], ["food and drinks", 18], ["travel and scenery", 16], ["pets and animals", 14], ["everyday activities", 14], ["events and celebrations", 12]],
+   "answers": {
+    "8": "B",
+    "9": "H",
+    "10": "D",
+    "11": "J",
+    "12": "A",
+    "13": "G",
+    "14": "E",
+    "15": "F",
+    "16": "I",
+    "17": "C",
+    "18": "to arrive",
+    "19": "nicest",
+    "20": "doesn’t"
+   },
+   "options": {
+    "18": [
+     "arrive",
+     "arriving",
+     "to arrive"
+    ],
+    "19": [
+     "nice",
+     "nicer",
+     "nicest"
+    ],
+    "20": [
+     "don’t",
+     "doesn’t",
+     "isn’t"
+    ]
+   },
+   "explain": {
+    "8": "look forward to 期待",
+    "10": "ones 代替前面的 photos",
+    "11": "do one’s best to + V 盡力去做",
+    "12": "not as + 原級 + as：沒有…那麼…",
+    "13": "be more likely to + V：比較可能",
+    "14": "be more likely to + V：比較可能",
+    "15": "只拍一張 → 比較不可能拍到好照片 → less likely",
+    "16": "put it off to the side 移到旁邊",
+    "17": "put it off to the side 移到旁邊",
+    "18": "do one’s best to + 原形動詞",
+    "19": "the + 最高級 + ones；nice → nicer → nicest",
+    "20": "backpack 是單數 → doesn’t；look as big as"
+   }
+  },
+  {
+   "id": "s3",
+   "title": "三、新編對話：拍照小技巧",
+   "bank": [
+    "low",
+    "middle",
+    "side",
+    "light",
+    "zoom",
+    "interesting",
+    "in the way",
+    "closer",
+    "early",
+    "angles",
+    "prize",
+    "subject",
+    "late",
+    "tips",
+    "creative"
+   ],
    "lines": [
-    {"text": "People take the most pictures of {{36}}."},
-    {"text": "About {{37}} of people probably take pictures of their meals."},
-    {"text": "Only 12% of people take pictures of {{38}}, like birthday parties."},
-    {"text": "16% of people take pictures of {{39}} when they go on trips."},
-    {"text": "The same number of people take pictures of pets and animals and of {{40}}."}
+    {
+     "label": "Conversation",
+     "note": "(in the park)"
+    },
+    {
+     "who": "Amy",
+     "text": "Hi, Milo. Are you taking pictures of the flowers?"
+    },
+    {
+     "who": "Milo",
+     "text": "Yes. I’m joining a photo marathon next week. Can you give me some {{21}}?"
+    },
+    {
+     "who": "Amy",
+     "text": "First, try different {{22}}, like high ones and low ones. Get down on the ground and try a {{23}} angle."
+    },
+    {
+     "who": "Milo",
+     "text": "What about taking a photo from the {{24}}, not the front?"
+    },
+    {
+     "who": "Amy",
+     "text": "Sure! Then your pictures will be more {{25}}."
+    },
+    {
+     "who": "Milo",
+     "text": "This red flower is my {{26}}. Should I put it in the {{27}} of the picture?"
+    },
+    {
+     "who": "Amy",
+     "text": "No. Put it off to the side. That looks better."
+    },
+    {
+     "who": "Milo",
+     "text": "The flower is far away. Can I use the {{28}}?"
+    },
+    {
+     "who": "Amy",
+     "text": "Don’t use it too much. Just move {{29}} to the flower."
+    },
+    {
+     "who": "Milo",
+     "text": "When is the best time to take pictures?"
+    },
+    {
+     "who": "Amy",
+     "text": "In the {{30}} morning or the {{31}} afternoon. The {{32}} is better then."
+    },
+    {
+     "who": "Milo",
+     "text": "Thanks! Maybe I’ll win a {{33}}!"
+    },
+    {
+     "who": "Amy",
+     "text": "Be {{34}} and do your best! Oh, wait. Your bag is {{35}}."
+    },
+    {
+     "who": "Milo",
+     "text": "Sorry! I’ll put it off to the side."
+    }
    ],
-   "answers": {"36": "C", "37": "A", "38": "D", "39": "E", "40": "F"},
-   "explain": {"36": "26% 最多", "37": "meals 餐點 → food and drinks 18%", "40": "兩者都是 14%"}}
+   "answers": {
+    "21": "N",
+    "22": "J",
+    "23": "A",
+    "24": "C",
+    "25": "F",
+    "26": "L",
+    "27": "B",
+    "28": "E",
+    "29": "H",
+    "30": "I",
+    "31": "M",
+    "32": "D",
+    "33": "K",
+    "34": "O",
+    "35": "G"
+   },
+   "explain": {
+    "24": "side (n) 邊；從側面拍",
+    "26": "subject 主體（照片要拍的東西）",
+    "28": "zoom 變焦",
+    "29": "move closer 走近一點",
+    "33": "win a prize 贏得獎品",
+    "35": "be in the way 擋路"
+   }
+  },
+  {
+   "id": "s4",
+   "title": "四、圖表文意 What Do People Take Pictures Of?",
+   "bank": [
+    "everyday activities",
+    "events and celebrations",
+    "26%",
+    "travel and scenery",
+    "food and drinks",
+    "18%",
+    "other people and themselves"
+   ],
+   "chart": [
+    [
+     "other people and themselves",
+     26
+    ],
+    [
+     "food and drinks",
+     18
+    ],
+    [
+     "travel and scenery",
+     16
+    ],
+    [
+     "pets and animals",
+     14
+    ],
+    [
+     "everyday activities",
+     14
+    ],
+    [
+     "events and celebrations",
+     12
+    ]
+   ],
+   "lines": [
+    {
+     "text": "People take the most pictures of {{36}}."
+    },
+    {
+     "text": "About {{37}} of people probably take pictures of their meals."
+    },
+    {
+     "text": "Only 12% of people take pictures of {{38}}, like birthday parties."
+    },
+    {
+     "text": "16% of people take pictures of {{39}} when they go on trips."
+    },
+    {
+     "text": "The same number of people take pictures of pets and animals and of {{40}}."
+    }
+   ],
+   "answers": {
+    "36": "G",
+    "37": "F",
+    "38": "B",
+    "39": "D",
+    "40": "A"
+   },
+   "explain": {
+    "36": "26% 最多",
+    "37": "meals 餐點 → food and drinks 18%",
+    "40": "兩者都是 14%"
+   }
+  }
  ]
 }
