@@ -94,3 +94,12 @@ node tools/validate-lessons.js
 3. 在 `lessons/index.json` 把 `unitXX` 那一行補上 `"file": "unitXX.json"` 和頁碼 `subtitle`；若該單元還不在清單內，依編號順序插入
 4. 執行 `node tools/validate-lessons.js`，修正所有錯誤
 5. 只提交 `lessons/` 底下的變更，commit 訊息例如 `Add Unit 07 lessons`
+
+## 總複習選擇題（`lessons/review/`）
+
+跨單元的總複習放在 `lessons/review/`，由 `review-quiz.js` 讀取，首頁會出現「📝 總複習」卡片，每組約 20 題四選一。
+
+- 檔案格式：`{"id","title","subtitle","groups":[{"id":"g1","title":"第 1 組","questions":[…]}]}`
+- 每題：`id`（不可重複）、`type`（`cloze`＝課本例句挖空、`advanced`＝進階題）、`q`（挖空題要剛好一個 `____`）、`choices`（4 個，正確答案放第一個）、`answer: 0`、`explain`；挖空題另加 `zh`（作答後才顯示）
+- 新增一份總複習：放進 `lessons/review/`，並在 `review-quiz.js` 最上面的 `FILES` 加上檔名
+- 組別的 `id` 上線後不要改，否則該組的最佳成績會消失

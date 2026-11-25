@@ -65,6 +65,34 @@ if (idx) {
   if (!errors.length) console.log(`題庫共 ${unitIds.size} 個單元、${total} 個例句。`);
 }
 
+// 總複習選擇題（lessons/review/*.json，由 review-quiz.js 讀取）
+const reviewDir = path.join(dir, 'review');
+if (fs.existsSync(reviewDir)) {
+  for (const f of fs.readdirSync(reviewDir).filter(f => f.endsWith('.json'))) {
+    const file = 'review/' + f, d = readJson(file);
+    if (!d) continue;
+    if (!d.id || !d.title) err(file, '缺少 id 或 title');
+    if (!Array.isArray(d.groups) || !d.groups.length) { err(file, '需要有至少一個 groups'); continue; }
+    const qids = new Set(); let n = 0;
+    for (const [gi, g] of d.groups.entries()) {
+      const gw = `${file} 第 ${gi + 1} 組`;
+      if (!g.id || !g.title) err(gw, '缺少 id 或 title');
+      if (!Array.isArray(g.questions) || !g.questions.length) { err(gw, '沒有題目'); continue; }
+      for (const [qi, q] of g.questions.entries()) {
+        const qw = `${gw} 第 ${qi + 1} 題（${q.id || '?'}）`;
+        if (!q.id || qids.has(q.id)) err(qw, '題目 id 缺少或重複'); qids.add(q.id);
+        if (!q.q) err(qw, '缺少題目 q');
+        if (!Array.isArray(q.choices) || q.choices.length !== 4) { err(qw, 'choices 必須是 4 個選項'); continue; }
+        if (new Set(q.choices).size !== 4) err(qw, '選項有重複');
+        if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer > 3) err(qw, 'answer 必須是 0 到 3');
+        if (q.type === 'cloze' && (q.q.split('____').length !== 2 || !q.zh)) err(qw, '挖空題要剛好一個 ____，並附中譯 zh');
+        n++;
+      }
+    }
+    if (!errors.length) console.log(`總複習 ${file}：${d.groups.length} 組、${n} 題。`);
+  }
+}
+
 warnings.forEach(w => console.log(w));
 if (errors.length) {
   errors.forEach(e => console.log(e));

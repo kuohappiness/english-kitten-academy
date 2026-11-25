@@ -1,0 +1,2281 @@
+{
+ "id": "review-unit01-03",
+ "title": "Unit 1–3 總複習",
+ "subtitle": "每個單字 2 題：課本例句挖空＋進階題",
+ "groups": [
+  {
+   "id": "g1",
+   "title": "第 1 組",
+   "questions": [
+    {
+     "id": "u02-hand-c",
+     "unit": 2,
+     "word": "hand",
+     "type": "cloze",
+     "q": "Greg walked up to the manager and shook his ____.",
+     "choices": [
+      "hand",
+      "bed",
+      "sea",
+      "story"
+     ],
+     "answer": 0,
+     "zh": "葛瑞格走向經理並和他握手。",
+     "explain": "hand：n. 手 & vt. 遞給"
+    },
+    {
+     "id": "u02-high-a",
+     "unit": 2,
+     "word": "high",
+     "type": "advanced",
+     "q": "The price of this car is too ____ for me.",
+     "choices": [
+      "high",
+      "tall",
+      "long",
+      "big"
+     ],
+     "answer": 0,
+     "explain": "說價格高要用 high（price is high），不用 tall、big 或 long。"
+    },
+    {
+     "id": "u02-doll-c",
+     "unit": 2,
+     "word": "doll",
+     "type": "cloze",
+     "q": "Alice loves to play with her ____.",
+     "choices": [
+      "dolls",
+      "trees",
+      "doors",
+      "desks"
+     ],
+     "answer": 0,
+     "zh": "艾莉絲喜歡玩她的玩偶。",
+     "explain": "doll：n. 玩偶，洋娃娃"
+    },
+    {
+     "id": "u03-big-a",
+     "unit": 3,
+     "word": "big",
+     "type": "advanced",
+     "q": "下列哪一句的 big 是「年長的」意思？",
+     "choices": [
+      "My big sister is in college now.",
+      "That's a big house.",
+      "Today is a big day for me.",
+      "Elephants are very big animals."
+     ],
+     "answer": 0,
+     "explain": "big sister / big brother＝姊姊／哥哥，big 在這裡是「年長的」。a big day 的 big 是「重要的」。"
+    },
+    {
+     "id": "u02-sky-a",
+     "unit": 2,
+     "word": "sky",
+     "type": "advanced",
+     "q": "Look! There are many stars ____ the sky.",
+     "choices": [
+      "in",
+      "on",
+      "at",
+      "under"
+     ],
+     "answer": 0,
+     "explain": "in the sky＝在天空中，介系詞用 in。"
+    },
+    {
+     "id": "u01-bad-c",
+     "unit": 1,
+     "word": "bad",
+     "type": "cloze",
+     "q": "The rain has had a very ____ effect on the crops.",
+     "choices": [
+      "bad",
+      "busy",
+      "next",
+      "open"
+     ],
+     "answer": 0,
+     "zh": "那場雨對農作物造成了不好的影響。",
+     "explain": "bad：a. 壞的，不好的；很差的；餿掉的"
+    },
+    {
+     "id": "u03-desk-c",
+     "unit": 3,
+     "word": "desk",
+     "type": "cloze",
+     "q": "This wooden ____ is quite beautiful.",
+     "choices": [
+      "desk",
+      "sea",
+      "sun",
+      "sky"
+     ],
+     "answer": 0,
+     "zh": "這張木桌相當漂亮。",
+     "explain": "desk：n. 桌子(尤指附抽屜的書桌、辦公桌等)"
+    },
+    {
+     "id": "u02-bed-a",
+     "unit": 2,
+     "word": "bed",
+     "type": "advanced",
+     "q": "It's late. It's time to go to ____.",
+     "choices": [
+      "bed",
+      "the bed",
+      "a bed",
+      "beds"
+     ],
+     "answer": 0,
+     "explain": "go to bed＝上床睡覺，bed 前面不加冠詞。"
+    },
+    {
+     "id": "u02-hard-c",
+     "unit": 2,
+     "word": "hard",
+     "type": "cloze",
+     "q": "This bed is too ____. I like a soft one.",
+     "choices": [
+      "hard",
+      "busy",
+      "next",
+      "also"
+     ],
+     "answer": 0,
+     "zh": "這張床太硬了。我喜歡軟床。",
+     "explain": "hard：a. 硬的；難的 & adv. 努力地；猛烈地"
+    },
+    {
+     "id": "u03-rain-c",
+     "unit": 3,
+     "word": "rain",
+     "type": "cloze",
+     "q": "Taipei is a good city, but it gets a lot of ____.",
+     "choices": [
+      "rain",
+      "pen",
+      "desk",
+      "boss"
+     ],
+     "answer": 0,
+     "zh": "臺北是個好城市，但很常下雨。",
+     "explain": "rain：n. 雨；雨季 & vi. 下雨"
+    },
+    {
+     "id": "u01-dance-c",
+     "unit": 1,
+     "word": "dance",
+     "type": "cloze",
+     "q": "There are many different ____, such as the twist.",
+     "choices": [
+      "dances",
+      "cows",
+      "trees",
+      "cars"
+     ],
+     "answer": 0,
+     "zh": "有許多不同種類的舞蹈，例如扭扭舞。",
+     "explain": "dance：n. 舞蹈；跳舞；舞會 & vi. & vt. 跳舞"
+    },
+    {
+     "id": "u03-insect-a",
+     "unit": 3,
+     "word": "insect",
+     "type": "advanced",
+     "q": "How many legs does an insect have?",
+     "choices": [
+      "six",
+      "eight",
+      "four",
+      "two"
+     ],
+     "answer": 0,
+     "explain": "昆蟲（insect）有六隻腳；蜘蛛有八隻腳，所以不是昆蟲。"
+    },
+    {
+     "id": "u01-enough-c",
+     "unit": 1,
+     "word": "enough",
+     "type": "cloze",
+     "q": "Yesterday, it was hot ____ to fry an egg on the street.",
+     "choices": [
+      "enough",
+      "also",
+      "now",
+      "only"
+     ],
+     "answer": 0,
+     "zh": "昨天的天氣夠熱到能在街上煎蛋了。",
+     "explain": "enough：adv. 足夠地；很 & a. 足夠的 & pron. 足夠"
+    },
+    {
+     "id": "u01-pig-c",
+     "unit": 1,
+     "word": "pig",
+     "type": "cloze",
+     "q": "In fact, ____ are very clever and like to be clean.",
+     "choices": [
+      "pigs",
+      "cups",
+      "beans",
+      "desks"
+     ],
+     "answer": 0,
+     "zh": "事實上，豬很聰明，也愛乾淨。",
+     "explain": "pig：n. 豬"
+    },
+    {
+     "id": "u02-story-a",
+     "unit": 2,
+     "word": "story",
+     "type": "advanced",
+     "q": "下列哪一句的 story 是「(建築物的)層」的意思？",
+     "choices": [
+      "The building has fifty stories.",
+      "Grandma told us a funny story.",
+      "This movie is based on a true story.",
+      "I read an interesting story in the newspaper."
+     ],
+     "answer": 0,
+     "explain": "story 也可指建築物的樓層，複數為 stories。"
+    },
+    {
+     "id": "u02-tea-c",
+     "unit": 2,
+     "word": "tea",
+     "type": "cloze",
+     "q": "Monica read the newspaper while drinking a cup of ____.",
+     "choices": [
+      "tea",
+      "belt",
+      "door",
+      "bee"
+     ],
+     "answer": 0,
+     "zh": "莫妮卡邊讀報紙邊喝一杯茶。",
+     "explain": "tea：n. 茶(飲)；茶葉"
+    },
+    {
+     "id": "u03-only-a",
+     "unit": 3,
+     "word": "only",
+     "type": "advanced",
+     "q": "Mary is an ____ child. She has no brothers or sisters.",
+     "choices": [
+      "only",
+      "also",
+      "alone",
+      "own"
+     ],
+     "answer": 0,
+     "explain": "only 當形容詞＝唯一的，an only child＝獨生子女。"
+    },
+    {
+     "id": "u01-long-a",
+     "unit": 1,
+     "word": "long",
+     "type": "advanced",
+     "q": "After living abroad for ten years, Amy ____ for home.",
+     "choices": [
+      "longs",
+      "says",
+      "buys",
+      "makes"
+     ],
+     "answer": 0,
+     "explain": "long 當動詞＝渴望，long for…＝渴望……。Amy longs for home＝艾咪很想家。"
+    },
+    {
+     "id": "u02-want-a",
+     "unit": 2,
+     "word": "want",
+     "type": "advanced",
+     "q": "I want ____ a new bike.",
+     "choices": [
+      "to buy",
+      "buying",
+      "buy",
+      "bought"
+     ],
+     "answer": 0,
+     "explain": "want + to V＝想要做某事。"
+    },
+    {
+     "id": "u01-bag-c",
+     "unit": 1,
+     "word": "bag",
+     "type": "cloze",
+     "q": "Josephine brought a shopping ____ with her to the supermarket.",
+     "choices": [
+      "bag",
+      "nose",
+      "duck",
+      "city"
+     ],
+     "answer": 0,
+     "zh": "喬瑟芬帶了一個購物袋去超市。",
+     "explain": "bag：n. 袋子，提袋"
+    },
+    {
+     "id": "u03-get-a",
+     "unit": 3,
+     "word": "get",
+     "type": "advanced",
+     "q": "It's getting ____. Let's go home.",
+     "choices": [
+      "dark",
+      "darkly",
+      "darkness",
+      "darken"
+     ],
+     "answer": 0,
+     "explain": "get + 形容詞＝變得……；It's getting dark＝天快黑了。"
+    }
+   ]
+  },
+  {
+   "id": "g2",
+   "title": "第 2 組",
+   "questions": [
+    {
+     "id": "u03-hen-a",
+     "unit": 3,
+     "word": "hen",
+     "type": "advanced",
+     "q": "Our ____ lays an egg almost every day.",
+     "choices": [
+      "hen",
+      "cow",
+      "pig",
+      "dog"
+     ],
+     "answer": 0,
+     "explain": "hen＝母雞，會下蛋（lay eggs）。"
+    },
+    {
+     "id": "u02-boss-c",
+     "unit": 2,
+     "word": "boss",
+     "type": "cloze",
+     "q": "My ____ is in a meeting right now. Could you leave a message?",
+     "choices": [
+      "boss",
+      "desk",
+      "tree",
+      "cup"
+     ],
+     "answer": 0,
+     "zh": "我老闆正在開會。您可以留言嗎？",
+     "explain": "boss：n. 老闆，上司 & vt. 使喚，發號施令"
+    },
+    {
+     "id": "u03-cute-a",
+     "unit": 3,
+     "word": "cute",
+     "type": "advanced",
+     "q": "下列哪一個字的意思和 cute 最接近？",
+     "choices": [
+      "lovely",
+      "ugly",
+      "busy",
+      "hard"
+     ],
+     "answer": 0,
+     "explain": "cute＝可愛的，lovely 也是「可愛的、討人喜歡的」；ugly 是「醜的」。"
+    },
+    {
+     "id": "u01-cake-a",
+     "unit": 1,
+     "word": "cake",
+     "type": "advanced",
+     "q": "Don't worry about the test. It's a piece of ____!",
+     "choices": [
+      "cake",
+      "bag",
+      "nose",
+      "city"
+     ],
+     "answer": 0,
+     "explain": "a piece of cake＝小事一樁、很簡單。"
+    },
+    {
+     "id": "u02-make-c",
+     "unit": 2,
+     "word": "make",
+     "type": "cloze",
+     "q": "Jason ____ a coffee table out of wood.",
+     "choices": [
+      "made",
+      "said",
+      "went",
+      "stopped"
+     ],
+     "answer": 0,
+     "zh": "傑森用木頭做了一張咖啡桌。",
+     "explain": "make：vt. 做，製作；使得；趕到，到達"
+    },
+    {
+     "id": "u01-smile-c",
+     "unit": 1,
+     "word": "smile",
+     "type": "cloze",
+     "q": "Claire always wears a ____.",
+     "choices": [
+      "smile",
+      "cake",
+      "city",
+      "tree"
+     ],
+     "answer": 0,
+     "zh": "克萊兒總是面帶微笑。",
+     "explain": "smile：n. & vi. 微笑"
+    },
+    {
+     "id": "u03-door-a",
+     "unit": 3,
+     "word": "door",
+     "type": "advanced",
+     "q": "Our neighbor Mr. Wang lives next ____.",
+     "choices": [
+      "door",
+      "desk",
+      "bed",
+      "car"
+     ],
+     "answer": 0,
+     "explain": "live next door＝住在隔壁。"
+    },
+    {
+     "id": "u03-rain-a",
+     "unit": 3,
+     "word": "rain",
+     "type": "advanced",
+     "q": "It's a ____ day. Don't forget your umbrella.",
+     "choices": [
+      "rainy",
+      "rain",
+      "raining",
+      "rained"
+     ],
+     "answer": 0,
+     "explain": "修飾名詞 day 要用形容詞 rainy（下雨的）。"
+    },
+    {
+     "id": "u01-duck-c",
+     "unit": 1,
+     "word": "duck",
+     "type": "cloze",
+     "q": "____ were swimming peacefully in the pond.",
+     "choices": [
+      "Ducks",
+      "Cakes",
+      "Books",
+      "Desks"
+     ],
+     "answer": 0,
+     "zh": "鴨子在池塘裡悠閒地划著水。",
+     "explain": "duck：n. 鴨子 & vt. & vi. (突然)低頭/彎腰"
+    },
+    {
+     "id": "u02-sea-c",
+     "unit": 2,
+     "word": "sea",
+     "type": "cloze",
+     "q": "Adam sat by the ____ to watch the sunset.",
+     "choices": [
+      "sea",
+      "milk",
+      "tea",
+      "love"
+     ],
+     "answer": 0,
+     "zh": "亞當坐在海邊觀賞日落。",
+     "explain": "sea：n. 海"
+    },
+    {
+     "id": "u01-arm-c",
+     "unit": 1,
+     "word": "arm",
+     "type": "cloze",
+     "q": "There is a cut on my ____.",
+     "choices": [
+      "arm",
+      "game",
+      "city",
+      "tea"
+     ],
+     "answer": 0,
+     "zh": "我的手臂上有一道傷口。",
+     "explain": "arm：n. 手臂 & vt. 使武裝"
+    },
+    {
+     "id": "u01-go-a",
+     "unit": 1,
+     "word": "go",
+     "type": "advanced",
+     "q": "Don't call Julia now. She has already ____ to bed.",
+     "choices": [
+      "gone",
+      "go",
+      "went",
+      "going"
+     ],
+     "answer": 0,
+     "explain": "has already + 過去分詞（現在完成式）；go 的三態是 go – went – gone。"
+    },
+    {
+     "id": "u03-tree-a",
+     "unit": 3,
+     "word": "tree",
+     "type": "advanced",
+     "q": "A ____ is a large plant with a trunk, branches, and leaves.",
+     "choices": [
+      "tree",
+      "fruit",
+      "bean",
+      "insect"
+     ],
+     "answer": 0,
+     "explain": "有樹幹（trunk）、樹枝（branches）、樹葉（leaves）的大型植物是 tree。"
+    },
+    {
+     "id": "u03-now-a",
+     "unit": 3,
+     "word": "now",
+     "type": "advanced",
+     "q": "From ____ on, I will get up early every day.",
+     "choices": [
+      "now",
+      "then",
+      "yesterday",
+      "before"
+     ],
+     "answer": 0,
+     "explain": "from now on＝從現在起；from then on 是「從那時起」，用在過去的事。"
+    },
+    {
+     "id": "u02-belt-a",
+     "unit": 2,
+     "word": "belt",
+     "type": "advanced",
+     "q": "Please fasten your seat ____ before the car starts.",
+     "choices": [
+      "belt",
+      "shoe",
+      "bag",
+      "desk"
+     ],
+     "answer": 0,
+     "explain": "seat belt＝安全帶。"
+    },
+    {
+     "id": "u01-pig-a",
+     "unit": 1,
+     "word": "pig",
+     "type": "advanced",
+     "q": "Tom ate like a ____ at the party and finished three plates of food.",
+     "choices": [
+      "pig",
+      "bag",
+      "book",
+      "city"
+     ],
+     "answer": 0,
+     "explain": "eat like a pig＝吃得很多、狼吞虎嚥。"
+    },
+    {
+     "id": "u03-fruit-c",
+     "unit": 3,
+     "word": "fruit",
+     "type": "cloze",
+     "q": "It's important that you eat ____ and vegetables every day.",
+     "choices": [
+      "fruit",
+      "door",
+      "car",
+      "pen"
+     ],
+     "answer": 0,
+     "zh": "每天吃蔬果是很重要的。",
+     "explain": "fruit：n. 水果"
+    },
+    {
+     "id": "u03-cup-a",
+     "unit": 3,
+     "word": "cup",
+     "type": "advanced",
+     "q": "Would you like a ____ of coffee?",
+     "choices": [
+      "cup",
+      "piece",
+      "slice",
+      "loaf"
+     ],
+     "answer": 0,
+     "explain": "a cup of coffee／tea＝一杯咖啡／茶；piece、slice、loaf 用於麵包、蛋糕等。"
+    },
+    {
+     "id": "u02-story-c",
+     "unit": 2,
+     "word": "story",
+     "type": "cloze",
+     "q": "This TV series is based on a true ____.",
+     "choices": [
+      "story",
+      "cup",
+      "bee",
+      "hen"
+     ],
+     "answer": 0,
+     "zh": "這部電視影集是根據一則真實故事。",
+     "explain": "story：n. 故事；新聞報導；(建築物的)層"
+    },
+    {
+     "id": "u02-high-c",
+     "unit": 2,
+     "word": "high",
+     "type": "cloze",
+     "q": "New York City has many ____ buildings.",
+     "choices": [
+      "high",
+      "busy",
+      "enough",
+      "also"
+     ],
+     "answer": 0,
+     "zh": "紐約市有很多高樓。",
+     "explain": "high：a. 高的 & adv.(很)高地 & n. 高峰"
+    },
+    {
+     "id": "u01-man-c",
+     "unit": 1,
+     "word": "man",
+     "type": "cloze",
+     "q": "Everyone agrees that Liam is a nice ____.",
+     "choices": [
+      "man",
+      "city",
+      "bag",
+      "nose"
+     ],
+     "answer": 0,
+     "zh": "大家都同意連恩是個好男人。",
+     "explain": "man：n.(成年)男子；人；人類 & vt. 看管，操作"
+    }
+   ]
+  },
+  {
+   "id": "g3",
+   "title": "第 3 組",
+   "questions": [
+    {
+     "id": "u03-dog-a",
+     "unit": 3,
+     "word": "dog",
+     "type": "advanced",
+     "q": "It's raining cats and ____. Take an umbrella!",
+     "choices": [
+      "dogs",
+      "pigs",
+      "cows",
+      "ducks"
+     ],
+     "answer": 0,
+     "explain": "rain cats and dogs＝下傾盆大雨。"
+    },
+    {
+     "id": "u03-love-a",
+     "unit": 3,
+     "word": "love",
+     "type": "advanced",
+     "q": "Vicky loves ____ in the rain.",
+     "choices": [
+      "walking",
+      "walk",
+      "walks",
+      "walked"
+     ],
+     "answer": 0,
+     "explain": "love + V-ing（或 to V）＝喜愛做某事。"
+    },
+    {
+     "id": "u03-tree-c",
+     "unit": 3,
+     "word": "tree",
+     "type": "cloze",
+     "q": "There were many large oak ____ in Mason's backyard.",
+     "choices": [
+      "trees",
+      "cows",
+      "skies",
+      "smiles"
+     ],
+     "answer": 0,
+     "zh": "梅森家的後院有很多大橡樹。",
+     "explain": "tree：n. 樹(木)"
+    },
+    {
+     "id": "u02-stop-c",
+     "unit": 2,
+     "word": "stop",
+     "type": "cloze",
+     "q": "Gavin ____ to talk to me.",
+     "choices": [
+      "stopped",
+      "bought",
+      "said",
+      "made"
+     ],
+     "answer": 0,
+     "zh": "蓋文停下來跟我說話。",
+     "explain": "stop：vt. & vi. & n. 停止 & vt. 阻止 & vi.(短暫)逗留 & n. 站牌"
+    },
+    {
+     "id": "u02-sky-c",
+     "unit": 2,
+     "word": "sky",
+     "type": "cloze",
+     "q": "The sun shone brightly in the ____ on the hot summer's day.",
+     "choices": [
+      "sky",
+      "bag",
+      "nose",
+      "pen"
+     ],
+     "answer": 0,
+     "zh": "太陽在炎熱的夏天高掛空中閃耀。",
+     "explain": "sky：n. 天空"
+    },
+    {
+     "id": "u03-car-c",
+     "unit": 3,
+     "word": "car",
+     "type": "cloze",
+     "q": "Oscar waited for the ____ to pass by before crossing the street.",
+     "choices": [
+      "cars",
+      "beans",
+      "desks",
+      "cups"
+     ],
+     "answer": 0,
+     "zh": "奧斯卡等車子都開過了才穿過街道。",
+     "explain": "car：n. 汽車"
+    },
+    {
+     "id": "u02-foot-a",
+     "unit": 2,
+     "word": "foot",
+     "type": "advanced",
+     "q": "I didn't take the bus today. I came to school on ____.",
+     "choices": [
+      "foot",
+      "feet",
+      "hands",
+      "shoe"
+     ],
+     "answer": 0,
+     "explain": "on foot＝步行，固定用單數 foot。"
+    },
+    {
+     "id": "u02-reason-c",
+     "unit": 2,
+     "word": "reason",
+     "type": "cloze",
+     "q": "I don't know the ____ for my girlfriend's anger.",
+     "choices": [
+      "reason",
+      "tea",
+      "sky",
+      "bean"
+     ],
+     "answer": 0,
+     "zh": "我不知道我女友生氣的原因。",
+     "explain": "reason：n. 原因，理由 & vt. & vi. 推論，推理"
+    },
+    {
+     "id": "u02-sun-a",
+     "unit": 2,
+     "word": "sun",
+     "type": "advanced",
+     "q": "The cat is ____ itself by the window.",
+     "choices": [
+      "sunning",
+      "sunny",
+      "sun",
+      "suns"
+     ],
+     "answer": 0,
+     "explain": "sun 當動詞＝晒太陽；be 動詞 + V-ing 是進行式，sun → sunning 要重複 n。"
+    },
+    {
+     "id": "u02-belt-c",
+     "unit": 2,
+     "word": "belt",
+     "type": "cloze",
+     "q": "These pants are too big. I need to wear a ____.",
+     "choices": [
+      "belt",
+      "cake",
+      "tree",
+      "duck"
+     ],
+     "answer": 0,
+     "zh": "這條褲子太大了。我得繫皮帶。",
+     "explain": "belt：n. 腰帶，皮帶"
+    },
+    {
+     "id": "u03-pen-a",
+     "unit": 3,
+     "word": "pen",
+     "type": "advanced",
+     "q": "下列哪一句的 pen 是動詞「寫」的意思？",
+     "choices": [
+      "The writer penned a letter to his fans.",
+      "Can I borrow your pen?",
+      "This pen doesn't work.",
+      "I lost my red pen."
+     ],
+     "answer": 0,
+     "explain": "pen 當動詞＝寫；penned 是過去式。"
+    },
+    {
+     "id": "u01-long-c",
+     "unit": 1,
+     "word": "long",
+     "type": "cloze",
+     "q": "Josh saw a ____ movie yesterday.",
+     "choices": [
+      "long",
+      "busy",
+      "also",
+      "enough"
+     ],
+     "answer": 0,
+     "zh": "喬許昨天看了一部很長的電影。",
+     "explain": "long：a. 長的 & adv. 長地；整個地 & vi. 渴望"
+    },
+    {
+     "id": "u01-open-a",
+     "unit": 1,
+     "word": "open",
+     "type": "advanced",
+     "q": "The bank doesn't ____ on Sundays.",
+     "choices": [
+      "open",
+      "opens",
+      "opened",
+      "opening"
+     ],
+     "answer": 0,
+     "explain": "doesn't 後面接原形動詞；open 在這裡是「營業」。"
+    },
+    {
+     "id": "u01-bad-a",
+     "unit": 1,
+     "word": "bad",
+     "type": "advanced",
+     "q": "My cold is getting ____ and ____.",
+     "choices": [
+      "worse and worse",
+      "badder and badder",
+      "more bad and more bad",
+      "worst and worst"
+     ],
+     "answer": 0,
+     "explain": "bad 的比較級是 worse、最高級是 worst；比較級 and 比較級＝越來越……。"
+    },
+    {
+     "id": "u02-shoe-a",
+     "unit": 2,
+     "word": "shoe",
+     "type": "advanced",
+     "q": "I bought a new pair of ____ yesterday.",
+     "choices": [
+      "shoes",
+      "shoe",
+      "belt",
+      "bag"
+     ],
+     "answer": 0,
+     "explain": "a pair of + 複數名詞：a pair of shoes＝一雙鞋。"
+    },
+    {
+     "id": "u02-boss-a",
+     "unit": 2,
+     "word": "boss",
+     "type": "advanced",
+     "q": "Stop ____ me around! You're not my boss.",
+     "choices": [
+      "bossing",
+      "boss",
+      "bossed",
+      "bosses"
+     ],
+     "answer": 0,
+     "explain": "boss sb around＝對某人發號施令；stop + V-ing＝停止做某事。"
+    },
+    {
+     "id": "u01-boy-c",
+     "unit": 1,
+     "word": "boy",
+     "type": "cloze",
+     "q": "Karen thought the ____ was rude for yelling at her.",
+     "choices": [
+      "boy",
+      "cake",
+      "bag",
+      "book"
+     ],
+     "answer": 0,
+     "zh": "凱倫覺得那位男孩對她大吼很無禮。",
+     "explain": "boy：n. 男孩；兒子"
+    },
+    {
+     "id": "u01-bag-a",
+     "unit": 1,
+     "word": "bag",
+     "type": "advanced",
+     "q": "Tom ate a whole ____ of potato chips while watching the game.",
+     "choices": [
+      "bag",
+      "book",
+      "city",
+      "arm"
+     ],
+     "answer": 0,
+     "explain": "a bag of potato chips＝一包洋芋片，bag 可當量詞「一袋、一包」。"
+    },
+    {
+     "id": "u02-sea-a",
+     "unit": 2,
+     "word": "sea",
+     "type": "advanced",
+     "q": "These goods were sent to Japan by ____.",
+     "choices": [
+      "sea",
+      "the sea",
+      "a sea",
+      "seas"
+     ],
+     "answer": 0,
+     "explain": "by sea＝經由海運，固定不加冠詞。"
+    },
+    {
+     "id": "u01-cake-c",
+     "unit": 1,
+     "word": "cake",
+     "type": "cloze",
+     "q": "Tony bought a big chocolate birthday ____ for his girlfriend.",
+     "choices": [
+      "cake",
+      "arm",
+      "city",
+      "head"
+     ],
+     "answer": 0,
+     "zh": "東尼買了一個巧克力口味的大生日蛋糕給他女友。",
+     "explain": "cake：n.(一整個)蛋糕"
+    },
+    {
+     "id": "u02-bean-c",
+     "unit": 2,
+     "word": "bean",
+     "type": "cloze",
+     "q": "I hate to eat ____.",
+     "choices": [
+      "beans",
+      "shoes",
+      "desks",
+      "cars"
+     ],
+     "answer": 0,
+     "zh": "我討厭吃豆子。",
+     "explain": "bean：n. 豆子"
+    }
+   ]
+  },
+  {
+   "id": "g4",
+   "title": "第 4 組",
+   "questions": [
+    {
+     "id": "u03-cute-c",
+     "unit": 3,
+     "word": "cute",
+     "type": "cloze",
+     "q": "Glenda saw a ____ dress and bought it.",
+     "choices": [
+      "cute",
+      "also",
+      "enough",
+      "now"
+     ],
+     "answer": 0,
+     "zh": "葛蘭達看到一件可愛的洋裝並買了下來。",
+     "explain": "cute：a. 可愛的"
+    },
+    {
+     "id": "u02-shoe-c",
+     "unit": 2,
+     "word": "shoe",
+     "type": "cloze",
+     "q": "When Bill is not working, he likes to wear running ____.",
+     "choices": [
+      "shoes",
+      "beans",
+      "trees",
+      "doors"
+     ],
+     "answer": 0,
+     "zh": "比爾沒上班時喜歡穿跑步鞋。",
+     "explain": "shoe：n.(一隻)鞋子"
+    },
+    {
+     "id": "u01-head-a",
+     "unit": 1,
+     "word": "head",
+     "type": "advanced",
+     "q": "After school, the students ____ for the park.",
+     "choices": [
+      "headed",
+      "bought",
+      "said",
+      "smiled"
+     ],
+     "answer": 0,
+     "explain": "head 當動詞＝前往，head for…＝前往……。"
+    },
+    {
+     "id": "u03-bee-c",
+     "unit": 3,
+     "word": "bee",
+     "type": "cloze",
+     "q": "Ian got scared when he saw some ____ flying near his head.",
+     "choices": [
+      "bees",
+      "cups",
+      "cakes",
+      "desks"
+     ],
+     "answer": 0,
+     "zh": "伊恩看到有些蜜蜂在他頭附近飛時嚇壞了。",
+     "explain": "bee：n. 蜜蜂"
+    },
+    {
+     "id": "u03-say-c",
+     "unit": 3,
+     "word": "say",
+     "type": "cloze",
+     "q": "Gordon finds it difficult to ____ how he feels.",
+     "choices": [
+      "say",
+      "buy",
+      "smile",
+      "go"
+     ],
+     "answer": 0,
+     "zh": "高登覺得很難把他的感受說出來。",
+     "explain": "say：vt. 說，講；(肯定地)表明/表達"
+    },
+    {
+     "id": "u02-hand-a",
+     "unit": 2,
+     "word": "hand",
+     "type": "advanced",
+     "q": "Could you ____ me the salt, please?",
+     "choices": [
+      "hand",
+      "foot",
+      "head",
+      "arm"
+     ],
+     "answer": 0,
+     "explain": "hand 當動詞＝遞給。hand sb sth＝把某物遞給某人。"
+    },
+    {
+     "id": "u02-milk-c",
+     "unit": 2,
+     "word": "milk",
+     "type": "cloze",
+     "q": "I'd like to add some ____ to my coffee.",
+     "choices": [
+      "milk",
+      "sky",
+      "sun",
+      "door"
+     ],
+     "answer": 0,
+     "zh": "我想在咖啡裡加點牛奶。",
+     "explain": "milk：n. 牛奶(不可數) & vt. 擠奶"
+    },
+    {
+     "id": "u03-insect-c",
+     "unit": 3,
+     "word": "insect",
+     "type": "cloze",
+     "q": "Spiders feed on small ____.",
+     "choices": [
+      "insects",
+      "cars",
+      "desks",
+      "doors"
+     ],
+     "answer": 0,
+     "zh": "蜘蛛捕食小昆蟲維生。",
+     "explain": "insect：n. 昆蟲"
+    },
+    {
+     "id": "u03-love-c",
+     "unit": 3,
+     "word": "love",
+     "type": "cloze",
+     "q": "Vicky's ____ for her husband grew over the years.",
+     "choices": [
+      "love",
+      "desk",
+      "bean",
+      "sea"
+     ],
+     "answer": 0,
+     "zh": "多年來，薇琪對老公的愛越來越深。",
+     "explain": "love：n. & vt. & vi. 愛，喜愛"
+    },
+    {
+     "id": "u03-only-c",
+     "unit": 3,
+     "word": "only",
+     "type": "cloze",
+     "q": "____ 10 people came to the party, but 50 were invited.",
+     "choices": [
+      "Only",
+      "Also",
+      "Enough",
+      "Hard"
+     ],
+     "answer": 0,
+     "zh": "來參加派對的人只有 10 個，但邀請了 50 個人。",
+     "explain": "only：adv. 只，僅 & a. 唯一的 & conj. 可是，但是"
+    },
+    {
+     "id": "u01-book-a",
+     "unit": 1,
+     "word": "book",
+     "type": "advanced",
+     "q": "下列哪一句的 book 是「預訂」的意思？",
+     "choices": [
+      "I'd like to book a table for two tonight.",
+      "This book is very interesting.",
+      "Tom left his book on the bus.",
+      "She reads a book every week."
+     ],
+     "answer": 0,
+     "explain": "book 當動詞＝預訂。book a table＝訂位。"
+    },
+    {
+     "id": "u01-smile-a",
+     "unit": 1,
+     "word": "smile",
+     "type": "advanced",
+     "q": "The baby smiled ____ me.",
+     "choices": [
+      "at",
+      "on",
+      "in",
+      "of"
+     ],
+     "answer": 0,
+     "explain": "smile at sb＝對某人微笑。"
+    },
+    {
+     "id": "u02-cow-c",
+     "unit": 2,
+     "word": "cow",
+     "type": "cloze",
+     "q": "A herd of ____ is eating grass over there.",
+     "choices": [
+      "cows",
+      "cups",
+      "books",
+      "cars"
+     ],
+     "answer": 0,
+     "zh": "那裡有一群牛正在吃草。",
+     "explain": "cow：n. 乳牛"
+    },
+    {
+     "id": "u01-nose-c",
+     "unit": 1,
+     "word": "nose",
+     "type": "cloze",
+     "q": "Do you have a runny ____?",
+     "choices": [
+      "nose",
+      "bag",
+      "game",
+      "story"
+     ],
+     "answer": 0,
+     "zh": "你流鼻水了嗎？",
+     "explain": "nose：n. 鼻子"
+    },
+    {
+     "id": "u03-door-c",
+     "unit": 3,
+     "word": "door",
+     "type": "cloze",
+     "q": "Ron forgot to close the ____ when he came into the house.",
+     "choices": [
+      "door",
+      "sky",
+      "sun",
+      "cow"
+     ],
+     "answer": 0,
+     "zh": "榮恩進到家裡後忘了關門。",
+     "explain": "door：n. 門；門口"
+    },
+    {
+     "id": "u01-kid-c",
+     "unit": 1,
+     "word": "kid",
+     "type": "cloze",
+     "q": "After her husband left, Addison raised her three ____ alone.",
+     "choices": [
+      "kids",
+      "books",
+      "cakes",
+      "cups"
+     ],
+     "answer": 0,
+     "zh": "自從她先生離開後，艾蒂森獨自撫養 3 個孩子。",
+     "explain": "kid：n. 小孩(口語) & vt. & vi. 開玩笑"
+    },
+    {
+     "id": "u02-movie-a",
+     "unit": 2,
+     "word": "movie",
+     "type": "advanced",
+     "q": "Let's go to the ____ this Saturday.",
+     "choices": [
+      "movies",
+      "moving",
+      "moved",
+      "movie's"
+     ],
+     "answer": 0,
+     "explain": "go to the movies＝去看電影；the movies 指電影院，恆用複數（美式）。"
+    },
+    {
+     "id": "u02-letter-c",
+     "unit": 2,
+     "word": "letter",
+     "type": "cloze",
+     "q": "Because of email, fewer and fewer people write ____ these days.",
+     "choices": [
+      "letters",
+      "cups",
+      "ducks",
+      "trees"
+     ],
+     "answer": 0,
+     "zh": "由於有電子郵件，現在越來越少人寫信了。",
+     "explain": "letter：n. 信；字母"
+    },
+    {
+     "id": "u03-old-a",
+     "unit": 3,
+     "word": "old",
+     "type": "advanced",
+     "q": "My little brother is six ____.",
+     "choices": [
+      "years old",
+      "year old",
+      "years olds",
+      "old years"
+     ],
+     "answer": 0,
+     "explain": "數字 + years old＝……歲；一歲以上 year 用複數，old 不加 s。"
+    },
+    {
+     "id": "u03-hen-c",
+     "unit": 3,
+     "word": "hen",
+     "type": "cloze",
+     "q": "The ____ is surrounded by many chicks.",
+     "choices": [
+      "hen",
+      "cup",
+      "desk",
+      "car"
+     ],
+     "answer": 0,
+     "zh": "這隻母雞被許多隻小雞圍繞。",
+     "explain": "hen：n. 母雞"
+    },
+    {
+     "id": "u03-busy-a",
+     "unit": 3,
+     "word": "busy",
+     "type": "advanced",
+     "q": "George is busy ____ for the test.",
+     "choices": [
+      "studying",
+      "to study",
+      "study",
+      "studied"
+     ],
+     "answer": 0,
+     "explain": "be busy + V-ing＝忙著做某事。"
+    }
+   ]
+  },
+  {
+   "id": "g5",
+   "title": "第 5 組",
+   "questions": [
+    {
+     "id": "u02-crazy-a",
+     "unit": 2,
+     "word": "crazy",
+     "type": "advanced",
+     "q": "Andy is crazy ____ baseball. He watches every game.",
+     "choices": [
+      "about",
+      "of",
+      "at",
+      "on"
+     ],
+     "answer": 0,
+     "explain": "be crazy about…＝對……著迷。"
+    },
+    {
+     "id": "u01-body-a",
+     "unit": 1,
+     "word": "body",
+     "type": "advanced",
+     "q": "Exercise is good for our ____.",
+     "choices": [
+      "bodies",
+      "bodys",
+      "bodyes",
+      "body's"
+     ],
+     "answer": 0,
+     "explain": "子音 + y 結尾的名詞，複數去 y 加 ies：body → bodies。"
+    },
+    {
+     "id": "u01-dance-a",
+     "unit": 1,
+     "word": "dance",
+     "type": "advanced",
+     "q": "Linda enjoys ____ to pop music.",
+     "choices": [
+      "dancing",
+      "dance",
+      "danced",
+      "dances"
+     ],
+     "answer": 0,
+     "explain": "enjoy 後面接動名詞（V-ing）。"
+    },
+    {
+     "id": "u03-car-a",
+     "unit": 3,
+     "word": "car",
+     "type": "advanced",
+     "q": "Please get ____ the car. We're leaving now.",
+     "choices": [
+      "in",
+      "on",
+      "up",
+      "off"
+     ],
+     "answer": 0,
+     "explain": "上汽車（小型車）用 get in the car；get on 用於公車、火車等大型交通工具。"
+    },
+    {
+     "id": "u02-hard-a",
+     "unit": 2,
+     "word": "hard",
+     "type": "advanced",
+     "q": "Jason studies very ____, so he always gets good grades.",
+     "choices": [
+      "hard",
+      "hardly",
+      "hardness",
+      "hards"
+     ],
+     "answer": 0,
+     "explain": "hard 當副詞＝努力地；hardly 是「幾乎不」，意思完全不同。"
+    },
+    {
+     "id": "u01-head-c",
+     "unit": 1,
+     "word": "head",
+     "type": "cloze",
+     "q": "Trevor nodded his ____ while Bart talked to him.",
+     "choices": [
+      "head",
+      "bag",
+      "cake",
+      "game"
+     ],
+     "answer": 0,
+     "zh": "崔佛在巴特和他說話時點頭。",
+     "explain": "head：n. 頭；頭腦；領導人 & vi. 前往 & vt. 率領，主管"
+    },
+    {
+     "id": "u01-enough-a",
+     "unit": 1,
+     "word": "enough",
+     "type": "advanced",
+     "q": "下列哪一句是正確的？",
+     "choices": [
+      "Ken is old enough to drive.",
+      "Ken is enough old to drive.",
+      "Ken is old to enough drive.",
+      "Ken enough is old to drive."
+     ],
+     "answer": 0,
+     "explain": "enough 修飾形容詞時放在形容詞後面：形容詞 + enough + to V。"
+    },
+    {
+     "id": "u02-foot-c",
+     "unit": 2,
+     "word": "foot",
+     "type": "cloze",
+     "q": "Harry's shoes are too small for his ____, so they are uncomfortable.",
+     "choices": [
+      "feet",
+      "beans",
+      "letters",
+      "trees"
+     ],
+     "answer": 0,
+     "zh": "哈利的鞋子對他的腳來說太小了，所以穿起來很不舒服。",
+     "explain": "foot：n.(一隻)腳；英尺 & vt. 支付(帳單、費用等)"
+    },
+    {
+     "id": "u03-big-c",
+     "unit": 3,
+     "word": "big",
+     "type": "cloze",
+     "q": "John's room is not as ____ as his older brother's.",
+     "choices": [
+      "big",
+      "busy",
+      "also",
+      "enough"
+     ],
+     "answer": 0,
+     "zh": "約翰的房間不如他哥哥的房間大。",
+     "explain": "big：a. 大的；年長的；重要的"
+    },
+    {
+     "id": "u01-game-a",
+     "unit": 1,
+     "word": "game",
+     "type": "advanced",
+     "q": "Our school team won the basketball ____ last night.",
+     "choices": [
+      "game",
+      "cake",
+      "letter",
+      "smile"
+     ],
+     "answer": 0,
+     "explain": "game 也有「比賽」的意思，win the game＝贏得比賽。"
+    },
+    {
+     "id": "u03-say-a",
+     "unit": 3,
+     "word": "say",
+     "type": "advanced",
+     "q": "Gordon ____ that he was tired.",
+     "choices": [
+      "said",
+      "told",
+      "spoke",
+      "talked"
+     ],
+     "answer": 0,
+     "explain": "say + that 子句；tell 後面要先接人（told me that…）；speak、talk 不直接接 that 子句。"
+    },
+    {
+     "id": "u02-bean-a",
+     "unit": 2,
+     "word": "bean",
+     "type": "advanced",
+     "q": "Don't spill the ____! The party is a surprise.",
+     "choices": [
+      "beans",
+      "doors",
+      "desks",
+      "cars"
+     ],
+     "answer": 0,
+     "explain": "spill the beans＝洩露祕密。"
+    },
+    {
+     "id": "u03-cup-c",
+     "unit": 3,
+     "word": "cup",
+     "type": "cloze",
+     "q": "Stewart dropped the ____ on the floor, and it broke.",
+     "choices": [
+      "cup",
+      "sky",
+      "sea",
+      "rain"
+     ],
+     "answer": 0,
+     "zh": "史都華把杯子掉在地板上摔破了。",
+     "explain": "cup：n.(尤指附有手柄，用來喝茶、咖啡的)杯子"
+    },
+    {
+     "id": "u03-busy-c",
+     "unit": 3,
+     "word": "busy",
+     "type": "cloze",
+     "q": "George is too ____ to talk to anyone now.",
+     "choices": [
+      "busy",
+      "also",
+      "next",
+      "enough"
+     ],
+     "answer": 0,
+     "zh": "喬治現在很忙，沒有辦法跟其他人講話。",
+     "explain": "busy：a. 忙碌的"
+    },
+    {
+     "id": "u01-man-a",
+     "unit": 1,
+     "word": "man",
+     "type": "advanced",
+     "q": "下列哪一句的 man 是「看管，操作」的意思？",
+     "choices": [
+      "Two guards man the front gate every night.",
+      "Every man has his own dream.",
+      "The old man lives alone in a small house.",
+      "That man over there is my uncle."
+     ],
+     "answer": 0,
+     "explain": "man 當動詞＝看管、操作（崗位）。Two guards man the front gate＝兩名警衛每晚看守前門。"
+    },
+    {
+     "id": "u01-buy-c",
+     "unit": 1,
+     "word": "buy",
+     "type": "cloze",
+     "q": "Lori ____ her mother an expensive purse.",
+     "choices": [
+      "bought",
+      "went",
+      "said",
+      "stopped"
+     ],
+     "answer": 0,
+     "zh": "蘿蕊買了一個昂貴的錢包給她媽媽。",
+     "explain": "buy：vt. & vi. & n. 購買 & vt. 相信"
+    },
+    {
+     "id": "u02-make-a",
+     "unit": 2,
+     "word": "make",
+     "type": "advanced",
+     "q": "The sad movie made Lisa ____.",
+     "choices": [
+      "cry",
+      "to cry",
+      "crying",
+      "cried"
+     ],
+     "answer": 0,
+     "explain": "make + 受詞 + 原形動詞＝使某人做某事。"
+    },
+    {
+     "id": "u03-next-c",
+     "unit": 3,
+     "word": "next",
+     "type": "cloze",
+     "q": "The students will go on a school trip ____ Friday.",
+     "choices": [
+      "next",
+      "busy",
+      "cute",
+      "crazy"
+     ],
+     "answer": 0,
+     "zh": "學生下週五會去校外教學。",
+     "explain": "next：a. 下一個的，緊接著的 & adv. 接下來，然後；下次"
+    },
+    {
+     "id": "u03-pen-c",
+     "unit": 3,
+     "word": "pen",
+     "type": "cloze",
+     "q": "Ginny couldn't find a ____, so she wrote in pencil.",
+     "choices": [
+      "pen",
+      "cow",
+      "hen",
+      "cake"
+     ],
+     "answer": 0,
+     "zh": "金妮找不到筆，所以用鉛筆來寫。",
+     "explain": "pen：n.(用墨水的)筆 & vt. 寫"
+    },
+    {
+     "id": "u02-hot-a",
+     "unit": 2,
+     "word": "hot",
+     "type": "advanced",
+     "q": "下列哪一句的 hot 是「辣的」意思？",
+     "choices": [
+      "This curry is too hot for me. My mouth is on fire!",
+      "It's very hot today. Let's go swimming.",
+      "The water in the pool is too hot.",
+      "Taiwan is hot in July."
+     ],
+     "answer": 0,
+     "explain": "hot 也有「辛辣的」意思；嘴巴像著火一樣，指的是咖哩太辣。"
+    }
+   ]
+  },
+  {
+   "id": "g6",
+   "title": "第 6 組",
+   "questions": [
+    {
+     "id": "u01-also-c",
+     "unit": 1,
+     "word": "also",
+     "type": "cloze",
+     "q": "Sharon is a businesswoman and ____ a mother of three children.",
+     "choices": [
+      "also",
+      "enough",
+      "hard",
+      "high"
+     ],
+     "answer": 0,
+     "zh": "雪倫是女企業家，也是 3 個小孩的母親。",
+     "explain": "also：adv. 也，而且"
+    },
+    {
+     "id": "u02-bed-c",
+     "unit": 2,
+     "word": "bed",
+     "type": "cloze",
+     "q": "Robert found his missing shoe under his ____.",
+     "choices": [
+      "bed",
+      "sky",
+      "sun",
+      "sea"
+     ],
+     "answer": 0,
+     "zh": "羅伯特在床底下找到他不見的鞋子。",
+     "explain": "bed：n. 床"
+    },
+    {
+     "id": "u01-book-c",
+     "unit": 1,
+     "word": "book",
+     "type": "cloze",
+     "q": "I have to hit the ____ tonight, so I can't go to the movies with you.",
+     "choices": [
+      "books",
+      "ducks",
+      "pigs",
+      "beans"
+     ],
+     "answer": 0,
+     "zh": "我今晚必須用功讀書，因此沒辦法跟你去看電影。",
+     "explain": "book：n. 書 & vt. & vi. 預訂"
+    },
+    {
+     "id": "u02-milk-a",
+     "unit": 2,
+     "word": "milk",
+     "type": "advanced",
+     "q": "There isn't ____ milk in the fridge.",
+     "choices": [
+      "much",
+      "many",
+      "a",
+      "few"
+     ],
+     "answer": 0,
+     "explain": "milk 是不可數名詞，要用 much 修飾，不能用 many、a 或 few。"
+    },
+    {
+     "id": "u02-sun-c",
+     "unit": 2,
+     "word": "sun",
+     "type": "cloze",
+     "q": "It was so cloudy that the ____ could not be seen.",
+     "choices": [
+      "sun",
+      "tea",
+      "milk",
+      "game"
+     ],
+     "answer": 0,
+     "zh": "烏雲密布，以致於看不到太陽。",
+     "explain": "sun：n. 太陽；陽光 & vt. & vi. 晒太陽，做日光浴"
+    },
+    {
+     "id": "u03-bicycle-c",
+     "unit": 3,
+     "word": "bicycle",
+     "type": "cloze",
+     "q": "Wendy's father taught her how to ride a ____.",
+     "choices": [
+      "bicycle",
+      "desk",
+      "cup",
+      "letter"
+     ],
+     "answer": 0,
+     "zh": "溫蒂的爸爸教她如何騎腳踏車。",
+     "explain": "bicycle：n. 腳踏車，自行車(= bike)"
+    },
+    {
+     "id": "u03-desk-a",
+     "unit": 3,
+     "word": "desk",
+     "type": "advanced",
+     "q": "Please leave your key at the front ____ when you check out of the hotel.",
+     "choices": [
+      "desk",
+      "bed",
+      "cup",
+      "tree"
+     ],
+     "answer": 0,
+     "explain": "front desk＝（飯店的）櫃檯。"
+    },
+    {
+     "id": "u01-arm-a",
+     "unit": 1,
+     "word": "arm",
+     "type": "advanced",
+     "q": "The police officers were ____ with guns.",
+     "choices": [
+      "armed",
+      "headed",
+      "opened",
+      "bought"
+     ],
+     "answer": 0,
+     "explain": "arm 當動詞＝使武裝，be armed with…＝配備（武器）。"
+    },
+    {
+     "id": "u02-crazy-c",
+     "unit": 2,
+     "word": "crazy",
+     "type": "cloze",
+     "q": "Turn that music down! It's driving me ____!",
+     "choices": [
+      "crazy",
+      "busy",
+      "cute",
+      "old"
+     ],
+     "answer": 0,
+     "zh": "把音樂關掉！它讓我快抓狂了！",
+     "explain": "crazy：a. 瘋狂的；荒唐愚蠢的；著迷的"
+    },
+    {
+     "id": "u02-important-a",
+     "unit": 2,
+     "word": "important",
+     "type": "advanced",
+     "q": "Health is ____ than money.",
+     "choices": [
+      "more important",
+      "importanter",
+      "most important",
+      "as important"
+     ],
+     "answer": 0,
+     "explain": "important 是多音節形容詞，比較級用 more important。"
+    },
+    {
+     "id": "u02-hot-c",
+     "unit": 2,
+     "word": "hot",
+     "type": "cloze",
+     "q": "The weather's been quite ____ recently.",
+     "choices": [
+      "hot",
+      "busy",
+      "cute",
+      "important"
+     ],
+     "answer": 0,
+     "zh": "最近的天氣很熱。",
+     "explain": "hot：a. 熱的；辛辣的；熱門的；暴躁易怒的"
+    },
+    {
+     "id": "u01-go-c",
+     "unit": 1,
+     "word": "go",
+     "type": "cloze",
+     "q": "Julia ____ down the stairs instead of taking the elevator.",
+     "choices": [
+      "went",
+      "bought",
+      "made",
+      "said"
+     ],
+     "answer": 0,
+     "zh": "茱麗亞走下樓梯，而沒有搭電梯。",
+     "explain": "go：vi. 走；去；從事；離開；變成；進行 & n. 嘗試"
+    },
+    {
+     "id": "u02-stop-a",
+     "unit": 2,
+     "word": "stop",
+     "type": "advanced",
+     "q": "The doctor told Mr. Lee to stop ____. It's bad for his health.",
+     "choices": [
+      "smoking",
+      "to smoke",
+      "smoke",
+      "smoked"
+     ],
+     "answer": 0,
+     "explain": "stop + V-ing＝停止做某事；stop + to V 是「停下來去做某事」，意思不同。"
+    },
+    {
+     "id": "u03-next-a",
+     "unit": 3,
+     "word": "next",
+     "type": "advanced",
+     "q": "The bank is ____ to the post office.",
+     "choices": [
+      "next",
+      "beside",
+      "between",
+      "by"
+     ],
+     "answer": 0,
+     "explain": "next to…＝在……旁邊；beside、by 後面不加 to，between 要接兩者。"
+    },
+    {
+     "id": "u01-open-c",
+     "unit": 1,
+     "word": "open",
+     "type": "cloze",
+     "q": "The window is wide ____.",
+     "choices": [
+      "open",
+      "busy",
+      "cute",
+      "old"
+     ],
+     "answer": 0,
+     "zh": "這扇窗戶是敞開著的。",
+     "explain": "open：a. 打開的；營業的 & vt. & vi. 打開；營業；開始"
+    },
+    {
+     "id": "u01-city-c",
+     "unit": 1,
+     "word": "city",
+     "type": "cloze",
+     "q": "There are over three million people living in the ____.",
+     "choices": [
+      "city",
+      "book",
+      "cup",
+      "nose"
+     ],
+     "answer": 0,
+     "zh": "有超過 300 萬人住在這座城市。",
+     "explain": "city：n. 城市"
+    },
+    {
+     "id": "u01-buy-a",
+     "unit": 1,
+     "word": "buy",
+     "type": "advanced",
+     "q": "Tom said he was sick, but I don't ____ his story. I think he's lying.",
+     "choices": [
+      "buy",
+      "go",
+      "smile",
+      "dance"
+     ],
+     "answer": 0,
+     "explain": "buy 口語可當「相信」。I don't buy it＝我才不信。"
+    },
+    {
+     "id": "u02-tea-a",
+     "unit": 2,
+     "word": "tea",
+     "type": "advanced",
+     "q": "Horror movies are not my cup of ____. I prefer comedies.",
+     "choices": [
+      "tea",
+      "milk",
+      "cake",
+      "sea"
+     ],
+     "answer": 0,
+     "explain": "not my cup of tea＝不是我喜歡的類型。"
+    },
+    {
+     "id": "u02-doll-a",
+     "unit": 2,
+     "word": "doll",
+     "type": "advanced",
+     "q": "Mia dressed her ____ in a pink dress and put it to bed.",
+     "choices": [
+      "doll",
+      "desk",
+      "cup",
+      "tree"
+     ],
+     "answer": 0,
+     "explain": "doll＝玩偶、洋娃娃，可以幫它穿衣服、哄它睡覺。"
+    },
+    {
+     "id": "u01-game-c",
+     "unit": 1,
+     "word": "game",
+     "type": "cloze",
+     "q": "Poker is a card ____ that people around the world play.",
+     "choices": [
+      "game",
+      "bed",
+      "sea",
+      "cup"
+     ],
+     "answer": 0,
+     "zh": "撲克牌是一種全世界的人都會玩的紙牌遊戲。",
+     "explain": "game：n. 遊戲；比賽；(比賽中的)一局"
+    }
+   ]
+  },
+  {
+   "id": "g7",
+   "title": "第 7 組",
+   "questions": [
+    {
+     "id": "u03-bicycle-a",
+     "unit": 3,
+     "word": "bicycle",
+     "type": "advanced",
+     "q": "Wendy goes to school ____ bicycle every day.",
+     "choices": [
+      "by",
+      "on",
+      "in",
+      "with"
+     ],
+     "answer": 0,
+     "explain": "by + 交通工具（不加冠詞）＝搭乘／騎……：by bicycle、by car。"
+    },
+    {
+     "id": "u02-important-c",
+     "unit": 2,
+     "word": "important",
+     "type": "cloze",
+     "q": "What the teacher has just said is really ____.",
+     "choices": [
+      "important",
+      "busy",
+      "next",
+      "also"
+     ],
+     "answer": 0,
+     "zh": "老師剛才所說的話真的很重要。",
+     "explain": "important：a. 重要的"
+    },
+    {
+     "id": "u03-bee-a",
+     "unit": 3,
+     "word": "bee",
+     "type": "advanced",
+     "q": "Mom works from morning till night. She's as busy as a ____.",
+     "choices": [
+      "bee",
+      "pig",
+      "cow",
+      "dog"
+     ],
+     "answer": 0,
+     "explain": "as busy as a bee＝像蜜蜂一樣忙碌。"
+    },
+    {
+     "id": "u03-dog-c",
+     "unit": 3,
+     "word": "dog",
+     "type": "cloze",
+     "q": "Suzie enjoys playing with her ____ in the park.",
+     "choices": [
+      "dog",
+      "tea",
+      "milk",
+      "rain"
+     ],
+     "answer": 0,
+     "zh": "蘇西喜歡和她的狗在公園一起玩。",
+     "explain": "dog：n. 狗"
+    },
+    {
+     "id": "u02-movie-c",
+     "unit": 2,
+     "word": "movie",
+     "type": "cloze",
+     "q": "Let's go to a ____ tonight! What would you like to see?",
+     "choices": [
+      "movie",
+      "cup",
+      "bean",
+      "pen"
+     ],
+     "answer": 0,
+     "zh": "我們今晚去看電影吧！你想要看什麼呢？",
+     "explain": "movie：n. 電影，影片；電影院(恆用複數)〔美〕"
+    },
+    {
+     "id": "u01-city-a",
+     "unit": 1,
+     "word": "city",
+     "type": "advanced",
+     "q": "Taipei and Kaohsiung are two big ____ in Taiwan.",
+     "choices": [
+      "cities",
+      "citys",
+      "cityes",
+      "city"
+     ],
+     "answer": 0,
+     "explain": "子音 + y 結尾的名詞，複數去 y 加 ies：city → cities。"
+    },
+    {
+     "id": "u02-letter-a",
+     "unit": 2,
+     "word": "letter",
+     "type": "advanced",
+     "q": "下列哪一句的 letter 是「字母」的意思？",
+     "choices": [
+      "There are 26 letters in the English alphabet.",
+      "I got a letter from my pen pal.",
+      "Please mail this letter for me.",
+      "She wrote a love letter to him."
+     ],
+     "answer": 0,
+     "explain": "letter 除了「信」，也指「字母」；英文字母共 26 個。"
+    },
+    {
+     "id": "u01-also-a",
+     "unit": 1,
+     "word": "also",
+     "type": "advanced",
+     "q": "Sharon is a teacher. She is ____ a singer.",
+     "choices": [
+      "also",
+      "too",
+      "either",
+      "enough"
+     ],
+     "answer": 0,
+     "explain": "also 放在 be 動詞後面；too 放句尾；either 用在否定句。"
+    },
+    {
+     "id": "u01-duck-a",
+     "unit": 1,
+     "word": "duck",
+     "type": "advanced",
+     "q": "Kevin ____ when the ball flew toward his head.",
+     "choices": [
+      "ducked",
+      "bought",
+      "wanted",
+      "made"
+     ],
+     "answer": 0,
+     "explain": "duck 當動詞＝突然低頭／彎腰（閃躲）。"
+    },
+    {
+     "id": "u03-get-c",
+     "unit": 3,
+     "word": "get",
+     "type": "cloze",
+     "q": "Nancy ____ a lot of great gifts for her birthday.",
+     "choices": [
+      "got",
+      "went",
+      "stopped",
+      "smiled"
+     ],
+     "answer": 0,
+     "zh": "南希收到一大堆很棒的生日禮物。",
+     "explain": "get：vt. 收到，得到；買到；拿來；感染上；使得；理解 & vi. 到達；變得"
+    },
+    {
+     "id": "u01-nose-a",
+     "unit": 1,
+     "word": "nose",
+     "type": "advanced",
+     "q": "Here's a tissue. You can blow your ____.",
+     "choices": [
+      "nose",
+      "arm",
+      "head",
+      "smile"
+     ],
+     "answer": 0,
+     "explain": "blow one's nose＝擤鼻涕。"
+    },
+    {
+     "id": "u03-old-c",
+     "unit": 3,
+     "word": "old",
+     "type": "cloze",
+     "q": "The ____ man can no longer walk very well.",
+     "choices": [
+      "old",
+      "also",
+      "enough",
+      "now"
+     ],
+     "answer": 0,
+     "zh": "這名老先生已經無法好好走路了。",
+     "explain": "old：a. 年老的；……歲的；老舊的；從前的"
+    },
+    {
+     "id": "u02-want-c",
+     "unit": 2,
+     "word": "want",
+     "type": "cloze",
+     "q": "What do you ____ to do tomorrow?",
+     "choices": [
+      "want",
+      "say",
+      "buy",
+      "smile"
+     ],
+     "answer": 0,
+     "zh": "你明天要做什麼？",
+     "explain": "want：vt. 想要 & n. 需求(常用複數)；缺乏"
+    },
+    {
+     "id": "u01-body-c",
+     "unit": 1,
+     "word": "body",
+     "type": "cloze",
+     "q": "Harriet wasn't happy with her ____, so she decided to lose weight.",
+     "choices": [
+      "body",
+      "tea",
+      "sky",
+      "rain"
+     ],
+     "answer": 0,
+     "zh": "哈莉特不滿意自己的身體，因此決定減重。",
+     "explain": "body：n. 身體"
+    },
+    {
+     "id": "u02-reason-a",
+     "unit": 2,
+     "word": "reason",
+     "type": "advanced",
+     "q": "Tell me the reason ____ you were late.",
+     "choices": [
+      "why",
+      "because",
+      "what",
+      "how"
+     ],
+     "answer": 0,
+     "explain": "the reason why + 子句＝……的原因。"
+    },
+    {
+     "id": "u01-boy-a",
+     "unit": 1,
+     "word": "boy",
+     "type": "advanced",
+     "q": "Mr. and Mrs. Chen have three children: two ____ and a girl.",
+     "choices": [
+      "boys",
+      "men",
+      "dolls",
+      "bees"
+     ],
+     "answer": 0,
+     "explain": "boy 也有「兒子」的意思；children 是小孩，所以是 two boys（兩個兒子）and a girl。"
+    },
+    {
+     "id": "u02-cow-a",
+     "unit": 2,
+     "word": "cow",
+     "type": "advanced",
+     "q": "Most of the milk we drink comes from ____.",
+     "choices": [
+      "cows",
+      "pigs",
+      "hens",
+      "ducks"
+     ],
+     "answer": 0,
+     "explain": "cow＝乳牛，我們喝的牛奶大多來自乳牛。"
+    },
+    {
+     "id": "u01-kid-a",
+     "unit": 1,
+     "word": "kid",
+     "type": "advanced",
+     "q": "You won the lottery? You're ____ me!",
+     "choices": [
+      "kidding",
+      "kid",
+      "kidded",
+      "kids"
+     ],
+     "answer": 0,
+     "explain": "kid 當動詞＝開玩笑；You're kidding (me)!＝你在開玩笑吧！（進行式，kid → kidding 要重複 d）"
+    },
+    {
+     "id": "u03-now-c",
+     "unit": 3,
+     "word": "now",
+     "type": "cloze",
+     "q": "David ____ works at a big company in the US.",
+     "choices": [
+      "now",
+      "enough",
+      "high",
+      "hard"
+     ],
+     "answer": 0,
+     "zh": "大衛現在在美國的一間大公司上班。",
+     "explain": "now：adv. 現在，目前；馬上，立刻 & n. 現在"
+    },
+    {
+     "id": "u03-fruit-a",
+     "unit": 3,
+     "word": "fruit",
+     "type": "advanced",
+     "q": "下列哪一個不是水果？",
+     "choices": [
+      "bean",
+      "apple",
+      "banana",
+      "orange"
+     ],
+     "answer": 0,
+     "explain": "bean 是豆子，不是水果（fruit）。"
+    }
+   ]
+  }
+ ]
+}
