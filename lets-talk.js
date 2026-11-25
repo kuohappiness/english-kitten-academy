@@ -6,10 +6,11 @@
  let lessons = null;
  const css = document.createElement('style');
  css.textContent = `.lt-bank{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;margin:10px 0 16px}
+@media(min-width:700px){.lt-bank{position:sticky;top:0;z-index:2;background:#fffffff2;padding:8px 0;margin:6px 0 10px;box-shadow:0 6px 8px -8px #765c4560}}
 .lt-bank div{background:#fdf6e8;border:2px solid #efdcb6;border-radius:12px;padding:7px 10px;font-weight:800;color:#644f40}.lt-bank b{color:#c0703a;margin-right:8px}
 .lt-text{font-size:18px;line-height:2.3;color:#4b3b31}.lt-line{margin:2px 0}.lt-who{font-weight:900;color:#81675b;margin-right:6px}
 .lt-label{font-weight:900;color:#3d8b74;margin:16px 0 2px}.lt-note{font-style:italic;color:#8d7567;font-weight:400;margin-left:6px}
-.lt-blank{display:inline-flex;align-items:center;gap:3px;white-space:nowrap}.lt-blank em{font-style:normal;font-size:13px;color:#a48b6d;font-weight:900}
+.lt-blank{display:inline-flex;align-items:center;gap:3px;white-space:nowrap;max-width:100%}.lt-blank select{max-width:min(240px,70vw)}.lt-blank em{font-style:normal;font-size:13px;color:#a48b6d;font-weight:900}
 .lt-blank select{padding:3px 6px;border:2px solid #f1d7c0;border-bottom:3px solid #d6a97b;border-radius:9px;background:#fff9e9;color:#674e40;font-weight:900;font-size:16px}
 .lt-blank.ok select{border-color:#39aa73;background:#d9f9e5}.lt-blank.no select{border-color:#e05a6b;background:#ffe5e9}
 .lt-fix{font-size:14px;color:#c52d40;font-weight:900}.lt-exp{font-size:13px;color:#8d7567;font-weight:700}
@@ -89,7 +90,7 @@
    return esc(text).replace(/\{\{(\d+)\}\}/g, (_, num) => {
      const opts = sec.options && sec.options[num]
        ? sec.options[num].map(o => `<option value="${esc(o)}">${esc(o)}</option>`).join('')
-       : sec.bank.map((_, k) => `<option value="${LETTERS[k]}">${LETTERS[k]}</option>`).join('');
+       : sec.bank.map((w, k) => `<option value="${LETTERS[k]}">${LETTERS[k]}  ${esc(w)}</option>`).join('');
      return `<span class="lt-blank" data-num="${num}" data-sec="${esc(sec.id)}"><em>${num}.</em><select aria-label="第 ${num} 格"><option value="">－</option>${opts}</select><span class="lt-fix"></span></span>`;
    });
  }
@@ -97,7 +98,7 @@
    stage = 'lt-sheet'; header();
    const n = blanksOf(l);
    $('app').innerHTML = `<div class="statline"><strong>✍️ ${esc(l.title)} · 學習單</strong><span>共 ${n} 格，每格 ${pts(1, n)} 分</span></div>
-     <p class="smallnote">從每大題上方的單字框選出正確的字母填入空格；「圈選」題直接選正確的形式。每個字母只用一次。</p>
+     <p class="smallnote">點空格就會列出這一大題的所有選項（字母＋單字），不用再往上找單字框；「圈選」題直接選正確的形式。每個字母只用一次。</p>
      ${l.sections.map(sec => `<div class="lt-sec"><h3>${esc(sec.title)}</h3>
        ${sec.chart ? `<div class="lt-chart">${sec.chart.map(([k, v]) => `<div class="lt-bar"><span>${esc(k)}</span><i style="width:${v * 2.5}%"></i>${v}%</div>`).join('')}</div>` : ''}
        <div class="lt-bank">${sec.bank.map((w, k) => `<div><b>${LETTERS[k]}</b>${esc(w)}</div>`).join('')}</div>
