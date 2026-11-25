@@ -1,7 +1,7 @@
 // 大家說英語分頁：題庫在 lessons/letstalk/（例如 lt02-photos.json）
 // 每課有「重點提醒」投影片＋學習單（字母選項填空、圈選題）。成績只存在這台裝置，不影響闖關積分。
 (function(){
- const FILES = ['letstalk/lt02-photos.json'];
+ const FILES = ['letstalk/lt02-photos.json', 'letstalk/lt03-cats.json', 'letstalk/lt04-eyes.json'];
  const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
  let lessons = null;
  const css = document.createElement('style');
@@ -24,8 +24,9 @@
 .lt-stars{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 12px;font-size:14px;font-weight:800;color:#8d7567}
 .lt-star{border:2px solid #f1d7c0;background:#fff;border-radius:20px;padding:5px 10px;font-weight:900;color:#82645a;font-size:13px}.lt-star.on{background:#ffe3c9;border-color:#ffab75;color:#633d24}
 .lt-card{border:2px solid #f3e3d6;border-radius:18px;padding:12px 16px;margin:12px 0}.lt-card h3{margin:4px 0 8px;color:#63493f}.lt-card.done{opacity:.45}
+.lt-table{border-collapse:collapse;margin:8px 0 14px;font-weight:800;color:#644f40;font-size:15px}.lt-table th{background:#ffe3c9;padding:6px 14px}.lt-table td{border-top:1px solid #f2e1d2;padding:5px 14px;text-align:center}
 .lt-dots{display:flex;gap:5px;justify-content:center;margin:14px 0 4px}.lt-dots i{width:9px;height:9px;border-radius:50%;background:#f0e0d2}.lt-dots i.on{background:#ffab75}
-@media(max-width:550px){.lt-text{font-size:16px}.lt-bar span{flex-basis:130px;font-size:12px}}`;
+@media(max-width:550px){.lt-row{flex-direction:column;align-items:stretch}.lt-acts .btn{padding:10px 8px;white-space:nowrap}.lt-text{font-size:16px}.lt-bar span{flex-basis:130px;font-size:12px}}`;
  document.head.appendChild(css);
 
  const storeKey = () => 'kitten-academy-letstalk:' + (db.active || '訪客');
@@ -87,8 +88,8 @@
    if (stage !== 'lt-home') return;
    $('app').innerHTML = `<div class="homecard"><h2>🗣️ 大家說英語</h2><p>每一課先看「重點提醒」並幫每頁標上熟悉度，再寫學習單。標成「普通」「不熟悉」的重點和學習單答錯的題目，會集中到「🔥 考前衝刺」。學習單成績只記在這台裝置上，不影響闖關積分。</p></div>
      ${list.length ? list.map(l => { const b = best[l.id], n = blanksOf(l);
-       return `<div class="lesson-row"><div><strong>${esc(l.title)}</strong><br><small>${esc(l.subtitle || '')} · 學習單 ${n} 格${b ? ` · 最佳 ${pts(b.right, b.n)} 分` : ''}</small></div>
-       <div class="actions" style="margin:0"><button class="btn mint" data-slides="${esc(l.id)}">📖 重點提醒</button><button class="btn primary" data-sheet="${esc(l.id)}">✍️ 學習單</button>${sprintCount(l) ? `<button class="btn secondary" data-sprint="${esc(l.id)}">🔥 考前衝刺（${sprintCount(l)}）</button>` : ''}</div></div>`; }).join('') : '<p class="smallnote">課程準備中。</p>'}
+       return `<div class="lesson-row lt-row"><div><strong>${esc(l.title)}</strong><br><small>${esc(l.subtitle || '')} · 學習單 ${n} 格${b ? ` · 最佳 ${pts(b.right, b.n)} 分` : ''}</small></div>
+       <div class="actions lt-acts" style="margin:0"><button class="btn mint" data-slides="${esc(l.id)}">📖 重點提醒</button><button class="btn primary" data-sheet="${esc(l.id)}">✍️ 學習單</button>${sprintCount(l) ? `<button class="btn secondary" data-sprint="${esc(l.id)}">🔥 考前衝刺（${sprintCount(l)}）</button>` : ''}</div></div>`; }).join('') : '<p class="smallnote">課程準備中。</p>'}
      <p class="smallnote">課文內容出自《大家說英語》（空中英語教室），本站僅供教學練習，請支持正版教材。</p>`;
    const find = id => list.find(l => l.id === id);
    document.querySelectorAll('[data-slides]').forEach(b => b.onclick = () => slides(find(b.dataset.slides), 0));
@@ -145,6 +146,7 @@
      <p class="smallnote">點空格就會列出這一大題的所有選項（字母＋單字），不用再往上找單字框；「圈選」題直接選正確的形式。每個字母只用一次。</p>
      ${l.sections.map(sec => `<div class="lt-sec"><h3>${esc(sec.title)}</h3>
        ${sec.chart ? `<div class="lt-chart">${sec.chart.map(([k, v]) => `<div class="lt-bar"><span>${esc(k)}</span><i style="width:${v * 2.5}%"></i>${v}%</div>`).join('')}</div>` : ''}
+       ${sec.table ? `<div style="overflow-x:auto"><table class="lt-table"><tr>${sec.table.head.map(h => `<th>${esc(h)}</th>`).join('')}</tr>${sec.table.rows.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table></div>` : ''}
        <div class="lt-bank">${sec.bank.map((w, k) => `<div><b>${LETTERS[k]}</b>${esc(w)}</div>`).join('')}</div>
        <div class="lt-text">${sec.lines.map(ln => ln.label
          ? `<div class="lt-label">${esc(ln.label)}${ln.note ? `<span class="lt-note">${esc(ln.note)}</span>` : ''}</div>`
