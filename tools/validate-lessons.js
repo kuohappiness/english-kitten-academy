@@ -93,6 +93,30 @@ if (fs.existsSync(reviewDir)) {
   }
 }
 
+// 大家說英語學習單（lessons/letstalk/*.json，由 lets-talk.js 讀取）
+const ltDir = path.join(dir, 'letstalk');
+if (fs.existsSync(ltDir)) {
+  const L = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  for (const f of fs.readdirSync(ltDir).filter(f => f.endsWith('.json'))) {
+    const file = 'letstalk/' + f, d = readJson(file);
+    if (!d) continue;
+    if (!d.id || !d.title || !Array.isArray(d.sections) || !Array.isArray(d.slides)) { err(file, '需要 id、title、slides、sections'); continue; }
+    const seen = new Set(); let n = 0;
+    for (const sec of d.sections) {
+      const w = `${file} ${sec.id}`, used = new Set();
+      for (const ln of sec.lines || []) for (const m of (ln.text || '').matchAll(/\{\{(\d+)\}\}/g)) {
+        const k = m[1], a = (sec.answers || {})[k], opts = sec.options && sec.options[k];
+        if (seen.has(k)) err(w, `第 ${k} 格編號重複`); seen.add(k); n++;
+        if (!a) err(w, `第 ${k} 格沒有答案`);
+        else if (opts ? !opts.includes(a) : L.indexOf(a) < 0 || L.indexOf(a) >= sec.bank.length) err(w, `第 ${k} 格答案 "${a}" 不在選項內`);
+        else if (!opts) { if (used.has(a)) err(w, `字母 ${a} 用了兩次`); used.add(a); }
+      }
+      for (const k of Object.keys(sec.answers || {})) if (!seen.has(k)) err(w, `答案 ${k} 在文章中找不到 {{${k}}}`);
+    }
+    if (!errors.length) console.log(`大家說英語 ${file}：${d.slides.length} 頁重點提醒、學習單 ${n} 格。`);
+  }
+}
+
 warnings.forEach(w => console.log(w));
 if (errors.length) {
   errors.forEach(e => console.log(e));

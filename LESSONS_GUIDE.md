@@ -103,3 +103,12 @@ node tools/validate-lessons.js
 - 每題：`id`（不可重複）、`type`（`cloze`＝課本例句挖空、`advanced`＝進階題）、`q`（挖空題要剛好一個 `____`）、`choices`（4 個，正確答案放第一個）、`answer: 0`、`explain`；挖空題另加 `zh`（作答後才顯示）
 - 新增一份總複習：放進 `lessons/review/`，並在 `review-quiz.js` 最上面的 `FILES` 加上檔名
 - 組別的 `id` 上線後不要改，否則該組的最佳成績會消失
+
+## 大家說英語學習單（`lessons/letstalk/`）
+
+導覽列的「🗣️ 大家說英語」分頁由 `lets-talk.js` 讀取，每課一個 JSON：
+
+- `slides`：重點提醒投影片，每頁 `title`、`points`（條列）、可選 `examples`（可點播發音）、`tip`
+- `sections`：學習單大題，每題 `bank`（單字框，依序對應 A、B、C…）、`lines`（`label`/`note` 為對話標題，`who` 為說話者，`text` 內用 `{{編號}}` 挖空）、`answers`（編號 → 字母）
+- 圈選題：在 `options` 放該編號的選項陣列，`answers` 填正確選項文字；`explain` 為交卷後顯示的說明；`chart` 可放圖表資料
+- 新增一課：放進 `lessons/letstalk/`，並在 `lets-talk.js` 最上面的 `FILES` 加上檔名。課的 `id` 上線後不要改（最佳成績用它記錄）
